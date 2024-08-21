@@ -18,8 +18,8 @@
     box-sizing: border-box;
 }
 h1{
-    color: white;
-    font-size: 45px;
+    color:black;
+    font-size: 55px;
 }
 body{
 
@@ -99,7 +99,7 @@ body{
     align-items: center;
 }
 .container h4{
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
 }
 nav{
@@ -226,24 +226,62 @@ header{
 }
 
 .main{
-    background-color:var(--cor-site);
+    background-color:black;
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 550px; /* Define a altura da navbar */
+    height: 650px; /* Define a altura da navbar */
+}
+.imgesquerda{
+    padding: 120px;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    height: 800px;
+}
+
+.imgdireita{
+    padding: 120px;
+    display: flex;
+    justify-content:right;
+    align-items: right;
+    height: 800px;
+}
+.conteudodireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* Alinha o conteúdo à direita */
+    text-align: right; /* Alinha o texto à direita */
+    color: white;
+    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    height: 100%; /* Garante que o container ocupe toda a altura disponível */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+}
+.conteudoesquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: black;
+    padding: 20px; /* Adiciona um pouco de padding, se necessário */
+    height: 100%; /* Garante que o container ocupe toda a altura disponível */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
 }
 .main2{
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 550px; /* Define a altura da navbar */
-    background-color:var(--cor-site)
+    height: 650px; /* Define a altura da navbar */
+    background-color:white;
 }
 .main3{
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 550px; /* Define a altura da navbar */
-    background-color:var(--cor-site);
+    height: 650px; /* Define a altura da navbar */
+    background-color:violet;
+    align-items: center;
 }
 .main4{
     padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 550px; /* Define a altura da navbar */
-    background-color: var(--cor-site);
+    height: 650px; /* Define a altura da navbar */
+    background-color: pink;
 }
 
 </style>
@@ -271,17 +309,40 @@ header{
         
         <main>
         <div class="main">
+            <div class="imgesquerda">
+            <img src="https://cdn.pixabay.com/photo/2023/04/26/17/09/flower-7952950_1280.jpg" alt="imagem" height="380px">
+            <div class="conteudodireita">
             <h1>Seja Bem-vindo!!</h1>
-            <img src="/imagem/escola.jpg" alt="imagem">
+            <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
+            </div>
+            </div>
         </div>
         <div class="main2">
-            <img src="/imagem/logo_concursadorteste2.png" alt="">
+        <div class="imgdireita">
+        <div class="conteudoesquerda">
+            <h1>Matérias</h1>
+            <h3>Contando com 9 matérias diferentes, oferecemos um ótimo material de estudos 100% gratuito.</h3>
+            </div>
+            <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt=""  height="380px" >
+        </div>
         </div>
         <div class="main3">
-            <img src="/imagem/logo_concursadorteste2.png" alt="">
+        <div class="imgesquerda">
+            <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt=""  height="380px">
+            <div class="conteudodireita">
+            <h1>Seja Bem-vindo!!</h1>
+            <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
+            </div>
+        </div>
         </div>
         <div class="main4">
-            <img src="/imagem/logo_concursadorteste2.png" alt="">
+            <div class="imgdireita">
+            <div class="conteudoesquerda">
+            <h1>Seja Bem-vindo!!</h1>
+            <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt=""  height="380px">
+            </div>
         </div>
         </main>
     
