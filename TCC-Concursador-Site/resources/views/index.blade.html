@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
 </head>
 <style>
-    :root{
+:root{
     --cor-site: rgb(44, 61, 91);
     --cor-nav:rgb(67, 93, 134);
 }
@@ -59,13 +59,13 @@ body{
 }
 .barrapesquisa{
     position: absolute;
-    top: 10%;
+    top: 10.3%;
     left: 70%;
     transform: translate(-50%, -50%);
     background-color:var(--cor-nav);
     height: 30px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 40px;
     display: flex;
     justify-content: center;
     transition: .5s;
@@ -76,7 +76,7 @@ body{
     padding: 0 6px;
 }
 .barrapesquisa:hover .botao-pesquisar{
-    background-color: white;
+    background-color:var(--cor-nav);
 }
 .pesquisa-txt{
     border: none;
@@ -93,7 +93,7 @@ body{
     width: 40px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--cor-site);
+    background-color: var(--cor-nav);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +101,7 @@ body{
 .container h4{
     font-size: 32px;
     text-align: center;
+    margin-top: -65px;
 }
 nav{
     border-bottom: 0.5px solid #ccc;
@@ -112,6 +113,7 @@ nav{
     background-color: rgb(67, 93, 134);
 }
 .logosite{
+    margin-top: -8px;
     align-items: center;
 }
 .container-pes{
@@ -149,8 +151,9 @@ header{
     justify-content: space-around;
 }
 .header{
-    gap: 50px;
-    margin-left: 20px;
+    gap: 120px;
+    margin-left: 5px;
+    margin-left: -80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,7 +175,7 @@ header{
     color: white;
 }
 .botao{
-    margin-right: 5px;
+    margin-right: -550px; /* Espaço entre os botões */
     font-size: 14px;
     border-radius: 30px; /* Arredonda o botão */
     padding: 15px 30px;
@@ -181,6 +184,9 @@ header{
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Animação suave */
+}
+.botao:last-child {
+    margin-right: 0; /* Remove o espaço do último botão */
 }
 .botao:hover {
     background-color: rgb(173, 203, 234); /* Azul clarinho ao passar o mouse */
@@ -249,7 +255,7 @@ header{
 <body>
     <div class="container">
         <nav>
-            <img class="logosite" src="logo_concursadorteste2.png" alt="logo" height="80" width="80">
+            <img class="logosite" src="https://images.vexels.com/content/166359/preview/graduation-hat-and-diploma-silhouette-181a51.png" alt="logo" height="85" width="85">
             <h4>Concursador</h4>
         </nav>
         <header class="cabeça">
