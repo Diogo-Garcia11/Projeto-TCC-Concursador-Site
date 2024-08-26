@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku'),
-    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
@@ -64,6 +64,7 @@ return array(
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
+    'Lucascudo\\LaravelPtBRLocalization\\' => array($vendorDir . '/lucascudo/laravel-pt-br-localization/src'),
     'League\\MimeTypeDetection\\' => array($vendorDir . '/league/mime-type-detection/src'),
     'League\\Flysystem\\Local\\' => array($vendorDir . '/league/flysystem-local'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
@@ -73,6 +74,7 @@ return array(
     'Laravel\\SerializableClosure\\' => array($vendorDir . '/laravel/serializable-closure/src'),
     'Laravel\\Sail\\' => array($vendorDir . '/laravel/sail/src'),
     'Laravel\\Prompts\\' => array($vendorDir . '/laravel/prompts/src'),
+    'Laravel\\Breeze\\' => array($vendorDir . '/laravel/breeze/src'),
     'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
     'Illuminate\\Support\\' => array($vendorDir . '/laravel/framework/src/Illuminate/Macroable', $vendorDir . '/laravel/framework/src/Illuminate/Collections', $vendorDir . '/laravel/framework/src/Illuminate/Conditionable'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
