@@ -256,7 +256,7 @@ header{
 <body>
     <div class="container">
         <nav>
-            <img class="logosite" src="https://images.vexels.com/content/166359/preview/graduation-hat-and-diploma-silhouette-181a51.png" alt="logo" height="85" width="85">
+            <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="85" width="85">
             <h4>Concursador</h4>
         </nav>
         <header class="cabeça">
@@ -271,8 +271,8 @@ header{
                 <li><a href="{{route('simulados')}}">Simulados</a></li>
                 <li><a href="{{route('comunidade')}}">Comunidade</a></li>
             </ul>
-        <button class="botao"><a href="{{route('entrar')}}">Entrar</a></button>
-        <button class="botao"><a href="{{route('cadastrar')}}">Cadastrar</a></button>
+        <button class="botao"><a href="{{route('login')}}">Entrar</a></button>
+        <button class="botao"><a href="{{route('register')}}">Cadastrar</a></button>
         </header>
         
         <main>
