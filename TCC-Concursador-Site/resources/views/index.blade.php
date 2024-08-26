@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pag inicio</title>
-    <link rel="stylesheet" href="/TCC-Concursador-Site/src/style.css">
+    <!-- <link rel="stylesheet" href="/TCC-Concursador-Site/src/style.css"> -->
+    <link rel="stylesheet" href="{{ asset('\TCC-Concursador-Siteresources\css\style.css') }}">
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
 </head>
 <style>
@@ -266,12 +267,12 @@ header{
                 </a>
             </div>
             <ul class="header">
-                <li><a href="materias.blade.html">Matérias</a></li>
-                <li><a href="simulados.blade.html">Simulados</a></li>
-                <li><a href="comunidade.blade.html">Comunidade</a></li>
+                <li><a href="{{route('materias')}}">Matérias</a></li>
+                <li><a href="{{route('simulados')}}">Simulados</a></li>
+                <li><a href="{{route('comunidade')}}">Comunidade</a></li>
             </ul>
-        <button class="botao"><a href="entrar.blade.html">Entrar</a></button>
-        <button class="botao"><a href="cadastrar.blade.html">Cadastrar</a></button>
+        <button class="botao"><a href="{{route('entrar')}}">Entrar</a></button>
+        <button class="botao"><a href="{{route('cadastrar')}}">Cadastrar</a></button>
         </header>
         
         <main>
