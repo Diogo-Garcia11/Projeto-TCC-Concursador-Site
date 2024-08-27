@@ -11,6 +11,13 @@ export default {
 
     theme: {
         extend: {
+            colors:{
+                'allblue': '#465E84',
+                'blueberry': '#15253F',
+                'steelblue': '#435D86',
+                'genericwhite': '#FFFFFF',
+                'stormblue': '#2C3D5B',
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
