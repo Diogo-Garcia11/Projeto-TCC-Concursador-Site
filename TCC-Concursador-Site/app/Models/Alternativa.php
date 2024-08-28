@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Alternativa extends Model
 {
+    use CrudTrait;
     use HasFactory;
 
     // Define o nome da tabela associada ao modelo
