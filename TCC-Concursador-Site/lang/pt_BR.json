@@ -34,7 +34,7 @@
   "Create New Team": "Criar um novo Time",
   "Created.": "Criado.",
   "Current Password": "Senha Atual",
-  "Dashboard": "Painel de controle",
+  "Dashboard": "Painel de Controle",
   "Delete": "Deletar",
   "Delete API Token": "Deletar o Token de API",
   "Delete Account": "Deletar Conta",
@@ -147,5 +147,8 @@
   "You have enabled two factor authentication.": "Você já habilitou a autenticação de dois fatores.",
   "You have not enabled two factor authentication.": "Você ainda não habilitou a autenticação de dois fatores.",
   "You may delete any of your existing tokens if they are no longer needed.": "Você deve deletar os tokens sem utilização.",
-  "Your email address is unverified.": "Seu endereço de e-mail não foi verificado."
+  "Your email address is unverified.": "Seu endereço de e-mail não foi verificado.",
+  "Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": "Obrigado por se registrar! Antes de começar, você poderia verificar seu endereço de e-mail clicando no link que acabamos de enviar para você? Se você não recebeu o e-mail, ficaremos felizes em enviar outro.",
+  "Are you sure you want to delete your account?": "Tem certeza que deseja deletar sua conta?",
+  "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Depois que sua conta for excluída, todos os seus recursos e dados serão excluídos permanentemente. Por favor, digite sua senha para confirmar que você deseja excluir permanentemente sua conta."
 }
