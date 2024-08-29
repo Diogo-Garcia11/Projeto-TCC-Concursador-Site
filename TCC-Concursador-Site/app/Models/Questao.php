@@ -39,4 +39,11 @@ class Questao extends Model
     protected $casts = [
         // Adicione os casts aqui se necessário
     ];
+    
+
+    public function relAlternativa()
+    {
+        return $this->hasMany(Alternativa::class, 'idQuestao');
+    }
+
 }

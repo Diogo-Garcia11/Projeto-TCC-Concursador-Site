@@ -45,6 +45,8 @@ class UserCrudController extends CrudController
          * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
          */
+        CRUD::column('password')->type('password');
+       
     }
 
     /**

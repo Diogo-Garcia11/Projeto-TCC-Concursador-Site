@@ -45,6 +45,7 @@ class QuestaoCrudController extends CrudController
          * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
          */
+        CRUD::column('idQuestao')->type('number');
     }
 
     /**

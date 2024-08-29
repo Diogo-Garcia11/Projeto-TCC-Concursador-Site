@@ -31,8 +31,8 @@ class Alternativa extends Model
     ];
 
     // Define as relações com outros modelos
-    public function questao()
+    public function relQuestao()
     {
-        return $this->belongsTo(Questao::class, 'idQuestao', 'idQuestao');
+        return $this->hasOne(Questao::class, 'idQuestao', 'idQuestao');
     }
 }

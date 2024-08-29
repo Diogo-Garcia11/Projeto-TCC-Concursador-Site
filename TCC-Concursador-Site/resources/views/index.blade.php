@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pag inicio</title>
-    <!-- <link rel="stylesheet" href="/TCC-Concursador-Site/src/style.css"> -->
-    <link rel="stylesheet" href="{{ asset('\TCC-Concursador-Siteresources\css\style.css') }}">
-    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/TCC-Concursador-Site/resources/css/style.css">
+    <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
 </head>
 <style>
 :root{
@@ -105,7 +104,7 @@ body{
     margin-top: -65px;
 }
 nav{
-    border-bottom: 0.5px solid #ccc;
+    border-bottom: 0.1px solid black;
     grid-area: nav;
     align-items: center;
     color: white;
@@ -145,7 +144,7 @@ ul{
     list-style: none;
 }
 header{
-    border-bottom: 0.5px solid #ccc;
+    border-bottom: 0.1px solid black;
     height: 70px;
     display: flex;
     align-items: center;
@@ -260,19 +259,18 @@ header{
             <h4>Concursador</h4>
         </nav>
         <header class="cabeça">
-            <div class="barrapesquisa">
-                <input type="text" class="pesquisa-txt" placeholder="Pesquisar">
-                <a href="#" class="botao-pesquisar">
-                    <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" alt="lupa" height="30" width="30">
-                </a>
-            </div>
             <ul class="header">
                 <li><a href="{{route('materias')}}">Matérias</a></li>
                 <li><a href="{{route('simulados')}}">Simulados</a></li>
                 <li><a href="{{route('comunidade')}}">Comunidade</a></li>
+                <!-- <li><div class="barrapesquisa">
+                <input type="text" class="pesquisa-txt" placeholder="Pesquisar">
+                <a href="#" class="botao-pesquisar">
+                    <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" alt="lupa" height="30" width="30">
+                </a> </div></li> -->
+                <li><button class="botao"><a href="{{route('login')}}">Entrar</a></button></li>
+                <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
             </ul>
-        <button class="botao"><a href="{{route('login')}}">Entrar</a></button>
-        <button class="botao"><a href="{{route('register')}}">Cadastrar</a></button>
         </header>
         
         <main>

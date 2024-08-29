@@ -10,10 +10,19 @@
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
+                <!-- Navigation Links, aqui e onde vai ficar nossas outras paginas -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('materias')" :active="request()->routeIs('materias')">
+                        {{ __('Matérias') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('simulados')" :active="request()->routeIs('simulados')">
+                        {{ __('Simulados') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('comunidade')" :active="request()->routeIs('comunidade')">
+                        {{ __('Comunidade') }}
                     </x-nav-link>
                 </div>
             </div>

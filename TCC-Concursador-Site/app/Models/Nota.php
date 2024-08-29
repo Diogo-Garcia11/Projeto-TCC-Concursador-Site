@@ -43,8 +43,8 @@ class Nota extends Model
     ];
 
     // Define a relação com o modelo User
-    public function user()
+    public function relUser()
     {
-        return $this->belongsTo(User::class, 'idUser', 'id');
+        return $this->hasOne(User::class, 'id', 'idUser');
     }
 }
