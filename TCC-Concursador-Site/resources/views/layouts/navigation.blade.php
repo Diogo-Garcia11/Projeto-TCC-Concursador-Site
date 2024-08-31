@@ -80,7 +80,22 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
-
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('materias')" :active="request()->routeIs('materias')">
+                {{ __('Matérias') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('simulados')" :active="request()->routeIs('simulados')">
+                {{ __('Simulados') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('comunidade')" :active="request()->routeIs('comunidade')">
+                {{ __('Comunidade') }}
+            </x-responsive-nav-link>
+        </div>
+        
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">

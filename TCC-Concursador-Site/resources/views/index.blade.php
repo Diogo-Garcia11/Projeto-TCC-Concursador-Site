@@ -254,15 +254,18 @@ header{
 </style>
 <body>
     <div class="container">
+        <a name="cabeca" id="cabeca"></a>
         <nav>
+        
             <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="85" width="85">
             <h4>Concursador</h4>
         </nav>
         <header class="cabeça">
+        
             <ul class="header">
-                <li><a href="{{route('materias')}}">Matérias</a></li>
-                <li><a href="{{route('simulados')}}">Simulados</a></li>
-                <li><a href="{{route('comunidade')}}">Comunidade</a></li>
+                <li><a href="#materias">Matérias</a></li>
+                <li><a href="#simulados">Simulados</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
                 <!-- <li><div class="barrapesquisa">
                 <input type="text" class="pesquisa-txt" placeholder="Pesquisar">
                 <a href="#" class="botao-pesquisar">
@@ -275,6 +278,7 @@ header{
         
         <main>
         <div class="main">
+            
             <div class="imgesquerda">
             <img src="https://cdn.pixabay.com/photo/2023/04/26/17/09/flower-7952950_1280.jpg" alt="imagem" height="380px">
             <div class="conteudodireita">
@@ -284,6 +288,7 @@ header{
             </div>
         </div>
         <div class="main2">
+        <a name="materias" id="materias"></a>
         <div class="imgdireita">
         <div class="conteudoesquerda">
             <h1>Matérias</h1>
@@ -293,7 +298,9 @@ header{
         </div>
         </div>
         <div class="main3">
+        <a name="simulados" id="simulados"></a>
         <div class="imgesquerda">
+            
             <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt=""  height="380px">
             <div class="conteudodireita">
             <h1>Simulados</h1>
@@ -302,8 +309,10 @@ header{
         </div>
         </div>
         <div class="main4">
+        <a name="comunidade" id="comunidade"></a>
             <div class="imgdireita">
             <div class="conteudoesquerda">
+            
             <h1>Comunidade</h1>
             <h3>Junte-se a nossa comunidade no Discord criada exclusivamente para a plataforma.</h3>
             </div>
@@ -317,9 +326,31 @@ header{
                 <div class="footer-copyright">
                     &#169
                     2024 all rights reserved
+                    <a href="#cabeca">Voltar ao topo</a>
                 </div>
             </div>
         </footer>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a[href^="#"]');
+    
+        for (const link of links) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>
