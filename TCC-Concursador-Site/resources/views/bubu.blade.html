@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/TCC-Concursador-Site/resources/css/style.css">
+    <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
+    <style>
+        :root {
+            --cor-site: rgb(44, 61, 91);
+            --cor-nav: rgb(67, 93, 134);
+            --degrade: rgba(67, 93, 134, 0.4); /* Azul com transparência */
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--cor-site);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-bottom: 0.1px solid black;
+            background-color: var(--cor-nav);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            z-index: 1000;
+        }
+        .logosite {
+            margin-right: 20px;
+        }
+        .header h4 {
+            margin: 0;
+        }
+        header {
+            margin-top: 120px; /* Ajuste para compensar a navbar fixa */
+            border-bottom: 0.1px solid black;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1); /* Efeito de vidro fosco */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            list-style: none;
+            font-size: 25px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            transition: color 0.3s ease;
+        }
+        .header a:hover {
+            color: rgb(173, 203, 234);
+        }
+        .botao {
+            font-size: 14px;
+            border-radius: 30px;
+            padding: 15px 30px;
+            background-color: rgb(60, 95, 155);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .botao:hover {
+            background-color: rgb(173, 203, 234);
+        }
+        main {
+            padding-top: 20px;
+        }
+        .main {
+            background: linear-gradient(135deg, rgba(67, 93, 134, 0.4), rgba(44, 61, 91, 0.4));
+            padding: 40px;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main2, .main3, .main4 {
+            background: linear-gradient(135deg, rgba(67, 93, 134, 0.4), rgba(44, 61, 91, 0.4));
+            padding: 40px;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgesquerda, .imgdireita {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .imgesquerda img, .imgdireita img {
+            max-width: 100%;
+            height: auto;
+        }
+        .conteudodireita, .conteudoesquerda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .conteudodireita {
+            text-align: right;
+            color: white;
+        }
+        .conteudoesquerda {
+            text-align: left;
+            color: black;
+        }
+        .footer {
+            background-color: var(--cor-nav);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-copyright {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="85" width="85">
+        <h4>Concursador</h4>
+    </nav>
+    
+    <header>
+        <ul class="header">
+            <li><a href="#materias">Matérias</a></li>
+            <li><a href="#simulados">Simulados</a></li>
+            <li><a href="#comunidade">Comunidade</a></li>
+            <li><button class="botao"><a href="{{route('login')}}">Entrar</a></button></li>
+            <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
+        </ul>
+    </header>
+    
+    <main>
+        <div class="main">
+            <div class="imgesquerda">
+                <img src="https://cdn.pixabay.com/photo/2023/04/26/17/09/flower-7952950_1280.jpg" alt="imagem" height="380px">
+                <div class="conteudodireita">
+                    <h1>Seja Bem-vindo!!</h1>
+                    <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <a name="materias" id="materias"></a>
+            <div class="imgdireita">
+                <div class="conteudoesquerda">
+                    <h1>Matérias</h1>
+                    <h3>Contando com 9 matérias diferentes, oferecemos um ótimo material de estudos 100% gratuito.</h3>
+                </div>
+                <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt="" height="380px">
+            </div>
+        </div>
+        <div class="main3">
+            <a name="simulados" id="simulados"></a>
+            <div class="imgesquerda">
+                <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt="" height="380px">
+                <div class="conteudodireita">
+                    <h1>Simulados</h1>
+                    <h3>Com base nos vestibulares mais populares do Brasil, nossa plataforma oferece uma ferramenta intuitiva nesse quesito.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main4">
+            <a name="comunidade" id="comunidade"></a>
+            <div class="imgdireita">
+                <div class="conteudoesquerda">
+                    <h1>Comunidade</h1>
+                    <h3>Junte-se a nossa comunidade no Discord criada exclusivamente para a plataforma.</h3>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt="" height="380px">
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-copyright">
+            &#169; 2024 All rights reserved
+            <a href="#cabeca">Voltar ao topo</a>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+        
+            for (const link of links) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+        
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+        
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
