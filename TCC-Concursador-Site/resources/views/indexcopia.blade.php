@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <link rel="shortcut icon" href="/TCC-Concursador-Site/public/favicon.ico" type="image/x-icon">
+    <title>Página Inicial</title>
     <style>
-        :root {
+    :root {
     --cor-site: rgb(44, 61, 91);
     --cor-nav: rgb(67, 93, 134);
 }
@@ -13,7 +14,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(rgba(44, 61, 91), rgba(67, 93, 134)), url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background: linear-gradient(rgb(76, 100, 143), rgba(67, 93, 134)), url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
     background-size: cover;
     color: white;
     padding-top: 70px; /* Space for fixed nav */
@@ -22,10 +23,10 @@ body {
 
 nav {
     background-color: var(--cor-nav);
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    align-items: center; /* Aligns items vertically center */
-    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
     position: fixed;
     top: 0;
     left: 0;
@@ -33,29 +34,26 @@ nav {
     z-index: 1000;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
 nav img {
     height: 50px;
-    margin-right: 215px; /* Spacing between logo and text */
+    margin-right: 20px; /* Espaçamento entre logo e nome */
 }
 
-nav h4 {
+nav h1 {
     margin: 0;
     font-size: 24px;
     color: white;
-    margin-right: 20px; /* Spacing between text and buttons */
 }
-#nome h1{
-    margin-right: 200px;
-    margin: 0;
-    font-size: 24px;
-    color: white;
-    margin-right: 20px;
 
-}
 .header {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 60px; /* Espaçamento entre os itens da lista */
     list-style: none; /* Remove bullets from list */
     margin: 0;
     padding: 0;
@@ -85,12 +83,13 @@ nav h4 {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 10px; /* Adds space between buttons */
+    margin-left: 10px; /* Adiciona espaço entre os botões */
 }
 
 .botao:hover {
     background-color: rgb(173, 203, 234);
 }
+
 
 .container {
     width: 80%;
@@ -102,8 +101,8 @@ nav h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
-    max-width: 1200px; /* Define a largura máxima para centralizar o conteúdo */
+    padding: 60px 0;
+    max-width: 1300px; /* Define a largura máxima para centralizar o conteúdo */
     margin: 0 auto; /* Centraliza horizontalmente */
 }
 
@@ -135,12 +134,12 @@ footer {
 }
 
 .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(231, 215, 215, 0.027);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(41, 38, 38, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -158,8 +157,10 @@ footer {
 </head>
 <body>
     <nav>
-        <img src="https://via.placeholder.com/50x50" alt="Logo">
-        <h1 id="nome">Concursador</h1>
+        <div class="nav-logo">
+            <img src="https://via.placeholder.com/50x50" alt="Logo">
+            <h1>Concursador</h1>
+        </div>
         <ul class="header">
             <li><a href="#materias">Matérias</a></li>
             <li><a href="#simulados">Simulados</a></li>
@@ -168,6 +169,7 @@ footer {
             <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
         </ul>
     </nav>
+    
 
     <header class="cabeça">
         <!-- Header Content -->

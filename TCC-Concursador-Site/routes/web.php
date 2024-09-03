@@ -9,7 +9,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-
+Route::get('/copia', function () {
+    return view('indexcopia');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
