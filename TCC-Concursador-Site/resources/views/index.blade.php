@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
     <title>Página Inicial</title>
+    @vite('resources/css/app.css')
     <style>
     :root {
     --cor-site: rgb(44, 61, 91);
@@ -147,7 +148,9 @@ footer {
     margin: 20px 0;
     border: 1px solid rgba(41, 38, 38, 0.3);
 }
-
+.text a {
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -162,7 +165,7 @@ footer {
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="">
         <div class="nav-logo">
         <a name="cabeca" id="cabeca"></a>
         <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="100" width="50">
@@ -187,8 +190,12 @@ footer {
     <div class="glass-effect">
             <div class="main">
                 <div class="text">
-                    <h1>Concursador</h1>
-                    <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
+                    <h1>Bem-vindo ao Concursador!</h1>
+                    <h3>Aqui, o seu sucesso é a nossa missão. No Concursador, oferecemos uma plataforma completa para você que está se preparando para concursos e vestibulares. 
+                        Acesse uma vasta gama de questões e simulados atualizados, projetados para te ajudar a se familiarizar com o formato das provas e a aprimorar seu desempenho. 
+                        Estude de forma estratégica e eficaz com nossos recursos interativos e desafios práticos.
+                        Estamos aqui para tornar sua jornada de estudos mais eficiente e garantir que você esteja pronto para conquistar seus objetivos. 
+                        Comece agora e dê o primeiro passo para o seu sucesso acadêmico e profissional!</h3>
                 </div>
                 <div class="image">
                     <img src="https://cdn.pixabay.com/photo/2021/11/05/19/30/animal-6771900_1280.jpg" alt="imagem" height="1000" width="500">
@@ -204,7 +211,7 @@ footer {
                     <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt="Imagem 2">
                 </div>
                 <div class="text">
-                    <h1>Matérias</h1>
+                    <h1><a href="{{route('materias')}}">Matérias</a></h1>
                     <h3>Contando com 9 matérias diferentes, oferecemos um ótimo material de estudos 100% gratuito.</h3>
                 </div>
             </div>
@@ -215,7 +222,7 @@ footer {
             <div class="main">
             <a name="simulados" id="simulados"></a>
                 <div class="text">
-                    <h1>Simulados</h1>
+                <h1><a href="{{route('simulados')}}">Simulados</a></h1>
                     <h3>Com base nos vestibulares mais popularess do Brasil, nossa plataforma oferece uma ferramenta intuitiva nesse quesito.</h3>
                 </div>
                 <div class="image">
@@ -232,7 +239,7 @@ footer {
                     <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt="Imagem 4">
                 </div>
                 <div class="text">
-                    <h1>Comunidade</h1>
+                <h1><a href="{{route('comunidade')}}">Comunidades</a></h1>
                     <h3>Junte-se a nossa comunidade no Discord criada exclusivamente para a plataforma.</h3>
                 </div>
             </div>
