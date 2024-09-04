@@ -164,14 +164,14 @@ footer {
 <body>
     <nav>
         <div class="nav-logo">
-        <a name="cabeca" id="cabeca"></a>
+        <a id="a_cabeca"></a>
         <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="100" width="50">
             <h1>Concursador</h1>
         </div>
         <ul class="header">
-            <li><a href="#materias">Matérias</a></li>
-            <li><a href="#simulados">Simulados</a></li>
-            <li><a href="#comunidade">Comunidade</a></li>
+            <li><a href="#a_materias">Matérias</a></li>
+            <li><a href="#a_simulados">Simulados</a></li>
+            <li><a href="#a_comunidade">Comunidade</a></li>
             <li><button class="botao"><a href="{{route('login')}}">Entrar</a></button></li>
             <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
         </ul>
@@ -197,9 +197,9 @@ footer {
         </div>
 
         <!-- Second Main -->
+        <a id="a_materias"></a>
         <div class="glass-effect">
             <div class="main">
-            <a name="materias" id="materias"></a>
                 <div class="image">
                     <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt="Imagem 2">
                 </div>
@@ -211,9 +211,9 @@ footer {
         </div>
 
         <!-- Third Main -->
+        <a id="a_simulados"></a>
         <div class="glass-effect">
             <div class="main">
-            <a name="simulados" id="simulados"></a>
                 <div class="text">
                     <h1>Simulados</h1>
                     <h3>Com base nos vestibulares mais popularess do Brasil, nossa plataforma oferece uma ferramenta intuitiva nesse quesito.</h3>
@@ -225,9 +225,9 @@ footer {
         </div>
 
         <!-- Fourth Main -->
+        <a id="a_comunidade"></a>
         <div class="glass-effect">
             <div class="main">
-            <a name="comunidade" id="comunidade"></a>
                 <div class="image">
                     <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt="Imagem 4">
                 </div>
@@ -245,7 +245,7 @@ footer {
                 &#169; 2024 all rights reserved
             </div>
             <br>
-            <a href="#cabeca">Voltar ao topo</a>
+            <a href="#a_cabeca">Voltar ao topo</a>
         </div>
     </footer>
 
