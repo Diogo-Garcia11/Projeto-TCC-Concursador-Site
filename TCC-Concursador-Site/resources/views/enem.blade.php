@@ -1,5 +1,5 @@
 <x-app-layout>
-    <form action="" method="POST">
+    <form action="{{ route('simulados.submit') }}" method="POST">
         @csrf
         @foreach($questoes as $questao)
         <div class="py-12">
@@ -23,6 +23,6 @@
             </div>
         </div>
         @endforeach
-        <input type="submit" value="Enviar">
+        <input type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" value="Enviar">
     </form>
 </x-app-layout>
