@@ -7,7 +7,7 @@
                 <h3>{{ ucfirst($categoria) }}</h3>
 
                 @if ($dados['ultimaNota'])
-                    <p>Última nota: {{ $dados['ultimaNota']->totalNota }} ({{ number_format($dados['percentualUltimaNota'], 2) }}%) de {{ $dados['totalQuestoes'] }} questões</p>
+                    <p>Última nota: {{ $dados['ultimaNota']->totalNota }}/{{ $dados['totalQuestoes'] }} questões ({{ number_format($dados['percentualUltimaNota'], 2) }}%)</p>
 
                     @if ($dados['segundaNota'])
                         <p>Nota Anterior: {{ $dados['segundaNota']->totalNota }}</p>
