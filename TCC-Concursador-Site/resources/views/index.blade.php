@@ -3,323 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pag inicio</title>
-    <link rel="stylesheet" href="/TCC-Concursador-Site/resources/css/style.css">
     <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
-</head>
-<style>
-:root{
+    <title>Página Inicial</title>
+    @vite('resources/css/app.css')
+    <style>
+    :root {
     --cor-site: rgb(44, 61, 91);
-    --cor-nav:rgb(67, 93, 134);
+    --cor-nav: rgb(67, 93, 134);
 }
-*{
-    padding: 0;
+
+body {
     margin: 0;
-    box-sizing: border-box;
-}
-h1{
-    color:black;
-    font-size: 55px;
-}
-body{
-
-    background-color: var(--cor-site);
-    height: 175vh;
-    grid-gap: 1rem;
-    display: grid;
-    grid-template-areas:
-      "nav nav nav"
-      "header header "
-      "main main main"
-      "footer footer footer";
-}
-
-/*Resposividade*/
-@media(max-width:767px){
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media(max-width:574px){
-    .footer-col{
-        width: 100%;
-    }
-}
-@media(max-width:767px){
-    .header{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media(max-width:574px){
-    .header{
-        width: 100%;
-    }
-}
-.barrapesquisa{
-    position: absolute;
-    top: 10.3%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    background-color:var(--cor-nav);
-    height: 30px;
-    padding: 20px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    transition: .5s;
-    align-items: center;
-}
-.barrapesquisa:hover > .pesquisa-txt{
-    width: 240px;
-    padding: 0 6px;
-}
-.barrapesquisa:hover .botao-pesquisar{
-    background-color:var(--cor-nav);
-}
-.pesquisa-txt{
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(44, 61, 91), rgb(67, 93, 134)), url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover;
     color: white;
-    font-size: 20px;
-    line-height: 40px;
-    width: 0;
-    transition: .2s;
+    padding-top: 70px; /* Space for fixed nav */
+    overflow-x: hidden;
 }
-.botao-pesquisar{
-    width: 40px;
-    height: 20px;
-    border-radius: 50%;
+
+nav {
     background-color: var(--cor-nav);
+    padding: 30px;
     display: flex;
-    justify-content: center;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    display: flex;
     align-items: center;
 }
-.container h4{
-    font-size: 32px;
-    text-align: center;
-    margin-top: -65px;
+
+nav img {
+    height: 50px;
+    margin-right: 20px; /* Espaçamento entre logo e nome */
 }
-nav{
-    border-bottom: 0.1px solid black;
-    grid-area: nav;
-    align-items: center;
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
     color: white;
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 100px; /* Define a altura da navbar */
-    background-color: rgb(67, 93, 134);
-}
-.logosite{
-    margin-top: -8px;
-    align-items: center;
-}
-.container-pes{
-    max-width: 1170px;
-    margin: auto;
 }
 
-.footer{
-    grid-area: footer;
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 180px; /* Define a altura da navbar */
-    background-color: rgb(67, 93, 134);
+.header {
     display: flex;
-}
-.footer-copyright{
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    padding: 1.5rem;
-    font-weight: 100;
+    align-items: center;
+    gap: 60px; /* Espaçamento entre os itens da lista */
+    list-style: none; /* Remove bullets from list */
+    margin: 0;
+    padding: 0;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.header li {
+    margin: 0;
 }
-ul{
-    list-style: none;
-}
-header{
-    border-bottom: 0.1px solid black;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.header{
-    gap: 120px;
-    margin-left: 5px;
-    margin-left: -80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px; /* Ajuste de acordo com a necessidade */
-    font-size: 25px;
-    list-style: none;
-}
-.header a{
+
+.header a {
     color: white;
     text-decoration: none;
-    padding: 20px 85px; /* Aumenta o espaçamento dos links */
-    transition: color 0.3s ease; /* Animação suave */
+    padding: 20px;
+    transition: color 0.3s ease;
 }
-.header li a:hover {
+
+.header a:hover {
     color: rgb(173, 203, 234);
 }
-.botao a{
-    text-decoration: none;
+a{
+    text-decoration: underline ;
     color: white;
 }
-.botao{
-    margin-right: -550px; /* Espaço entre os botões */
+a:hover {
+    color: rgb(173, 203, 234);
+}
+.botao {
     font-size: 14px;
-    border-radius: 30px; /* Arredonda o botão */
+    border-radius: 30px;
     padding: 15px 30px;
-    background-color: rgb(60, 95, 155); /* Cor de fundo inicial */
+    background-color: rgb(60, 95, 155);
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Animação suave */
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adiciona espaço entre os botões */
 }
-.botao:last-child {
-    margin-right: 0; /* Remove o espaço do último botão */
-}
+
 .botao:hover {
-    background-color: rgb(173, 203, 234); /* Azul clarinho ao passar o mouse */
+    background-color: rgb(173, 203, 234);
 }
 
-.main{
-    background-color:black;
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 650px; /* Define a altura da navbar */
-}
-.imgesquerda{
-    padding: 120px;
-    display: flex;
-    justify-content:left;
-    align-items: left;
-    height: 800px;
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.imgdireita{
-    padding: 120px;
+.main {
     display: flex;
-    justify-content:right;
-    align-items: right;
-    height: 800px;
-}
-.conteudodireita {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end; /* Alinha o conteúdo à direita */
-    text-align: right; /* Alinha o texto à direita */
-    color: white;
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
-    height: 100%; /* Garante que o container ocupe toda a altura disponível */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-}
-.conteudoesquerda {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
-    text-align: left; /* Alinha o texto à esquerda */
-    color: black;
-    padding: 20px; /* Adiciona um pouco de padding, se necessário */
-    height: 100%; /* Garante que o container ocupe toda a altura disponível */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-}
-.main2{
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 650px; /* Define a altura da navbar */
-    background-color:white;
-}
-.main3{
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 650px; /* Define a altura da navbar */
-    background-color:violet;
     align-items: center;
-}
-.main4{
-    padding: 20px 40px; /* Aumenta o espaçamento interno da navbar */
-    height: 650px; /* Define a altura da navbar */
-    background-color: pink;
+    justify-content: center;
+    padding: 60px 0;
+    max-width: 1300px; /* Define a largura máxima para centralizar o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-</style>
+.main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main .text, .main .image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--cor-nav);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.glass-effect {
+    background: rgba(231, 215, 215, 0.027);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid rgba(41, 38, 38, 0.3);
+}
+.text a {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main .text, .main .image {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
 <body>
-    <div class="container">
-        <nav>
-            <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="85" width="85">
-            <h4>Concursador</h4>
-        </nav>
-        <header class="cabeça">
-            <ul class="header">
-                <li><a href="{{route('materias')}}">Matérias</a></li>
-                <li><a href="{{route('simulados')}}">Simulados</a></li>
-                <li><a href="{{route('comunidade')}}">Comunidade</a></li>
-                <!-- <li><div class="barrapesquisa">
-                <input type="text" class="pesquisa-txt" placeholder="Pesquisar">
-                <a href="#" class="botao-pesquisar">
-                    <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" alt="lupa" height="30" width="30">
-                </a> </div></li> -->
-                <li><button class="botao"><a href="{{route('login')}}">Entrar</a></button></li>
-                <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
-            </ul>
-        </header>
-        
-        <main>
-        <div class="main">
-            <div class="imgesquerda">
-            <img src="https://cdn.pixabay.com/photo/2023/04/26/17/09/flower-7952950_1280.jpg" alt="imagem" height="380px">
-            <div class="conteudodireita">
-            <h1>Seja Bem-vindo!!</h1>
-            <h3>Nosso site, tem como objetivo facilitar o acesso a educação!</h3>
-            </div>
-            </div>
+    <nav class="">
+        <div class="nav-logo">
+        <a id="a_cabeca"></a>
+        <img class="logosite" src="{{ asset('imagens/logo.ico') }}" alt="logo" height="100" width="50">
+            <h1>Concursador</h1>
         </div>
-        <div class="main2">
-        <div class="imgdireita">
-        <div class="conteudoesquerda">
-            <h1>Matérias</h1>
-            <h3>Contando com 9 matérias diferentes, oferecemos um ótimo material de estudos 100% gratuito.</h3>
-            </div>
-            <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt=""  height="380px" >
-        </div>
-        </div>
-        <div class="main3">
-        <div class="imgesquerda">
-            <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt=""  height="380px">
-            <div class="conteudodireita">
-            <h1>Simulados</h1>
-            <h3>Com base nos vestibulares mais popularess do Brasil, nossa plataforma oferece uma ferramenta intuitiva nesse quesito.</h3>
-            </div>
-        </div>
-        </div>
-        <div class="main4">
-            <div class="imgdireita">
-            <div class="conteudoesquerda">
-            <h1>Comunidade</h1>
-            <h3>Junte-se a nossa comunidade no Discord criada exclusivamente para a plataforma.</h3>
-            </div>
-            <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt=""  height="380px">
-            </div>
-        </div>
-        </main>
+        <ul class="header">
+            <li><a href="#a_materias">Matérias</a></li>
+            <li><a href="#a_simulados">Simulados</a></li>
+            <li><a href="#a_comunidade">Comunidade</a></li>
+            <li><button class="botao"><a href="{{route('login')}}">Entrar</a></button></li>
+            <li><button class="botao"><a href="{{route('register')}}">Cadastrar</a></button></li>
+        </ul>
+    </nav>
     
-        <footer class="footer">
-            <div class="container-pes">
-                <div class="footer-copyright">
-                    &#169
-                    2024 all rights reserved
+
+    <header class="cabeça">
+        <!-- Header Content -->
+    </header>
+
+    <main>
+    <!-- First Main -->
+    <div class="glass-effect">
+            <div class="main">
+                <div class="text">
+                    <h1>Bem-vindo ao Concursador!</h1>
+                    <h3>Aqui, o seu sucesso é a nossa missão. No Concursador, oferecemos uma plataforma completa para você que está se preparando para concursos e vestibulares. 
+                        Acesse uma vasta gama de questões e simulados atualizados, projetados para te ajudar a se familiarizar com o formato das provas e a aprimorar seu desempenho. 
+                        Estude de forma estratégica e eficaz com nossos recursos interativos e desafios práticos.
+                        Estamos aqui para tornar sua jornada de estudos mais eficiente e garantir que você esteja pronto para conquistar seus objetivos. 
+                        Comece agora e dê o primeiro passo para o seu sucesso acadêmico e profissional!</h3>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/05/19/30/animal-6771900_1280.jpg" alt="imagem" height="1000" width="500">
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+
+        <!-- Second Main -->
+        <a id="a_materias"></a>
+        <div class="glass-effect">
+            <div class="main">
+                <div class="image">
+                    <img src="https://media.istockphoto.com/id/155141290/pt/foto/cris%C3%A2ntemo.jpg?s=2048x2048&w=is&k=20&c=H4gVO4mmBhk1fdpSgXBhsHP1uVHXYAfM0c6lU-X3Tq4=" alt="Imagem 2">
+                </div>
+                <div class="text">
+                    <h1><a href="{{route('materias')}}">Matérias</a></h1>
+                    <h3>Contando com 9 matérias diferentes, oferecemos um ótimo material de estudos 100% gratuito.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Main -->
+        <a id="a_simulados"></a>
+        <div class="glass-effect">
+            <div class="main">
+                <div class="text">
+                <h1><a href="{{route('simulados')}}">Simulados</a></h1>
+                    <h3>Com base nos vestibulares mais popularess do Brasil, nossa plataforma oferece uma ferramenta intuitiva nesse quesito.</h3>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Main -->
+        <a id="a_comunidade"></a>
+        <div class="glass-effect">
+            <div class="main">
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/17/16/42/roses-1463562_1280.jpg" alt="Imagem 4">
+                </div>
+                <div class="text">
+                <h1><a href="{{route('comunidade')}}">Comunidades</a></h1>
+                    <h3>Junte-se a nossa comunidade no Discord criada exclusivamente para a plataforma.</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-pes">
+            <div class="footer-copyright">
+                &#169; 2024 all rights reserved
+            </div>
+            <br>
+            <a href="#a_cabeca">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a[href^="#"]');
+    
+        for (const link of links) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>

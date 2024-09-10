@@ -39,7 +39,7 @@ class Nota extends Model
     // Define os atributos que devem ser casted para tipos específicos
     protected $casts = [
         'dataNota' => 'datetime', // Cast 'dataNota' para um objeto Carbon datetime
-        'totalNota' => 'decimal:2', // Cast 'totalNota' para decimal com 2 casas decimais
+        'totalNota' => 'integer', // Cast 'totalNota' para dinteiro
     ];
 
     // Define a relação com o modelo User

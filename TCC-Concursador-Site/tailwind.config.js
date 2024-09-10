@@ -17,10 +17,26 @@ export default {
                 'steelblue': '#435D86',
                 'genericwhite': '#FFFFFF',
                 'stormblue': '#2C3D5B',
+                'kblue':'#768fb8',
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+
             },
+            fontFamily: {
+                Montserrat: ['Montserrat', 'system-ui'],
+            },
+            fontWeight: {
+                'thin': '100',
+                'extra-light': '200',
+                'light': '300',
+                'normal': '400',
+                'medium': '500',
+                'semi-bold': '600',
+                'bold': '700',
+                'extra-bold': '800',
+                'black': '900',
+              },
         },
     },
 
