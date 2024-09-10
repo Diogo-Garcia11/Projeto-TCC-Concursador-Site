@@ -10,7 +10,7 @@
                     <p>Última nota: {{ $dados['ultimaNota']->totalNota }} ({{ number_format($dados['percentualUltimaNota'], 2) }}%) de {{ $dados['totalQuestoes'] }} questões</p>
 
                     @if ($dados['segundaNota'])
-                        <p>Segunda última nota: {{ $dados['segundaNota']->totalNota }}</p>
+                        <p>Nota Anterior: {{ $dados['segundaNota']->totalNota }}</p>
                         
                         @if ($dados['comparacao']['diferenca'] > 0)
                             <p style="color: green;">Você melhorou: +{{ number_format($dados['comparacao']['diferenca'], 2) }}%</p>

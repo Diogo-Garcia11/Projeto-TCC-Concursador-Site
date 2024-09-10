@@ -20,7 +20,7 @@ class NotaController extends Controller
 
         $totalQuestoes = [
             'enem' => 180,
-            'fatec' => 50,
+            'fatec' => 54,
             'fuvest' => 90,
             'matematica' => 30,
             'portugues' => 30,

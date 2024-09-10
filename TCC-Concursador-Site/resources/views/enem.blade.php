@@ -1,6 +1,8 @@
 <x-app-layout>
     <form action="{{ route('simulados.submit') }}" method="POST">
         @csrf
+        <input type="hidden" name="categoria" value="{{ $categoria }}"> <!-- Adiciona a categoria ao formulário -->
+
         @php $contador = 1; $par =")";  @endphp <!-- Contador inicializado em 1 -->
         @foreach($questoes as $questao)
         <div class="py-12">

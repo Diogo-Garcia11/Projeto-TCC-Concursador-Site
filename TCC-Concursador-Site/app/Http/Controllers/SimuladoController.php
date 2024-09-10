@@ -14,22 +14,31 @@ class SimuladoController extends Controller
     public function enem()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->inRandomOrder()->get();
-        return view('enem', compact('questoes'));
+        $categoria = 'enem'; // Define a categoria
+        
+        return view('enem', compact('questoes', 'categoria'));
     } 
     public function fatec()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fatec')->inRandomOrder()->get();
-        return view('fatec', compact('questoes'));
+        $categoria = 'fatec'; // Define a categoria
+        
+        return view('fatec', compact('questoes', 'categoria'));
     } 
     public function fuvest()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fuvest')->inRandomOrder()->get();
-        return view('fuvest', compact('questoes'));
+        $categoria = 'fuvest'; // Define a categoria
+        
+        return view('fuvest', compact('questoes', 'categoria'));
     }
+    
     public function submit (Request $request)
     {
         $questoes = $request->all();
         $acertos = 0;
+
+        $categoria = $request->input('categoria');
 
         // Itera sobre as respostas enviadas
         foreach ($questoes as $key => $value) {
@@ -50,7 +59,7 @@ class SimuladoController extends Controller
             Nota::create([
                 'dataNota' => now(),
                 'totalNota' => $acertos,
-                'categoriaNota' => 'enem', // Ajuste de acordo com sua lógica
+                'categoriaNota' => $categoria, // Ajuste de acordo com sua lógica
                 'idUser' => $userId,  // Associando a nota ao usuário autenticado
             ]);
 
