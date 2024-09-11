@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\QuestaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SimuladoController;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('index');
+    
 });
 
 Route::get('/dashboard', [NotaController::class, 'index'])
@@ -35,6 +37,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/fuvest', [SimuladoController::class, 'fuvest'])->name('simulados.fuvest');
 
         Route::post('/submit', [SimuladoController::class, 'submit'])->name('simulados.submit');
+        
     });
     
     Route::get('/comunidade', function () {
@@ -48,6 +51,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/calendario', function () {
         return view('calendario');
     })->name('calendario');
+
+    Route::get('/uploads', function () {
+        return view('uploads'); // Aponta para a view do formulário de upload
+    })->name('uploads');
+    
+    Route::post('/extrair-questoes', [QuestaoController::class, 'extrairQuestoes'])->name('extrairQuestoes');
+    Route::post('/uploadImagem', [QuestaoController::class, 'uploadImagem'])->name('uploadImagem');
+    
 });
 
 require __DIR__.'/auth.php';
+
+    

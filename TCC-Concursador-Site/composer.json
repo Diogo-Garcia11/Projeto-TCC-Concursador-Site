@@ -8,8 +8,12 @@
         "php": "^8.2",
         "backpack/crud": "^6.7",
         "backpack/theme-tabler": "^1.2",
+        "intervention/image": "^3.8",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "setasign/fpdf": "^1.8",
+        "setasign/fpdi": "^2.6",
+        "smalot/pdfparser": "^2.11"
     },
     "require-dev": {
         "backpack/generators": "^4.0",

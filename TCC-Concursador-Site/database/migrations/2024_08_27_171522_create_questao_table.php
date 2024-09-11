@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('questao', function (Blueprint $table) {
+        Schema::create('questoes', function (Blueprint $table) {
             $table->id('idQuestao'); // AUTO_INCREMENT é implícito com o método id()
             $table->string('textoQuestao', 2000);
             $table->string('materiaQuestao', 25);
