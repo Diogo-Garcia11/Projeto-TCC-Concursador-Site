@@ -9,7 +9,7 @@
   <main class="p-4">
     <!-- Química -->
     <div class="flex justify-center">
-      <button id="dropdownButton"  class= "bg-steelblue p-6 shadow border-2 border-steelblue h-64 w-[90%] flex items-center">
+      <button id="dropdownButton"  class= "bg-steelblue p-6 shadow border-2 border-steelblue h-62 w-[90%] rounded-lg flex items-center">
         <div class="flex-shrink-0 m-10">
           <svg width="50%" height="auto" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
