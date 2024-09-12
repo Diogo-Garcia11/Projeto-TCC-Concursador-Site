@@ -18,6 +18,7 @@ export default {
                 'genericwhite': '#FFFFFF',
                 'stormblue': '#2C3D5B',
                 'kblue':'#768fb8',
+                'whiteblue': '#BAC7DC',
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
