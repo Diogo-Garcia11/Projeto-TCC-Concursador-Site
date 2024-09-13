@@ -6,9 +6,6 @@ use App\Models\Questao;
 use App\Models\Nota;
 use Illuminate\Support\Facades\Auth;
 
-
-
-
 class SimuladoController extends Controller
 {
     public function enem()
@@ -16,21 +13,21 @@ class SimuladoController extends Controller
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->inRandomOrder()->get();
         $categoria = 'enem'; // Define a categoria
         
-        return view('enem', compact('questoes', 'categoria'));
+        return view('simulado.enem', compact('questoes', 'categoria'));
     } 
     public function fatec()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fatec')->inRandomOrder()->get();
         $categoria = 'fatec'; // Define a categoria
         
-        return view('fatec', compact('questoes', 'categoria'));
+        return view('simulado.fatec', compact('questoes', 'categoria'));
     } 
     public function fuvest()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fuvest')->inRandomOrder()->get();
         $categoria = 'fuvest'; // Define a categoria
         
-        return view('fuvest', compact('questoes', 'categoria'));
+        return view('simulado.fuvest', compact('questoes', 'categoria'));
     }
     
     public function submit (Request $request)
