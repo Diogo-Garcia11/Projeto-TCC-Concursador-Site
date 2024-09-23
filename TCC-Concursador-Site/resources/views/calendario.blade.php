@@ -15,7 +15,6 @@
                 margin: 15px 0 0 -250px;
                 position: absolute;
                 width: 500px;
-                background: white;
                 height: 51px;
             }
             .calendario{
@@ -120,8 +119,8 @@
             <div class="calendario">
             <header>
                 <h2 id="mes">Setembro</h2>
-                    <a class="btn-ant" id="btn-prev"></a>
-                    <a class="btn-pro" id="btn-next"></a>
+                    <a class="btn-ant" id="btn_ant"></a>
+                    <a class="btn-pro" id="btn_prev"></a>
             </header>
             <table>
                 <thead>
@@ -137,8 +136,8 @@
                 </thead>
                 <tbody id="dias">
                     <tr>
-                        <td class="mes-anterior">1</td>
-                        <td class="event">2</td>
+                        <td>1</td>
+                        <td>2</td>
                         <td>3</td>
                         <td>4</td>
                         <td>5</td>
@@ -160,7 +159,7 @@
                         <td>17</td>
                         <td>18</td>
                         <td>19</td>
-                        <td class="dia-atual">20</td>
+                        <td>20</td>
                         <td>21</td>
                     </tr>
                     <tr>
@@ -176,15 +175,11 @@
                         <td>29</td>
                         <td>30</td>
                         <td>31</td>
-                        <td class="proximo-mes">1</td>
-                        <td class="proximo-mes">2</td>
-                        <td class="proximo-mes">3</td>
-                        <td class="proximo-mes">4</td>
                     </tr>
                 </tbody>
             </table>
             <footer>
-            <h2 id="ano">2024</h2>
+            <h2 id="ano"></h2>
         </footer>
             </div>
         </div>
@@ -192,12 +187,61 @@
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             const monthsBr = ['janeiro', 'fevereiro', 'março','abril', 'maio','junho', 'julho', 'agosto', 'setembro','outubro','novembro','dezembro'];
+            const tableDays = document.getElementById('dias');
             function GetDaysCalendar(mes,ano){
                 document.getElementById('mes').innerHTML = monthsBr[mes];
                 document.getElementById('ano').innerHTML = ano;
-                console.log(monthsBr[mes]);
+                
+                let firstDaysOfWeek = new Date (ano,mes,1).getDay()-1;
+                let getLastDayThisMonth = new Date(ano,mes+1,0).getDate();
+
+                for(var i = -firstDaysOfWeek,calendario = 0; i < (42-firstDaysOfWeek); i++, calendario++)
+                {
+                    let dt = new Date (ano,mes,i);
+                    let dtNow = new Date();
+                    let dayTable = tableDays.getElementsByTagName('td')[index];
+                    dayTable.classList.remove('mes-anterior');
+                    dayTable.classList.remove('proximo-mes');
+                    dayTable.classList.remove('dia-atual');
+                    dayTable.innerHTML = dt.getDate();
+
+                    if(dt.getFullYear() == dtNow.getFullYear() && dt.getMonth() == dtNow.getMonth() && dt.getDate() == dtNow.getDate()){
+                        dayTable.classList.add('dia-atual')
+                    }
+
+                    if(i < 1){
+                        dayTable.classList.add('mes-anterior')
+                    }
+                    if(i > getLastDayThisMonth){
+                        dayTable.classList.add('proximo-mes')
+                    }
+                }
             }
-            GetDaysCalendar(2,2001);
+
+            let now = new Date();
+            let mes = now.getMonth();
+            let ano = now.getFullYear();
+            GetDaysCalendar(mes,ano);
+
+            const botao_proximo = document.getElementById('btn_prev');
+            const botao_anterior = document.getElementById('btn_ant');
+
+            botao_proximo.onclick = function(){
+                mes++;
+                if(mes > 11){
+                    mes = 0;
+                    ano++;
+                }
+                GetDaysCalendar(mes,ano);
+            }
+            botao_anterior.onclick = function(){
+                mes--;
+                if(mes < 0){
+                    mes = 11;
+                    ano--;
+                }
+                GetDaysCalendar(mes,ano);
+            }
         })
     </script>
     </html>
