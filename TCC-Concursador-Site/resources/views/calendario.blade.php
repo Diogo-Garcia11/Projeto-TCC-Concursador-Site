@@ -28,6 +28,7 @@
                 margin-top: 20px;
                 font-size: 32px;
                 text-transform: uppercase;
+                color: #f9f9f9;
             }
             .btn-ant,.btn-pro{
                 position: absolute;
@@ -36,6 +37,7 @@
                 width: 32px;
                 line-height: 32px;
                 margin-top: -16px;
+                background-color: #f9f9f9;
                 border: 2px solid #cbd1d2;
                 border-radius: 50%;
                 color: #cbd1d2;
@@ -63,22 +65,31 @@
                 border-bottom: 2px solid red;
             }
             .calendario thead td{
-                height: 69.4px;
+                height: 71.4px;
             }
             .calendario thead td:first-child{
-                border-left: 2px solid red;
+               border-left: 2px solid red;
             }
             .calendario thead td:last-child{
-                border-right: 2px solid red;
+               border-right: 2px solid red;
             }
             .calendario td{
                 border: 1px solid #cbd1d2;
                 height: 71.4px;
                 text-align: center;
                 width: 71.4px;
+                border-bottom: #00addf;
             }
             .calendario tbody td{
+                background-color: #f9f9f9;
                 cursor: pointer;
+                border-bottom: #00addf;
+            }
+            .calendario tbody td:first-child{
+               border-left: 2px solid rgba(21, 37, 63);
+            }
+            .calendario tbody td:last-child{
+               border-right: 2px solid rgba(21, 37, 63);
             }
             .calendario tbody td:hover{
                 background: rgba(0, 173, 223, 0.8);
@@ -118,9 +129,9 @@
         <div class="conteudo">
             <div class="calendario">
             <header>
-                <h2 id="mes">Setembro</h2>
-                    <a class="btn-ant" id="btn_ant"></a>
-                    <a class="btn-pro" id="btn_prev"></a>
+                <h2 id="mes"></h2>
+                    <a class="btn-ant" id="btn_ant"><</a>
+                    <a class="btn-pro" id="btn_prev">></a>
             </header>
             <table>
                 <thead>
@@ -175,6 +186,10 @@
                         <td>29</td>
                         <td>30</td>
                         <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
                     </tr>
                 </tbody>
             </table>
@@ -185,7 +200,7 @@
         </div>
     </body>
     <script>
-        document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function(){
             const monthsBr = ['janeiro', 'fevereiro', 'março','abril', 'maio','junho', 'julho', 'agosto', 'setembro','outubro','novembro','dezembro'];
             const tableDays = document.getElementById('dias');
             function GetDaysCalendar(mes,ano){
@@ -197,13 +212,12 @@
 
                 for(var i = -firstDaysOfWeek,calendario = 0; i < (42-firstDaysOfWeek); i++, calendario++)
                 {
-                    let dt = new Date (ano,mes,i);
-                    let dtNow = new Date();
-                    let dayTable = tableDays.getElementsByTagName('td')[index];
+                    let dt = new Date(ano,mes,i);
+                    let dayTable = tableDays.getElementsByTagName('td')[calendario];
                     dayTable.classList.remove('mes-anterior');
                     dayTable.classList.remove('proximo-mes');
                     dayTable.classList.remove('dia-atual');
-                    dayTable.innerHTML = dt.getDate();
+                    dayTable.innerHTML = dtNow.getDate();
 
                     if(dt.getFullYear() == dtNow.getFullYear() && dt.getMonth() == dtNow.getMonth() && dt.getDate() == dtNow.getDate()){
                         dayTable.classList.add('dia-atual')
@@ -243,6 +257,6 @@
                 GetDaysCalendar(mes,ano);
             }
         })
-    </script>
+        </script>
     </html>
 </x-app-layout>
