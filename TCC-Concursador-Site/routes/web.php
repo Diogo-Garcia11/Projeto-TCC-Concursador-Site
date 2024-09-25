@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\QuestaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SimuladoController;
+use App\Http\Controllers\SimuladosController;
 use App\Http\Controllers\ProvasAntigasController; // Adicione este controlador
 use Illuminate\Http\Request;
 
@@ -20,14 +21,21 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/simulados', [SimuladosController::class, 'index'])->name('simulados.index'); // Rota para o index
+    Route::get('/simulados/{year}', [SimuladosController::class, 'showQuestions'])->name('simulados.show'); // Rota para ver questões
+
 
     Route::get('/materias', function () {
         return view('materias');
     })->name('materias');
 
-    Route::get('/simulados', function () {
-        return view('simulados');
-    })->name('simulados');
+    Route::get('/teste', function () {
+        return view('teste');
+    })->name('teste');
+
+   // Route::get('/simulados', function () {
+   //     return view('simulados');
+   // })->name('simulados');
     
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
@@ -68,6 +76,7 @@ Route::middleware('auth')->group(function () {
     
     Route::post('/extrair-questoes', [QuestaoController::class, 'extrairQuestoes'])->name('extrairQuestoes');
     Route::post('/uploadImagem', [QuestaoController::class, 'uploadImagem'])->name('uploadImagem');
+
 });
 
 require __DIR__.'/auth.php';
