@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MateriasController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\QuestaoController;
@@ -49,6 +50,136 @@ Route::middleware('auth')->group(function () {
         Route::get('/senac', [ProvasAntigasController::class, 'senac'])->name('provas.antigas.senac');
         Route::get('/ifsp', [ProvasAntigasController::class, 'ifsp'])->name('provas.antigas.ifsp');
     });
+
+    
+
+    Route::prefix('matematica')->group(function () {// Grupo de rotas para a matéria matemática
+        Route::get('/fracao', function () {
+            return view('materias.matematica.fracao');
+        })->name('fracao');
+        
+        Route::get('/conjuntos-numericos', function () {
+            return view('materias.matematica.conjuntos-numericos');
+        })->name('conjuntos-numericos');
+
+        Route::get('/porcentagem', function () {
+            return view('materias.matematica.porcentagem');
+        })->name('porcentagem');
+
+        Route::get('/equacao-1', function () {
+            return view('materias.matematica.equacao-1');
+        })->name('equacao-1');
+
+        Route::get('/equacao-2', function () {
+            return view('materias.matematica.equacao-2');
+        })->name('equacao-2');
+
+        Route::get('/funcoes', function () {
+            return view('materias.matematica.funcoes');
+        })->name('funcoes');
+
+        Route::get('/geometria-plana', function () {
+            return view('materias.matematica.geometria-plana');
+        })->name('geometria-plana');
+
+        Route::get('/geometria-espacial', function () {
+            return view('materias.matematica.geometria-espacial');
+        })->name('geometria-espacial');
+
+        Route::get('/teorema-pitagoras', function () {
+            return view('materias.matematica.teorema-pitagoras');
+        })->name('teorema-pitagoras');
+
+        Route::get('/media-mediana-moda', function () {
+            return view('materias.matematica.media-mediana-moda');
+        })->name('media-mediana-moda');
+
+        Route::get('/graficos-tabelas', function () {
+            return view('materias.matematica.graficos-tabelas');
+        })->name('graficos-tabelas');
+
+        Route::get('/probabilidade', function () {
+            return view('materias.matematica.probabilidade');
+        })->name('probabilidade');
+
+        Route::get('/juros-simples-compostos', function () {
+            return view('materias.matematica.juros-simples-compostos');
+        })->name('juros-simples-compostos');
+
+        Route::get('/trigonometria', function () {
+            return view('materias.matematica.trigonometria');
+        })->name('trigonometria');
+
+        Route::get('/unidades-medida', function () {
+            return view('materias.matematica.unidades-medida');
+        })->name('unidades-medida');
+
+        Route::get('/enem', [MateriasController::class, 'prova_matematica'])->name('materias.prova_matematica');
+    }); #Fim do agrupamento de matemática
+    
+    Route::prefix('portugues')->group(function () { // Grupo de rotas para a matéria portugues
+        Route::get('/fracao', function () {
+            return view('materias.matematica.fracao');
+        })->name('fracao');
+        
+        Route::get('/conjuntos-numericos', function () {
+            return view('materias.matematica.conjuntos-numericos');
+        })->name('conjuntos-numericos');
+
+        Route::get('/porcentagem', function () {
+            return view('materias.matematica.porcentagem');
+        })->name('porcentagem');
+
+        Route::get('/equacao-1', function () {
+            return view('materias.matematica.equacao-1');
+        })->name('equacao-1');
+
+        Route::get('/equacao-2', function () {
+            return view('materias.matematica.equacao-2');
+        })->name('equacao-2');
+
+        Route::get('/funcoes', function () {
+            return view('materias.matematica.funcoes');
+        })->name('funcoes');
+
+        Route::get('/geometria-plana', function () {
+            return view('materias.matematica.geometria-plana');
+        })->name('geometria-plana');
+
+        Route::get('/geometria-espacial', function () {
+            return view('materias.matematica.geometria-espacial');
+        })->name('geometria-espacial');
+
+        Route::get('/teorema-pitagoras', function () {
+            return view('materias.matematica.teorema-pitagoras');
+        })->name('teorema-pitagoras');
+
+        Route::get('/media-mediana-moda', function () {
+            return view('materias.matematica.media-mediana-moda');
+        })->name('media-mediana-moda');
+
+        Route::get('/graficos-tabelas', function () {
+            return view('materias.matematica.graficos-tabelas');
+        })->name('graficos-tabelas');
+
+        Route::get('/probabilidade', function () {
+            return view('materias.matematica.probabilidade');
+        })->name('probabilidade');
+
+        Route::get('/juros-simples-compostos', function () {
+            return view('materias.matematica.juros-simples-compostos');
+        })->name('juros-simples-compostos');
+
+        Route::get('/trigonometria', function () {
+            return view('materias.matematica.trigonometria');
+        })->name('trigonometria');
+
+        Route::get('/unidades-medida', function () {
+            return view('materias.matematica.unidades-medida');
+        })->name('unidades-medida');
+
+        Route::get('/enem', [MateriasController::class, 'prova_portugues'])->name('materias.prova_portugues');
+    }); #Fim do agrupamento de matemática
 
     Route::get('/comunidade', function () {
         return view('comunidade');

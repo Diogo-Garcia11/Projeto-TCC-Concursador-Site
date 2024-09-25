@@ -448,18 +448,6 @@
           <div class="grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cinemática</a>
           </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
-          </div>
         </div>
       </div>
     </div>
@@ -516,40 +504,22 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Mecânica</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Socrático</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia antiga</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia Moderna</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Soluções químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Existencialismo</a>
           </div>
         </div>
       </div>
@@ -576,40 +546,16 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Atomística</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Movimentos sociais</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cidadania e Direitos Humanos</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Política, Estado e Governo</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Soluções químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sociedade Contemporânea</a>
           </div>
         </div>
       </div>
