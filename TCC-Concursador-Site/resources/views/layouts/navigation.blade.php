@@ -27,6 +27,9 @@
                     <x-nav-link :href="route('downloadapp')" :active="request()->routeIs('downloadapp')">
                         {{ __('Download do App') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('teste')" :active="request()->routeIs('teste')">
+                        {{ __('Teste') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('calendario')" :active="request()->routeIs('calendario')">
                         {{ __('Calendário de Vestibulares') }}
                     </x-nav-link>
@@ -104,6 +107,11 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('downloadapp')" :active="request()->routeIs('downloadapp')">
                 {{ __('Download do App') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('teste')" :active="request()->routeIs('teste')">
+                {{ __('Teste') }}
             </x-responsive-nav-link>
         </div>
         <div class="pt-2 pb-3 space-y-1">
