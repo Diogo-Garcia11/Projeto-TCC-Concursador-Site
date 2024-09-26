@@ -25,7 +25,7 @@
             }
 
             h2{
-                margin-top: 20px;
+                margin-top: 60px;
                 font-size: 32px;
                 text-transform: uppercase;
                 color: #f9f9f9;
@@ -66,12 +66,6 @@
             }
             .calendario thead td{
                 height: 71.4px;
-            }
-            .calendario thead td:first-child{
-               border-left: 2px solid red;
-            }
-            .calendario thead td:last-child{
-               border-right: 2px solid red;
             }
             .calendario td{
                 border: 1px solid #cbd1d2;
@@ -191,6 +185,15 @@
                         <td>3</td>
                         <td>4</td>
                     </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
                 </tbody>
             </table>
             <footer>
@@ -198,8 +201,7 @@
         </footer>
             </div>
         </div>
-    </body>
-    <script>
+        <script>
     document.addEventListener('DOMContentLoaded', function(){
             const monthsBr = ['janeiro', 'fevereiro', 'março','abril', 'maio','junho', 'julho', 'agosto', 'setembro','outubro','novembro','dezembro'];
             const tableDays = document.getElementById('dias');
@@ -207,17 +209,18 @@
                 document.getElementById('mes').innerHTML = monthsBr[mes];
                 document.getElementById('ano').innerHTML = ano;
                 
-                let firstDaysOfWeek = new Date (ano,mes,1).getDay()-1;
+                let firstDayOfWeek = new Date (ano,mes,1).getDay()-1;
                 let getLastDayThisMonth = new Date(ano,mes+1,0).getDate();
 
-                for(var i = -firstDaysOfWeek,calendario = 0; i < (42-firstDaysOfWeek); i++, calendario++)
+                for(var i = -firstDayOfWeek,calendario = 0; i < (42-firstDayOfWeek); i++, calendario++)
                 {
                     let dt = new Date(ano,mes,i);
+                    let dtNow = new Date();
                     let dayTable = tableDays.getElementsByTagName('td')[calendario];
                     dayTable.classList.remove('mes-anterior');
                     dayTable.classList.remove('proximo-mes');
                     dayTable.classList.remove('dia-atual');
-                    dayTable.innerHTML = dtNow.getDate();
+                    dayTable.innerHTML = dt.getDate();
 
                     if(dt.getFullYear() == dtNow.getFullYear() && dt.getMonth() == dtNow.getMonth() && dt.getDate() == dtNow.getDate()){
                         dayTable.classList.add('dia-atual')
@@ -258,5 +261,6 @@
             }
         })
         </script>
+    </body>
     </html>
 </x-app-layout>

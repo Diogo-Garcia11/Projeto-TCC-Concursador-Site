@@ -30,13 +30,9 @@ Route::middleware('auth')->group(function () {
         return view('materias');
     })->name('materias');
 
-    Route::get('/teste', function () {
-        return view('teste');
-    })->name('teste');
-
-   Route::get('/simulados', function () {
+    Route::get('/simulados', function () {
        return view('simulados');
-   })->name('simulados');
+     })->name('simulados');
     
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
