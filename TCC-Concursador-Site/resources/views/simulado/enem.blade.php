@@ -16,15 +16,23 @@
                         @else
 
                         @endif
+
                         @foreach($questao->relAlternativa as $alternativa)
+                        
                             @if($alternativa->textoAlternativa != null)
-                            <div>
-                                <input type="radio" id="alternativa{{ $alternativa->idAlternativa }}" name="questao{{ $questao->idQuestao }}" value="{{ $alternativa->corretaAlternativa }}">{{ $alternativa->textoAlternativa }} <br>
-                            </div>
+                                <div>
+                                    <input type="radio" id="alternativa{{ $alternativa->idAlternativa }}" name="questao{{ $questao->idQuestao }}" value="{{ $alternativa->corretaAlternativa }}">{{ $alternativa->textoAlternativa }} <br>
+                                </div>
+                            @else
+
                             @endif
+
                             @if($alternativa->imagemAlternativa != null)
-                                <img src="{{alternativa->imagemalternativa}}" alt="Imagem da questão" width="500" height="200">
+                                    <img src="{{$alternativa->imagemAlternativa}}" alt="Imagem da alternativa" width="500" height="200">
+                            @else
+
                             @endif
+                            
                         @endforeach
                     </div>
                 </div>
