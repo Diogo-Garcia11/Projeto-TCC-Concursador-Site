@@ -1,7 +1,7 @@
 <x-app-layout>
     <form action="{{ route('simulados.submit') }}" method="POST">
         @csrf
-        <input type="hidden" name="categoria" value="{{ $categoria }}"> <!-- Adiciona a categoria ao formulário -->
+        <input type="hidden" name="categoria" value="{{ $categoria }}"> <!-- Adiciona a categoria ao formulário para depois ser registrado no banco de dados, não apague-->
 
         @php $contador = 1; $par =")";  @endphp <!-- Contador inicializado em 1 -->
         @foreach($questoes as $questao)
@@ -28,7 +28,9 @@
                             @endif
 
                             @if($alternativa->imagemAlternativa != null)
-                                    <img src="{{$alternativa->imagemAlternativa}}" alt="Imagem da alternativa" width="500" height="200">
+                                <div>
+                                    <input type="radio" id="alternativa{{ $alternativa->idAlternativa }}" name="questao{{ $questao->idQuestao }}" value="{{ $alternativa->corretaAlternativa }}"><img src="{{$alternativa->imagemAlternativa}}" alt="Imagem da alternativa" width="500" height="200"><br>
+                                </div>
                             @else
 
                             @endif
