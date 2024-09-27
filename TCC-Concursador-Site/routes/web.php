@@ -27,13 +27,8 @@ Route::middleware('auth')->group(function () {
     })->name('materias');
 
     Route::get('/simulados', function () {
-<<<<<<< HEAD
-       return view('simulados');
-     })->name('simulados');
-=======
         return view('simulados');
     })->name('simulados');
->>>>>>> parent of de2c47c3 (tentando incrementar a API)
     
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');

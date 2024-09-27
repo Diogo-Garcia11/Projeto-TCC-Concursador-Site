@@ -12,7 +12,8 @@
 
                         <h3>{{ $contador. $par }}.{{ $questao->textoQuestao }}</h3> <br><br>
                         @if($questao->imagemQuestao != null)
-                            <img src="{{ asset('imagens/' . $questao->imagemQuestao) }}" alt="Imagem da questão" width="200" height="200">
+                            <img src="{{$questao->imagemQuestao}}" alt="Imagem da questão" width="500" height="200">
+                            
                         @else
 
                         @endif
