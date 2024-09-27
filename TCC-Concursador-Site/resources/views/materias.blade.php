@@ -28,49 +28,49 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\conjuntos-numericos.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
+            <a href="TCC-Concursador-Site/resources/views/materias/matematica/fracao.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
+            <a href="TCC-Concursador-Site/resources/views/materias/matematica/porcentagem.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\equacao-1.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
+            <a href="TCC-Concursador-Site/resources/views/materias/matematica/equacao-2.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\funcoes.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
+            <a href="TCC-Concursador-Site/resources/views/materias/matematica/geometria-plana.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\geometria-espacial.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\teorema-pitagoras.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\media-mediana-moda.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\graficos-tabelas.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
+            <a href="TCC-Concursador-Site/resources/views/materias/matematica/probabilidade.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\juros-simples-compostos.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\trigonometria.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
+            <a href="TCC-Concursador-Site\resources\views\materias\matematica\unidades-medida.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Bioenergética</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interação Ecológicas</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interações Ecológicas</a>
           </div>
          
         </div>

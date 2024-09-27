@@ -114,7 +114,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.matematica.unidades-medida');
         })->name('unidades-medida');
 
-        Route::get('/enem', [MateriasController::class, 'prova_matematica'])->name('materias.prova_matematica');
+        Route::get('/prova_matematica', [MateriasController::class, 'prova_matematica'])->name('materias.prova_matematica');
     }); #Fim do agrupamento de matemática
     
     Route::prefix('portugues')->group(function () { // Grupo de rotas para a matéria portugues
@@ -178,8 +178,204 @@ Route::middleware('auth')->group(function () {
             return view('materias.matematica.unidades-medida');
         })->name('unidades-medida');
 
-        Route::get('/enem', [MateriasController::class, 'prova_portugues'])->name('materias.prova_portugues');
-    }); #Fim do agrupamento de matemática
+        Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias.prova_portugues');
+    }); #Fim do agrupamento de português
+
+    Route::prefix('biologia')->group(function () { // Grupo de rotas para a matéria biologia
+        Route::get('/bioenergetica', function () {
+            return view('materias.biologia.bioenergetica');
+        })->name('bioenergetica');
+        
+        Route::get('/botanica', function () {
+            return view('materias.biologia.botanica');
+        })->name('botanica');
+
+        Route::get('/celulas', function () {
+            return view('materias.biologia.celulas');
+        })->name('celulas');
+
+        Route::get('/ecologia', function () {
+            return view('materias.biologia.ecologia');
+        })->name('ecologia');
+
+        Route::get('/evolucao', function () {
+            return view('materias.biologia.evolucao');
+        })->name('evolucao');
+
+        Route::get('/fisiologia', function () {
+            return view('materias.biologia.fisiologia');
+        })->name('fisiologia');
+
+        Route::get('/genetica', function () {
+            return view('materias.biologia.genetica');
+        })->name('genetica');
+
+        Route::get('/interacao-ecologica', function () {
+            return view('materias.biologia.interacao-ecologica');
+        })->name('interacao-ecologica');
+
+        Route::get('/microbiologia', function () {
+            return view('materias.biologia.microbiologia');
+        })->name('teorema-pitagoras');
+
+        Route::get('/zoologia', function () {
+            return view('materias.biologia.zoologia');
+        })->name('zoologia');
+
+        Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('materias.prova_biologia');
+    }); #Fim do agrupamento de biologia
+
+    Route::prefix('fisica')->group(function () { // Grupo de rotas para a matéria fisica
+        Route::get('/cinematica', function () {
+            return view('materias.fisica.cinematica');
+        })->name('cinematica');
+        
+        Route::get('/eletromagnetismo', function () {
+            return view('materias.fisica.eletromagnetismo');
+        })->name('eletromagnetismo');
+
+        Route::get('/fluidos', function () {
+            return view('materias.fisica.fluidos');
+        })->name('fluidos');
+
+        Route::get('/mecanica', function () {
+            return view('materias.fisica.mecanica');
+        })->name('mecanica');
+
+        Route::get('/ondas', function () {
+            return view('materias.fisica.ondas');
+        })->name('ondas');
+
+        Route::get('/optica', function () {
+            return view('materias.fisica.optica');
+        })->name('optica');
+
+        Route::get('/termodinamica', function () {
+            return view('materias.fisica.termodinamica');
+        })->name('genetica');
+
+        Route::get('/trabalho-energia', function () {
+            return view('materias.fisica.trabalho-energia');
+        })->name('trabalho-energia');
+
+        Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('materias.prova_fisica');
+    }); #Fim do agrupamento de fisica
+
+    Route::prefix('filosofia')->group(function () { // Grupo de rotas para a matéria filosofia
+        Route::get('/etica', function () {
+            return view('materias.filosofia.etica');
+        })->name('etica');
+        
+        Route::get('/existencialismo', function () {
+            return view('materias.filosofia.existencialismo');
+        })->name('existencialismo');
+
+        Route::get('/filosofia-antiga', function () {
+            return view('materias.filosofia.filosofia-antiga');
+        })->name('filosofia-antiga');
+
+        Route::get('/filosofia-moderna', function () {
+            return view('materias.filosofia.filosofia-moderna');
+        })->name('filosofia-moderna');
+
+        Route::get('/periodo-pre-socratico', function () {
+            return view('materias.filosofia.periodo-pre-socratico');
+        })->name('periodo-pre-socratico');
+
+        Route::get('/periodo-socratico', function () {
+            return view('materias.filosofia.periodo-socratico');
+        })->name('periodo-socratico');
+
+        Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('materias.prova_filosofia');
+    }); #Fim do agrupamento de filosofia
+
+    Route::prefix('historia')->group(function () { // Grupo de rotas para a matéria historia
+        Route::get('/civilizacoes-antigas', function () {
+            return view('materias.historia.civilizacoes-antigas');
+        })->name('civilizacoes-antigas');
+        
+        Route::get('/ditadura-militar', function () {
+            return view('materias.historia.ditadura-militar');
+        })->name('ditadura-militar');
+
+        Route::get('/era-vargas', function () {
+            return view('materias.historia.era-vargas');
+        })->name('era-vargas');
+
+        Route::get('/guerras-mundiais', function () {
+            return view('materias.historia.guerras-mundiais');
+        })->name('guerras-mundiais');
+
+        Route::get('/idade-media', function () {
+            return view('materias.idade-media');
+        })->name('idade-media');
+
+        Route::get('/independencia-brasil', function () {
+            return view('materias.historia.independencia-brasil');
+        })->name('independencia-brasil');
+
+        Route::get('/periodo-colonial', function () {
+            return view('materias.historia.periodo-colonial');
+        })->name('periodo-colonial');
+
+        Route::get('/proclamacao-republica', function () {
+            return view('materias.historia.proclamacao-republica');
+        })->name('proclamacao-republica');
+
+        Route::get('/revolucao-francesa', function () {
+            return view('materias.historia.revolucao-francesa');
+        })->name('revolucao-francesa');
+        
+        Route::get('/revolucao-industrial', function () {
+            return view('materias.historia.revolucao-industrial');
+        })->name('revolucao-industrial');
+
+        Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('materias.prova_historia');
+    }); #Fim do agrupamento de historia
+
+    Route::prefix('quimica')->group(function () { // Grupo de rotas para a matéria quimica
+        Route::get('/acidos-bases', function () {
+            return view('materias.quimica.acidos-bases');
+        })->name('acidos-bases');
+        
+        Route::get('/eletroquimica', function () {
+            return view('materias.quimica.eletroquimica');
+        })->name('eletroquimica');
+
+        Route::get('/estequiometria', function () {
+            return view('materias.quimica.estequiometria');
+        })->name('estequiometria');
+
+        Route::get('/estrutura-atomica', function () {
+            return view('materias.quimica.estrutura-atomica');
+        })->name('estrutura-atomica');
+
+        Route::get('/ligacoes-quimicas', function () {
+            return view('materias.idade-media');
+        })->name('idade-media');
+
+        Route::get('/oxirreducoes', function () {
+            return view('materias.quimica.oxirreducoes');
+        })->name('oxirreducoes');
+
+        Route::get('/radiotividade', function () {
+            return view('materias.quimica.radiotividade');
+        })->name('radiotividade');
+
+        Route::get('/reacoes-quimicas', function () {
+            return view('materias.quimica.reacoes-quimicas');
+        })->name('reacoes-quimicas');
+
+        Route::get('/tabela-periodica', function () {
+            return view('materias.quimica.tabela-periodica');
+        })->name('tabela-periodica');
+        
+        Route::get('/termodinamica', function () {
+            return view('materias.quimica.termodinamica');
+        })->name('termodinamica');
+
+        Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('materias.prova_quimica');
+    }); #Fim do agrupamento de quimica
 
     Route::get('/comunidade', function () {
         return view('comunidade');
