@@ -114,7 +114,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.matematica.unidades-medida');
         })->name('unidades-medida');
 
-        Route::get('/prova_matematica', [MateriasController::class, 'prova_matematica'])->name('materias.prova_matematica');
+        Route::get('/prova_matematica', [MateriasController::class, 'prova_matematica'])->name('materias_prova_matematica');
     }); #Fim do agrupamento de matemática
     
     Route::prefix('portugues')->group(function () { // Grupo de rotas para a matéria portugues
@@ -178,7 +178,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.matematica.unidades-medida');
         })->name('unidades-medida');
 
-        Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias.prova_portugues');
+        Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias_prova_portugues');
     }); #Fim do agrupamento de português
 
     Route::prefix('biologia')->group(function () { // Grupo de rotas para a matéria biologia
@@ -222,7 +222,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.biologia.zoologia');
         })->name('zoologia');
 
-        Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('materias.prova_biologia');
+        Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('materias_prova_biologia');
     }); #Fim do agrupamento de biologia
 
     Route::prefix('fisica')->group(function () { // Grupo de rotas para a matéria fisica
@@ -258,7 +258,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.fisica.trabalho-energia');
         })->name('trabalho-energia');
 
-        Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('materias.prova_fisica');
+        Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('materias_prova_fisica');
     }); #Fim do agrupamento de fisica
 
     Route::prefix('filosofia')->group(function () { // Grupo de rotas para a matéria filosofia
@@ -286,7 +286,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.filosofia.periodo-socratico');
         })->name('periodo-socratico');
 
-        Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('materias.prova_filosofia');
+        Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('materias_prova_filosofia');
     }); #Fim do agrupamento de filosofia
 
     Route::prefix('historia')->group(function () { // Grupo de rotas para a matéria historia
@@ -330,7 +330,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.historia.revolucao-industrial');
         })->name('revolucao-industrial');
 
-        Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('materias.prova_historia');
+        Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('materias_prova_historia');
     }); #Fim do agrupamento de historia
 
     Route::prefix('quimica')->group(function () { // Grupo de rotas para a matéria quimica
@@ -374,7 +374,7 @@ Route::middleware('auth')->group(function () {
             return view('materias.quimica.termodinamica');
         })->name('termodinamica');
 
-        Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('materias.prova_quimica');
+        Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('materias_prova_quimica');
     }); #Fim do agrupamento de quimica
 
     Route::get('/comunidade', function () {
@@ -395,6 +395,6 @@ Route::middleware('auth')->group(function () {
     
     Route::post('/extrair-questoes', [QuestaoController::class, 'extrairQuestoes'])->name('extrairQuestoes');
     Route::post('/uploadImagem', [QuestaoController::class, 'uploadImagem'])->name('uploadImagem');
-});
+});//fim da middleware('auth') que verifica se voce esta logado para dar acesso às rotas
 
 require __DIR__.'/auth.php';

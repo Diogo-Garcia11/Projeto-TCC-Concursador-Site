@@ -27,6 +27,7 @@ class Alternativa extends Model
     protected $fillable = [
         'textoAlternativa',
         'corretaAlternativa',
+        'imagemAlternativa',
         'idQuestao',
     ];
 
