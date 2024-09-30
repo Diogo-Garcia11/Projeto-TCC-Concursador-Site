@@ -28,49 +28,49 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\conjuntos-numericos.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
+            <a href="{{route('matematica.conjuntos-numericos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site/resources/views/materias/matematica/fracao.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
+            <a href="{{route('matematica.fracao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site/resources/views/materias/matematica/porcentagem.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
+            <a href="{{route('matematica.porcentagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\equacao-1.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
+            <a href="{{route('matematica.equacao-1')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site/resources/views/materias/matematica/equacao-2.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
+            <a href="{{route('matematica.equacao-2')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\funcoes.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
+            <a href="{{route('matematica.funcoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site/resources/views/materias/matematica/geometria-plana.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
+            <a href="{{route('matematica.geometria-plana')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\geometria-espacial.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
+            <a href="{{route('matematica.geometria-espacial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\teorema-pitagoras.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
+            <a href="{{route('matematica.teorema-pitagoras')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\media-mediana-moda.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
+            <a href="{{route('matematica.media-mediana-moda')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\graficos-tabelas.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
+            <a href="{{route('matematica.graficos-tabelas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site/resources/views/materias/matematica/probabilidade.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
+            <a href="{{route('matematica.probabilidade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\juros-simples-compostos.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
+            <a href="{{route('matematica.juros-simples-compostos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\trigonometria.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
+            <a href="{{route('matematica.trigonometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
           </div>
           <div class="grid-item">
-            <a href="TCC-Concursador-Site\resources\views\materias\matematica\unidades-medida.blade.php" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
+            <a href="{{route('matematica.unidades-medida')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
           </div>
         </div>
       </div>
@@ -166,34 +166,34 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Colonial</a>
+            <a href="{{route('historia.periodo-colonial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Colonial</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Independência do Brasil</a>
+            <a href="{{route('historia.independencia-brasil')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Independência do Brasil</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Proclamação da República</a>
+            <a href="{{route('historia.proclamacao-republica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Proclamação da República</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Era Vargas</a>
+            <a href="{{route('historia.era-vargas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Era Vargas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ditadura militar</a>
+            <a href="{{route('historia.ditadura-militar')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ditadura militar</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Civilizações antigas</a>
+            <a href="{{route('historia.civilizacoes-antigas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Civilizações antigas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Idade Média</a>
+            <a href="{{route('historia.idade-media')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Idade Média</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Francesa</a>
+            <a href="{{route('historia.revolucao-francesa')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Francesa</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Industrial</a>
+            <a href="{{route('historia.revolucao-industrial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Industrial</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Guerras Mundiais</a>
+            <a href="{{route('historia.guerras-mundiais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Guerras Mundiais</a>
           </div>
         </div>
       </div>
@@ -291,34 +291,34 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Células</a>
+            <a href="{{route('biologia.celulas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Células</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Genética</a>
+            <a href="{{route('biologia.genetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Genética</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Evolução</a>
+            <a href="{{route('biologia.evolucao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Evolução</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ecologia</a>
+            <a href="{{route('biologia.ecologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ecologia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fisiologia</a>
+            <a href="{{route('biologia.fisiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fisiologia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Botânica</a>
+            <a href="{{route('biologia.botanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Botânica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Zoologia</a>
+            <a href="{{route('biologia.zoologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Zoologia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Microbiologia</a>
+            <a href="{{route('biologia.microbiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Microbiologia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Bioenergética</a>
+            <a href="{{route('biologia.bioenergetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Bioenergética</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interações Ecológicas</a>
+            <a href="{{route('biologia.interacao-ecologica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interações Ecológicas</a>
           </div>
          
         </div>
@@ -361,34 +361,34 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estrutura Atômica</a>
+            <a href="{{route('quimica.estrutura-atomica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estrutura Atômica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
+            <a href="{{route('quimica.tabela-periodica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
+            <a href="{{route('quimica.ligacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
+            <a href="{{route('quimica.oxirreducoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Reações Químicas</a>
+            <a href="{{route('quimica.reacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Reações Químicas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
+            <a href="{{route('quimica.eletroquimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
+            <a href="{{route('quimica.radioatividade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ácidos e Bases</a>
+            <a href="{{route('quimica.acidos-bases')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ácidos e Bases</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estequiometria</a>
+            <a href="{{route('quimica.estequiometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estequiometria</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica Química</a>
+            <a href="{{route('quimica.termodinamica-quimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica Química</a>
           </div>
           
         </div>
@@ -425,28 +425,28 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Mecânica</a>
+            <a href="{{route('fisica.mecanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Mecânica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica</a>
+            <a href="{{route('fisica.termodinamica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Óptica</a>
+            <a href="{{route('fisica.optica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Óptica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletromagnetismo</a>
+            <a href="{{route('fisica.eletromagnetismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletromagnetismo</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ondas</a>
+            <a href="{{route('fisica.ondas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ondas</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trabalho e Energia</a>
+            <a href="{{route('fisica.trabalho-energia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trabalho e Energia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fluidos</a>
+            <a href="{{route('fisica.fluidos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fluidos</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cinemática</a>
+            <a href="{{route('fisica.cinematica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cinemática</a>
           </div>
         </div>
       </div>
@@ -504,22 +504,22 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética</a>
+            <a href="{{route('filosofia.etica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
+            <a href="{{route('filosofia.periodo-pre-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Socrático</a>
+            <a href="{{route('filosofia.periodo-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Socrático</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia antiga</a>
+            <a href="{{route('filosofia.filosofia-antiga')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia antiga</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia Moderna</a>
+            <a href="{{route('filosofia.filosofia-moderna')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia Moderna</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Existencialismo</a>
+            <a href="{{route('filosofia.existencialismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Existencialismo</a>
           </div>
         </div>
       </div>
@@ -546,16 +546,16 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Movimentos sociais</a>
+            <a href="{{route('sociologia.movimentos-sociais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Movimentos sociais</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cidadania e Direitos Humanos</a>
+            <a href="{{route('sociologia.cidadania-direitos-humanos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cidadania e Direitos Humanos</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Política, Estado e Governo</a>
+            <a href="{{route('sociologia.politica-estado-governo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Política, Estado e Governo</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sociedade Contemporânea</a>
+            <a href="{{route('sociologia.sociedade-contemporanea')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sociedade Contemporânea</a>
           </div>
         </div>
       </div>
