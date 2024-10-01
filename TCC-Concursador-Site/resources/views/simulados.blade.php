@@ -28,16 +28,16 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Primeiro dia</a>
+            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Primeiro dia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Segundo dia</a>
+            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Segundo dia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Primeiro dia</a>
+            <a href="https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Primeiro dia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Segundo dia</a>
+            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Segundo dia</a>
           </div>
           <div class="grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2022 - Prova Primeiro dia</a>
