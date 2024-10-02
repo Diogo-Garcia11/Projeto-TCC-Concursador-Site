@@ -24,9 +24,10 @@ class Questao extends Model
 
     // Define os atributos que podem ser preenchidos em massa
     protected $fillable = [
-        'textoQuestao',
+        'contextoQuestao',
         'materiaQuestao',
         'categoriaQuestao',
+        'introducaoAlternativaQuestao',
         'imagemQuestao',
     ];
 

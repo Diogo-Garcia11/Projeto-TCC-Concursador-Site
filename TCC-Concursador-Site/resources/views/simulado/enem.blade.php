@@ -10,18 +10,18 @@
                 <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                        <h3>{{ $contador. $par }}.{{ $questao->textoQuestao }}</h3> <br><br>
+                        <h3 class="text-justify">{{ $contador. $par }}.{{ $questao->contextoQuestao }}</h3> <br><br>
                         @if($questao->imagemQuestao != null)
-                            <img src="{{$questao->imagemQuestao}}" alt="Imagem da questão" width="500" height="200">
+                            <img src="{{$questao->imagemQuestao}}" alt="Imagem da questão" width="500" height="200"><br>
                         @else
 
                         @endif
-
+                        {{$questao->introducaoAlternativaQuestao}}<br><br>
                         @foreach($questao->relAlternativa as $alternativa)
                         
                             @if($alternativa->textoAlternativa != null)
                                 <div>
-                                    <input type="radio" id="alternativa{{ $alternativa->idAlternativa }}" name="questao{{ $questao->idQuestao }}" value="{{ $alternativa->corretaAlternativa }}">{{ $alternativa->textoAlternativa }} <br>
+                                    <input type="radio" id="alternativa{{ $alternativa->idAlternativa }}" name="questao{{ $questao->idQuestao }}" value="{{ $alternativa->corretaAlternativa }}" class="text-justify">{{ $alternativa->textoAlternativa }} <br>
                                 </div>
                             @else
 
