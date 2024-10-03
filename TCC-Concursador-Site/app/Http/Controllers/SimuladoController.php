@@ -60,7 +60,7 @@ class SimuladoController extends Controller
                 'idUser' => $userId,  // Associando a nota ao usuário autenticado
             ]);
 
-            return redirect()->route('simulados')->with('status', "Você acertou $acertos questões!");
+            return redirect()->route('dashboard');
         } 
         else 
         {
