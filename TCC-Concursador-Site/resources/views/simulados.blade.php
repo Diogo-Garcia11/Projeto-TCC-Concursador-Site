@@ -24,50 +24,21 @@
       </div>
 
       <!-- Conteúdo -->
-      <div class="bg-whiteblue overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-[500px]">
-        <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
+      <div class="bg-whiteblue overflow-hidden transition-all duration-1000 max-h-0 peer-checked:max-h-[1000px]">
+
+        <!-- Lista de Anos (como no site do ENEM) -->
+        <div class="flex justify-center p-4 space-x-4 py-5 gap-4 border-b">
+          <button data-ano="2024" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2024</button>
+          <button data-ano="2023" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2023</button>
+          <button data-ano="2022" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2022</button>
+          <button data-ano="2021" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYear(this)">2021</button>
+        <!-- Adicione mais anos conforme necessário -->
+        </div>
+
+        <div id="provasContainer" class="p-4 grid grid-cols-2 grid-rows-2 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2024 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" target="_blank" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2023 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2022 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2022 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2021 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2021 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2020 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2020 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2019 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2019 - Prova Segundo dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2018 - Prova Primeiro dia</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Enem 2018 - Prova Segundo dia</a>
+            <div id="provasList" class="grid grid-cols-1 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
           </div>
         </div>
       </div>
@@ -136,6 +107,12 @@
           </div>
           <div class="grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Fatec 2018 - Prova Primeiro dia</a>
+          </div>
+          <div class="grid-item">
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Fatec 2018 - Prova Segundo dia</a>
+          </div>
+          <div class="grid-item">
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Fatec 2018 - Prova Segundo dia</a>
           </div>
           <div class="grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤Fatec 2018 - Prova Segundo dia</a>
