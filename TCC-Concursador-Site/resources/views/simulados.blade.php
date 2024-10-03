@@ -24,7 +24,7 @@
       </div>
 
       <!-- Conteúdo -->
-      <div class="bg-whiteblue overflow-hidden transition-all duration-1000 max-h-0 peer-checked:max-h-[1000px]">
+      <div class="bg-whiteblue overflow-hidden transition-all duration-600 max-h-0 peer-checked:max-h-[600px]">
 
         <!-- Lista de Anos (como no site do ENEM) -->
         <div class="flex justify-center p-4 space-x-4 py-5 gap-4 border-b">
@@ -32,13 +32,23 @@
           <button data-ano="2023" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2023</button>
           <button data-ano="2022" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2022</button>
           <button data-ano="2021" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYear(this)">2021</button>
+          <button data-ano="2020" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2020</button>
+          <button data-ano="2019" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2019</button>
+          <button data-ano="2018" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYear(this)">2018</button>
+          <button data-ano="2017" class="ano-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYear(this)">2017</button>
         <!-- Adicione mais anos conforme necessário -->
         </div>
+        <div class="flex justify-center grid grid-cols-2 place-items-center p-4">
+        <h2>Dia 1</h2>
+        <h2>Dia 2</h2>
+        </div>
 
-        <div id="provasContainer" class="p-4 grid grid-cols-2 grid-rows-2 gap-4 place-items-center">
-
+        <div id="provasContainer" class="grid grid-cols-2 grid-rows-2 place-items-center">
           <div class="grid-item">
-            <div id="provasList" class="grid grid-cols-1 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
+            <div id="provasList" class="grid grid-cols-2 grid-rows-4 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
+          </div>
+          <div class="grid-item">
+            <div id="gabaritoList" class="grid grid-cols-2 grid-rows-4 gap-4 text-2xl font-Montserrat text-steelblue p-8"></div>
           </div>
         </div>
       </div>
