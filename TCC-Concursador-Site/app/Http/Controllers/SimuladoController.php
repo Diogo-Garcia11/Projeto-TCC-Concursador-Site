@@ -11,21 +11,21 @@ class SimuladoController extends Controller
     public function enem()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->inRandomOrder()->get();
-        $categoria = 'enem'; // Define a categoria
+        $categoria = 'Enem'; // Define a categoria
         
         return view('simulado.enem', compact('questoes', 'categoria'));
     } 
     public function fatec()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fatec')->inRandomOrder()->get();
-        $categoria = 'fatec'; // Define a categoria
+        $categoria = 'Fatec'; // Define a categoria
         
         return view('simulado.fatec', compact('questoes', 'categoria'));
     } 
     public function fuvest()
     {
         $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'fuvest')->inRandomOrder()->get();
-        $categoria = 'fuvest'; // Define a categoria
+        $categoria = 'Fuvest'; // Define a categoria
         
         return view('simulado.fuvest', compact('questoes', 'categoria'));
     }

@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('questao', function (Blueprint $table) {
             $table->id('idQuestao'); // AUTO_INCREMENT é implícito com o método id()
             $table->string('contextoQuestao', 2000)->nullable();
+            $table->string('introducaoalternativaQuestao', 350);
             $table->string('materiaQuestao', 25);
             $table->string('categoriaQuestao', 15);
-            $table->string('introducaoAlternativaQuestao', 350);
             $table->string('imagemQuestao', 255)->nullable();
+            $table->integer('anoQuestao');
+            $table->integer('numeroQuestao');
             $table->timestamps(); // Adiciona created_at e updated_at
         });
     }

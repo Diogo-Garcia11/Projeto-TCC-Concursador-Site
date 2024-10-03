@@ -45,14 +45,29 @@ class NotaController extends Controller
             $ultimaNota = $notas->first();
             $segundaNota = $notas->count() > 1 ? $notas->get(1) : null;
 
-            $percentualUltimaNota = $ultimaNota ? ($ultimaNota->totalNota / $totalQuestoes[$categoria]) * 100 : null;
+            // Cálculo do percentual da última nota
+            $percentualUltimaNota = null;
+            if ($ultimaNota) {
+                if ($totalQuestoes[$categoria] > 0) {
+                    $percentualUltimaNota = ($ultimaNota->totalNota / $totalQuestoes[$categoria]) * 100;
+                } else {
+                    $percentualUltimaNota = 0; // Definindo como 0 se totalQuestoes for 0
+                }
+            }
 
+            // Cálculo da comparação entre notas
             $comparacao = null;
             if ($ultimaNota && $segundaNota) {
-                $diferencaPercentual = (($ultimaNota->totalNota - $segundaNota->totalNota) / $segundaNota->totalNota) * 100;
-                $comparacao = [
-                    'diferenca' => $diferencaPercentual,
-                ];
+                if ($segundaNota->totalNota > 0) {
+                    $diferencaPercentual = (($ultimaNota->totalNota - $segundaNota->totalNota) / $segundaNota->totalNota) * 100;
+                    $comparacao = [
+                        'diferenca' => $diferencaPercentual,
+                    ];
+                } else {
+                    $comparacao = [
+                        'diferenca' => null, // Ou outra lógica para lidar com isso
+                    ];
+                }
             }
 
             // Adiciona as notas e informações ao array

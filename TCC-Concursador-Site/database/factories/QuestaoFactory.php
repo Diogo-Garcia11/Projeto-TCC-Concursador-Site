@@ -18,10 +18,12 @@ class QuestaoFactory extends Factory
     {
         return [
             'contextoQuestao' => $this->faker->sentence,
+            'introducaoalternativaQuestao' => $this->faker->sentence,
             'materiaQuestao' => $this->faker->word,
             'categoriaQuestao' => $this->faker->word,
-            'introducaoAlternativaQuestao' => $this->faker->sentence,
             'imagemQuestao' => $this->faker->imageUrl,
+            'anoQuestao' => $this->faker->year,
+            'numeroQuestao' => $this->faker->numberBetween(1, 180),
         ];
     }
 }

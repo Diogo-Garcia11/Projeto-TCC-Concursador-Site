@@ -25,10 +25,12 @@ class Questao extends Model
     // Define os atributos que podem ser preenchidos em massa
     protected $fillable = [
         'contextoQuestao',
+        'introducaoalternativaQuestao',
         'materiaQuestao',
         'categoriaQuestao',
-        'introducaoAlternativaQuestao',
         'imagemQuestao',
+        'anoQuestao',
+        'numeroQuestao',
     ];
 
     // Define os atributos que devem ser ocultados para arrays
