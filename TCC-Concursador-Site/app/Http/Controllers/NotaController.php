@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Nota;
 use Illuminate\Http\Request;
 
+
 class NotaController extends Controller
 {
     public function index()
