@@ -1,4 +1,5 @@
 <x-app-layout>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @foreach ($notasPorCategoria as $categoria => $dados)
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -29,6 +30,40 @@
                         @endif
 
                         <hr>
+                        <div style="width: 75%; margin: auto; padding-bottom: 50px;">
+                            <h2>{{ ucfirst($categoria) }}</h2>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <script>
+                            // Pega os dados de notas e datas para cada categoria
+                            
+
+                            // Configuração do gráfico
+                            const ctx = document.getElementById('myChart').getContext('2d');
+                            const chart = new Chart(ctx, {
+                                type: 'line', // Tipo de gráfico
+                                data: {
+                                    labels: [{!! $dataNotas !!}], // Datas das notas
+                                    datasets: [{
+                                        label: 'Notas',
+                                        data: [{{ $todasNotas }}]data, // Valores das notas
+                                        borderColor: 'rgba(75, 192, 192, 1)', // Cor da linha
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)', // Cor de fundo sob a linha
+                                        fill: true, // Preencher sob a linha
+                                        tension: 0.4 // Curvatura da linha
+                                    }]
+                                },
+                                options: {
+                                    responsive: true,
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true // Eixo Y começa do zero
+                                        }
+                                    }
+                                }
+                            });
+                        </script>
                 </div>
             </div>
         </div>

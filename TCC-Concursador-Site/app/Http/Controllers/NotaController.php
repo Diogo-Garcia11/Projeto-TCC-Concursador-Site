@@ -42,6 +42,12 @@ class NotaController extends Controller
                 ->take(2)
                 ->get();
 
+            $todasNotas = Nota::where('idUser', $user->id)
+                ->where('categoriaNota', $categoria)
+                ->orderBy('dataNota', 'asc') // Ordenar em ordem crescente
+                ->get();
+
+
             // Prepara os dados para a view
             $ultimaNota = $notas->first();
             $segundaNota = $notas->count() > 1 ? $notas->get(1) : null;
@@ -78,6 +84,11 @@ class NotaController extends Controller
                 'percentualUltimaNota' => $percentualUltimaNota,
                 'comparacao' => $comparacao,
                 'totalQuestoes' => $totalQuestoes[$categoria],
+                'todasNotas' => $todasNotas->pluck('totalNota'), // Todas as notas
+                'datasNotas' => $todasNotas->pluck('dataNota')->map(function ($date) {
+                    return \Carbon\Carbon::parse($date)->format('d/m/Y'); // Formatando a data
+                }),
+
             ];
         }
 
