@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
@@ -34,39 +33,30 @@ class NotaController extends Controller
         ];
 
         foreach ($categorias as $categoria) {
-            // Obtém as últimas duas notas para cada categoria
-            $notas = Nota::where('idUser', $user->id)
+            // Obtém todas as notas para cada categoria
+            $todasNotas = Nota::where('idUser', $user->id)
                 ->where('categoriaNota', $categoria)
-                ->orderBy('dataNota', 'desc')
-                ->take(2)
+                ->orderBy('dataNota', 'asc')
                 ->get();
 
             // Prepara os dados para a view
-            $ultimaNota = $notas->first();
-            $segundaNota = $notas->count() > 1 ? $notas->get(1) : null;
+            $ultimaNota = $todasNotas->last();
+            $segundaNota = $todasNotas->count() > 1 ? $todasNotas->slice(-2, 1)->first() : null;
 
             // Cálculo do percentual da última nota
-            $percentualUltimaNota = null;
-            if ($ultimaNota) {
-                if ($totalQuestoes[$categoria] > 0) {
-                    $percentualUltimaNota = ($ultimaNota->totalNota / $totalQuestoes[$categoria]) * 100;
-                } else {
-                    $percentualUltimaNota = 0; // Definindo como 0 se totalQuestoes for 0
-                }
+            $percentualUltimaNota = 0;
+            if ($ultimaNota && $ultimaNota->totalNota > 0 && $totalQuestoes[$categoria] > 0) {
+                $percentualUltimaNota = ($ultimaNota->totalNota / $totalQuestoes[$categoria]) * 100;
             }
 
-            // Cálculo da comparação entre notas
+            // Cálculo da comparação entre notas (evitando divisão por zero)
             $comparacao = null;
             if ($ultimaNota && $segundaNota) {
                 if ($segundaNota->totalNota > 0) {
                     $diferencaPercentual = (($ultimaNota->totalNota - $segundaNota->totalNota) / $segundaNota->totalNota) * 100;
-                    $comparacao = [
-                        'diferenca' => $diferencaPercentual,
-                    ];
+                    $comparacao = ['diferenca' => $diferencaPercentual];
                 } else {
-                    $comparacao = [
-                        'diferenca' => null, // Ou outra lógica para lidar com isso
-                    ];
+                    $comparacao = ['diferenca' => null]; // Não tem como comparar se a nota anterior foi 0
                 }
             }
 
@@ -77,12 +67,15 @@ class NotaController extends Controller
                 'percentualUltimaNota' => $percentualUltimaNota,
                 'comparacao' => $comparacao,
                 'totalQuestoes' => $totalQuestoes[$categoria],
+                'todasNotas' => $todasNotas->pluck('totalNota'), // Lista de notas
+                'datasNotas' => $todasNotas->pluck('dataNota')->map(function ($date) {
+                    return \Carbon\Carbon::parse($date)->format('d/m/Y');
+                }), // Lista de datas
             ];
         }
 
         // Retorna para a view com todas as notas por categoria
-        return view('dashboard', [
-            'notasPorCategoria' => $notasPorCategoria,
-        ]);
+        return view('dashboard', ['notasPorCategoria' => $notasPorCategoria]);
     }
 }
+?>
