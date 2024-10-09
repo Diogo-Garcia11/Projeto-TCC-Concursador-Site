@@ -58,7 +58,8 @@
                 responsive: true,
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        max: {{ $dados['totalQuestoes'] }} // Limite superior baseado no total de questões
                     }
                 }
             }

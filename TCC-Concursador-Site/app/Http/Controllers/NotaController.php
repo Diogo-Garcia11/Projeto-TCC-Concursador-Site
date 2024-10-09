@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
@@ -79,3 +78,4 @@ class NotaController extends Controller
         return view('dashboard', ['notasPorCategoria' => $notasPorCategoria]);
     }
 }
+?>
