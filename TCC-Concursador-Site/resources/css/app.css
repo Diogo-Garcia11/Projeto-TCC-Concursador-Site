@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.ano-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: steelblue;
+    transition: width 0.3s ease;
+  }
+
+  .ano-btn.active::after {
+    width: 100%;
+  }
