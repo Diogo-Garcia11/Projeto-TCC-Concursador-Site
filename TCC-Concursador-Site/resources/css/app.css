@@ -16,3 +16,23 @@
   .ano-btn.active::after {
     width: 100%;
   }
+
+  .bg-amarelo {
+    --tw-bg-opacity: 1;
+    background-color: #faee6f;
+  }
+
+  .bg-azul{
+    --tw-bg-opacity: 1;
+    background-color: #75dcfc;
+  }
+
+  .bg-rosa{
+    --tw-bg-opacity: 1;
+    background-color: #fcc0db;
+  }
+
+  .bg-cinza{
+    --tw-bg-opacity: 1;
+    background-color: #d7dadd;
+  }

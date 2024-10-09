@@ -19,6 +19,10 @@ export default {
                 'stormblue': '#2C3D5B',
                 'kblue':'#768fb8',
                 'whiteblue': '#BAC7DC',
+                'amarelo' : '#FFF35F',
+                'azul' : '#00BDF2',
+                'rosa' : '#F066A5',
+                'cinza' : '#C5C7CA'
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
