@@ -10,10 +10,12 @@ Alpine.start();
 // Página dos Simulados
 document.addEventListener('DOMContentLoaded', function() {
   const yearButtons = document.querySelectorAll('.ano-btn');
+  const yearButtonsFatec = document.querySelectorAll('.ano-fatec-btn');
 
   // Define o ano padrão ao carregar a página
   const defaultYear = '2023';
   const defaultButton = document.querySelector(`button[data-ano="${defaultYear}"]`);
+  const defaultButtonFatec = document.querySelector(`button[data-ano-fatec="${defaultYear}"]`);
   
   // Função para atualizar o ano ativo
   function setActiveYear(button) {
@@ -232,4 +234,127 @@ document.addEventListener('DOMContentLoaded', function() {
           gabaritoList.innerHTML = '<p class="text-gray-500">Nenhum gabarito disponível para este ano.</p>';
       }
   }
+
+
+  //FATEC
+  // Função para atualizar o ano ativo
+  function setActiveYearFatec(button) {
+      yearButtonsFatec.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const yearFatec = button.getAttribute('data-ano-fatec');
+      updateProvasFatec(yearFatec);
+      updateGabaritosFatec(yearFatec);
+  }
+
+  // Adiciona evento de clique a todos os botões de ano
+  yearButtonsFatec.forEach(button => {
+      button.addEventListener('click', function() {
+          setActiveYearFatec(this);
+      });
+  });
+
+  // Conteúdo das provas
+  const provasDataFatec = {
+      '2023': [
+          { title: 'Prova - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2024/01/CADERNO-FATEC-1SEM-2024.pdf', color: "bg-cinza" },
+          { title: 'Prova – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2024/07/CADERNO-FATEC-2-SEM2024.pdf', color: "bg-cinza" },
+      ],
+      '2022': [
+        { title: 'Prova - 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/07/caderno_lar_2_sem_2022.pdf', color: "bg-cinza" },
+      ],
+      '2020': [
+       { title: 'Prova - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2019/12/prova-vestibular-1sem-2020.pdf', color: "bg-cinza" },
+      ],
+      '2019': [
+        { title: 'Prova - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/12/prova-vestibular-1sem-2019.pdf', color: "bg-cinza" },
+        { title: 'Prova – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2019/06/prova-vestibular-2sem-2019.pdf', color: "bg-cinza" },
+    ],
+    '2018': [
+      { title: 'Prova - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/01/prova-vestibular-1sem-2018.pdf', color: "bg-cinza" },
+      { title: 'Prova – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/07/ProvaVestibular.pdf', color: "bg-cinza" },
+  ],
+  '2017': [
+    { title: 'Prova - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2017/10/prova_1_semestre.pdf', color: "bg-cinza" },
+    { title: 'Prova – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2017/10/Prova.pdf', color: "bg-cinza" },
+],
+  };
+
+  const gabaritoDataFatec = {
+      '2023': [
+        { title: 'Gabarito – 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2024/01/GABARITO-FATEC-1SEM2024.pdf', color: "bg-cinza" },
+          { title: 'Gabarito - 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2024/07/GABARITO-FATEC-2-SEM2024.pdf', color: "bg-cinza"},
+      ],
+      '2022': [
+        { title: 'Gabarito – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/07/gabarito-oficial-vertibular-2-sem-22.pdf', color: "bg-cinza" },
+     ],
+     '2020': [
+        { title: 'Gabarito - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2023/03/gabarito_vestibular_fatec_1o_sem_2020.pdf', color: "bg-cinza" },
+      ],
+      '2019': [
+        { title: 'Gabarito - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/12/gabarito-vestibular-1sem-2019.pdf', color: "bg-cinza" },
+        { title: 'Gabarito – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2019/06/gabarito-vestibular-2sem-2019.pdf', color: "bg-cinza" },
+    ],
+    '2018': [
+      { title: 'Gabarito - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/01/gabarito_vestibular_1sem_2018.pdf', color: "bg-cinza" },
+      { title: 'Gabarito – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2018/07/GabaritoVestibular.pdf', color: "bg-cinza" },
+  ],
+  '2017': [
+    { title: 'Gabarito - 1° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2023/03/Gabarito-2017.pdf', color: "bg-cinza" },
+    { title: 'Gabarito – 2° Semestre', link: 'https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2017/10/Gabarito.pdf', color: "bg-cinza" },
+],
+  };
+
+  // Chama a função para definir o ano padrão
+  if (defaultButtonFatec) {
+      setActiveYearFatec(defaultButtonFatec);
+  }
+
+  function updateProvasFatec(yearFatec) {
+    const provasListFatec = document.getElementById('provasListFatec');
+    provasListFatec.innerHTML = ''; // Limpa o conteúdo atual
+
+    const provasFatec = provasDataFatec[yearFatec] || []; // Obtém as provas para o ano selecionado
+
+    provasFatec.forEach(provaFatec => {
+        const provaFatecItem = document.createElement('div');
+        provaFatecItem.className = `p-4 border rounded ${provaFatec.color}`;
+        const provaFatecLink = document.createElement('a');
+        provaFatecLink.href = provaFatec.link; // Corrigido
+        provaFatecLink.target = '_blank';
+        provaFatecLink.className = 'text-xl text-steelblue';
+        provaFatecLink.textContent = `➤ ${provaFatec.title}`; // Corrigido
+        provaFatecItem.appendChild(provaFatecLink);
+        provasListFatec.appendChild(provaFatecItem); // Corrigido
+    });
+
+    // Se não houver provas, adicione uma mensagem
+    if (provasFatec.length === 0) { // Corrigido
+        provasListFatec.innerHTML = '<p class="text-gray-500">Nenhuma prova disponível para este ano.</p>';
+    }
+}
+
+function updateGabaritosFatec(yearFatec) {
+    const gabaritoListFatec = document.getElementById('gabaritoListFatec');
+    gabaritoListFatec.innerHTML = ''; // Limpa o conteúdo atual
+
+    const gabaritosFatec = gabaritoDataFatec[yearFatec] || []; // Obtém os gabaritos para o ano selecionado
+
+    gabaritosFatec.forEach(gabarito => {
+        const gabaritoItem = document.createElement('div');
+        gabaritoItem.className = `p-4 border rounded ${gabarito.color}`;
+        const gabaritoLink = document.createElement('a');
+        gabaritoLink.href = gabarito.link; // Corrigido
+        gabaritoLink.target = '_blank';
+        gabaritoLink.className = 'text-xl text-steelblue';
+        gabaritoLink.textContent = `➤ ${gabarito.title}`;
+        gabaritoItem.appendChild(gabaritoLink);
+        gabaritoListFatec.appendChild(gabaritoItem); // Corrigido
+    });
+
+    // Se não houver gabaritos, adicione uma mensagem
+    if (gabaritosFatec.length === 0) { // Corrigido
+        gabaritoListFatec.innerHTML = '<p class="text-gray-500">Nenhum gabarito disponível para este ano.</p>';
+    }
+}
 });
