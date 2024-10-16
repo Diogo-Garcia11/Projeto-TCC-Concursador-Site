@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\AlternativaRequest;
+use App\Http\Requests\EventoRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class AlternativaCrudController
+ * Class EventoCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class AlternativaCrudController extends CrudController
+class EventoCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -26,9 +26,9 @@ class AlternativaCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Alternativa::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/alternativa');
-        CRUD::setEntityNameStrings('alternativa', 'alternativas');
+        CRUD::setModel(\App\Models\Evento::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/evento');
+        CRUD::setEntityNameStrings('evento', 'eventos');
     }
 
     /**
@@ -39,13 +39,14 @@ class AlternativaCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('idAlternativa')->type('number');
+        CRUD::column('idEvento')->type('number');
         CRUD::setFromDb(); // set columns from db columns.
 
         /**
          * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
          */
+        
     }
 
     /**
@@ -56,7 +57,7 @@ class AlternativaCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(AlternativaRequest::class);
+        CRUD::setValidation(EventoRequest::class);
         CRUD::setFromDb(); // set fields from db columns.
 
         /**

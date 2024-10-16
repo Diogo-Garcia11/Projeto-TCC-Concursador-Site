@@ -57,6 +57,7 @@ class NotaCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(NotaRequest::class);
+        CRUD::column('id')->type('number');
         CRUD::setFromDb(); // set fields from db columns.
 
         /**

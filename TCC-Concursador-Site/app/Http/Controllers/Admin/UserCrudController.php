@@ -39,6 +39,7 @@ class UserCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+        CRUD::column('id')->type('number');
         CRUD::setFromDb(); // set columns from db columns.
 
         /**
@@ -46,6 +47,7 @@ class UserCrudController extends CrudController
          * - CRUD::column('price')->type('number');
          */
         CRUD::column('password')->type('password');
+        
        
     }
 

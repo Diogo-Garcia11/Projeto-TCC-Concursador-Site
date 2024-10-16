@@ -6,3 +6,4 @@
 <x-backpack::menu-item title="Questaos" icon="la la-question" :link="backpack_url('questao')" />
 <x-backpack::menu-item title="Notas" icon="la la-question" :link="backpack_url('nota')" />
 <x-backpack::menu-item title="Alternativas" icon="la la-question" :link="backpack_url('alternativa')" />
+<x-backpack::menu-item title="Eventos" icon="la la-question" :link="backpack_url('evento')" />
