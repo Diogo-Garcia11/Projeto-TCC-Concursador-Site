@@ -2,8 +2,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
 <x-app-layout>
+
     <style>
         .radio-container {
             display: flex;
@@ -52,11 +52,11 @@
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-e-genetica" class="text-blueberry hover:text-black">1- O que é genética</a></li>
-                        <li><a href="#historia-da-genetica" class="text-blueberry hover:text-black">2- História da genética</a></li>
-                        <li><a href="#conceitos-basicos" class="text-blueberry hover:text-black">3- Conceitos Básicos</a></li>
-                        <li><a href="#gregor-mendel" class="text-blueberry hover:text-black">4- Gregor Mendel</a></li>
-                        <li><a href="#exercicios" class="text-blueberry hover:text-black">4- Exercicios</a></li>
+                        <li><a href="#o-que-e-genetica" class="text-kblue hover:text-black hover:!text-black">1- O que é genética</a></li>
+                        <li><a href="#historia-da-genetica" class="text-kblue hover:text-black hover:!text-black">2- História da genética</a></li>
+                        <li><a href="#conceitos-basicos" class="text-kblue hover:text-black hover:!text-black">3- Conceitos Básicos</a></li>
+                        <li><a href="#gregor-mendel" class="text-kblue hover:text-black hover:!text-black">4- Gregor Mendel</a></li>
+                        <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">4- Exercicios</a></li>
                     </ul>
                 </div>
                 <h2 id="o-que-e-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é genética</h2>

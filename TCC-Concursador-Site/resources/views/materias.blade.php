@@ -399,6 +399,8 @@
 
     <!-- FÍSICA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-fisica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'fisica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-steelblue h-40 w-full pl-5 flex items-center">
         <div class=" left-3 ">
