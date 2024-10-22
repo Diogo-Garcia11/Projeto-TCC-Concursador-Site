@@ -24,53 +24,53 @@
 <x-app-layout>
 <div class="flex h-screen px-5 py-5">
     <!-- Parte da esquerda para o conteúdo -->
-    <div class="flex-grow p-5 bg-gray-900 rounded-lg border border-gray-700 mr-8 flex flex-col">
+    <div class="flex-grow p-5 bg-gray-900 rounded-lg border-4 border-gray-700 mr-8 flex flex-col">
       <h1 id="materia-titulo" class="text-5xl font-Montserrat text-white mb-4">Matemática</h1>
       <div id="materia-conteudo" class="text-gray-300 flex-grow overflow-y-auto">
         <!-- Conteúdo inicial para Matemática -->
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.conjuntos-numericos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.fracao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.porcentagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.equacao-1')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.equacao-2')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.funcoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.geometria-plana')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.geometria-espacial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.teorema-pitagoras')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.media-mediana-moda')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.graficos-tabelas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.probabilidade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.juros-simples-compostos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.trigonometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
         </div>
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700  grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700  grid-item">
           <a href="{{route('matematica.unidades-medida')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
         </div>
       </div>
@@ -78,10 +78,10 @@
 
 
     <!-- Parte da direita para as matérias -->
-    <div class="w-1/3 bg-gray-900 rounded-lg border border-gray-700 p-5 flex flex-col">
+    <div class="w-1/3 bg-gray-900 rounded-lg border-4 border-gray-700 p-5 flex flex-col">
       <h1 class="text-5xl font-Montserrat text-white mb-4">Matérias</h1>
       <div class="space-y-2 flex-grow overflow-y-auto">
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded " onclick="mostrarConteudo('matematica')"> <svg fill="#FFFFFF" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded " onclick="mostrarConteudo('matemática')"> <svg fill="#FFFFFF" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -89,7 +89,7 @@
             </g>
           </svg>Matemática</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('portugues')"><svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('português')"><svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -102,7 +102,7 @@
             </g>
           </svg>Português</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('historia')"><svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" class="h-20 w-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('história')"><svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" class="h-20 w-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -114,7 +114,7 @@
             </g>
           </svg> História</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('geografia')"><svg viewBox="0 0 64 64" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('geografia')"><svg viewBox="0 0 64 64" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -129,7 +129,7 @@
             </g>
           </svg> Geografia</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('biologia')"><svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" class="h-20 w-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('biologia')"><svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" class="h-20 w-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -141,7 +141,7 @@
             </g>
           </svg> Biologia</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('quimica')"><svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('química')"><svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -164,7 +164,7 @@
             </g>
           </svg>Química</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('fisica')"> <svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('física')"> <svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -181,9 +181,9 @@
             </g>
           </svg> Física</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('filosofia')"><svg class="w-20 h-20" fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M509.607,250.223l-70.195-70.195v-99.27c0-4.512-3.658-8.17-8.17-8.17h-99.269L261.777,2.393 c-3.191-3.191-8.364-3.191-11.554,0l-70.195,70.194h-99.27c-4.512,0-8.17,3.658-8.17,8.17v99.27L2.393,250.223 c-3.191,3.191-3.191,8.364,0,11.554l70.195,70.195v99.27c0,4.512,3.658,8.17,8.17,8.17h99.27l70.195,70.195 c1.595,1.595,3.686,2.393,5.777,2.393c2.09,0,4.182-0.797,5.777-2.393l70.195-70.195h99.27c4.512,0,8.17-3.658,8.17-8.17v-99.27 l70.195-70.195C512.798,258.587,512.798,253.412,509.607,250.223z M72.588,308.863L19.725,256l52.863-52.863V308.863z M256,19.724 l52.863,52.863H203.136L256,19.724z M88.928,88.928h74.76l-74.76,74.76V88.928z M88.928,186.796l97.868-97.868h138.408 l97.868,97.868v45.211C381.418,183.557,320.588,155.233,256,155.233c-64.589,0-125.418,28.324-167.072,76.774V186.796z M196.304,196.302c15.946-15.946,37.147-24.727,59.698-24.727c22.551,0,43.752,8.781,59.698,24.727 c15.946,15.946,24.727,37.147,24.727,59.698s-8.782,43.752-24.727,59.698c-15.946,15.946-37.147,24.727-59.698,24.727 c-22.551,0-43.752-8.781-59.698-24.727C163.387,282.781,163.387,229.22,196.304,196.302z M185.283,327.763 c-37.437-13.854-70.488-38.587-94.534-71.763c24.045-33.177,57.099-57.909,94.537-71.765c-0.176,0.174-0.361,0.337-0.536,0.512 c-39.288,39.289-39.288,103.216,0,142.504C184.924,327.425,185.106,327.589,185.283,327.763z M327.254,327.251 c19.032-19.032,29.514-44.337,29.514-71.252c0-26.915-10.482-52.221-29.514-71.252c-0.174-0.174-0.358-0.336-0.534-0.509 c37.436,13.856,70.486,38.587,94.532,71.762c-24.043,33.173-57.093,57.905-94.526,71.761 C326.9,327.588,327.081,327.425,327.254,327.251z M88.928,423.072v-74.76l74.76,74.76H88.928z M256,492.276l-52.863-52.863 h105.727L256,492.276z M423.072,423.072h-74.76l74.76-74.76V423.072z M423.072,325.204l-97.868,97.868H186.796l-97.868-97.868 c0,0,0-45.211,0-45.211C130.582,328.442,191.41,356.767,256,356.767c64.588,0,125.418-28.324,167.072-76.774V325.204z M423.072,163.687l-74.76-74.76h74.76V163.687z M439.412,308.863V203.136L492.276,256L439.412,308.863z"></path> </g> </g> <g> <g> <path d="M256,212.422c-24.027,0-43.574,19.547-43.574,43.574c0,24.027,19.546,43.574,43.574,43.574 c24.027,0,43.574-19.548,43.574-43.574C299.574,231.969,280.027,212.422,256,212.422z M256,283.23 c-15.017,0-27.234-12.217-27.234-27.234c0-15.017,12.216-27.234,27.234-27.234c15.017,0,27.234,12.217,27.234,27.234 C283.234,271.013,271.017,283.23,256,283.23z"></path> </g> </g> <g> <g> <path d="M328.898,133.427c-23.346-11.456-47.872-17.265-72.898-17.265c-25.028,0-49.555,5.81-72.9,17.267 c-4.051,1.988-5.722,6.884-3.735,10.934c1.419,2.893,4.321,4.573,7.34,4.572c1.208,0,2.436-0.269,3.594-0.838 c21.086-10.349,43.191-15.596,65.702-15.596c22.509,0,44.613,5.247,65.697,15.595c4.051,1.989,8.947,0.317,10.935-3.734 C334.62,140.311,332.948,135.416,328.898,133.427z"></path> </g> </g> <g> <g> <path d="M332.631,367.635c-1.988-4.051-6.883-5.721-10.935-3.734c-21.085,10.349-43.189,15.595-65.697,15.595 c-22.511,0-44.616-5.247-65.702-15.596c-4.05-1.987-8.946-0.317-10.934,3.735c-1.988,4.05-0.316,8.946,3.735,10.934 c23.346,11.459,47.874,17.269,72.901,17.269c25.026,0,49.552-5.81,72.897-17.267C332.947,376.582,334.619,371.687,332.631,367.635 z"></path> </g> </g> </g></svg>Filosofia</a>
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('filosofia')"><svg class="w-20 h-20" fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M509.607,250.223l-70.195-70.195v-99.27c0-4.512-3.658-8.17-8.17-8.17h-99.269L261.777,2.393 c-3.191-3.191-8.364-3.191-11.554,0l-70.195,70.194h-99.27c-4.512,0-8.17,3.658-8.17,8.17v99.27L2.393,250.223 c-3.191,3.191-3.191,8.364,0,11.554l70.195,70.195v99.27c0,4.512,3.658,8.17,8.17,8.17h99.27l70.195,70.195 c1.595,1.595,3.686,2.393,5.777,2.393c2.09,0,4.182-0.797,5.777-2.393l70.195-70.195h99.27c4.512,0,8.17-3.658,8.17-8.17v-99.27 l70.195-70.195C512.798,258.587,512.798,253.412,509.607,250.223z M72.588,308.863L19.725,256l52.863-52.863V308.863z M256,19.724 l52.863,52.863H203.136L256,19.724z M88.928,88.928h74.76l-74.76,74.76V88.928z M88.928,186.796l97.868-97.868h138.408 l97.868,97.868v45.211C381.418,183.557,320.588,155.233,256,155.233c-64.589,0-125.418,28.324-167.072,76.774V186.796z M196.304,196.302c15.946-15.946,37.147-24.727,59.698-24.727c22.551,0,43.752,8.781,59.698,24.727 c15.946,15.946,24.727,37.147,24.727,59.698s-8.782,43.752-24.727,59.698c-15.946,15.946-37.147,24.727-59.698,24.727 c-22.551,0-43.752-8.781-59.698-24.727C163.387,282.781,163.387,229.22,196.304,196.302z M185.283,327.763 c-37.437-13.854-70.488-38.587-94.534-71.763c24.045-33.177,57.099-57.909,94.537-71.765c-0.176,0.174-0.361,0.337-0.536,0.512 c-39.288,39.289-39.288,103.216,0,142.504C184.924,327.425,185.106,327.589,185.283,327.763z M327.254,327.251 c19.032-19.032,29.514-44.337,29.514-71.252c0-26.915-10.482-52.221-29.514-71.252c-0.174-0.174-0.358-0.336-0.534-0.509 c37.436,13.856,70.486,38.587,94.532,71.762c-24.043,33.173-57.093,57.905-94.526,71.761 C326.9,327.588,327.081,327.425,327.254,327.251z M88.928,423.072v-74.76l74.76,74.76H88.928z M256,492.276l-52.863-52.863 h105.727L256,492.276z M423.072,423.072h-74.76l74.76-74.76V423.072z M423.072,325.204l-97.868,97.868H186.796l-97.868-97.868 c0,0,0-45.211,0-45.211C130.582,328.442,191.41,356.767,256,356.767c64.588,0,125.418-28.324,167.072-76.774V325.204z M423.072,163.687l-74.76-74.76h74.76V163.687z M439.412,308.863V203.136L492.276,256L439.412,308.863z"></path> </g> </g> <g> <g> <path d="M256,212.422c-24.027,0-43.574,19.547-43.574,43.574c0,24.027,19.546,43.574,43.574,43.574 c24.027,0,43.574-19.548,43.574-43.574C299.574,231.969,280.027,212.422,256,212.422z M256,283.23 c-15.017,0-27.234-12.217-27.234-27.234c0-15.017,12.216-27.234,27.234-27.234c15.017,0,27.234,12.217,27.234,27.234 C283.234,271.013,271.017,283.23,256,283.23z"></path> </g> </g> <g> <g> <path d="M328.898,133.427c-23.346-11.456-47.872-17.265-72.898-17.265c-25.028,0-49.555,5.81-72.9,17.267 c-4.051,1.988-5.722,6.884-3.735,10.934c1.419,2.893,4.321,4.573,7.34,4.572c1.208,0,2.436-0.269,3.594-0.838 c21.086-10.349,43.191-15.596,65.702-15.596c22.509,0,44.613,5.247,65.697,15.595c4.051,1.989,8.947,0.317,10.935-3.734 C334.62,140.311,332.948,135.416,328.898,133.427z"></path> </g> </g> <g> <g> <path d="M332.631,367.635c-1.988-4.051-6.883-5.721-10.935-3.734c-21.085,10.349-43.189,15.595-65.697,15.595 c-22.511,0-44.616-5.247-65.702-15.596c-4.05-1.987-8.946-0.317-10.934,3.735c-1.988,4.05-0.316,8.946,3.735,10.934 c23.346,11.459,47.874,17.269,72.901,17.269c25.026,0,49.552-5.81,72.897-17.267C332.947,376.582,334.619,371.687,332.631,367.635 z"></path> </g> </g> </g></svg>Filosofia</a>
 
-        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded" onclick="mostrarConteudo('sociologia')"> <svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 349.759 349.759" xml:space="preserve" class="w-20 h-20">
+        <a href="#" class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded" onclick="mostrarConteudo('sociologia')"> <svg fill="#FFFFFF" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 349.759 349.759" xml:space="preserve" class="w-20 h-20">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -199,265 +199,264 @@
   <script>
     function mostrarConteudo(materia) {
       let conteudo = {
-        matematica: `
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        matemática: `
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.conjuntos-numericos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.fracao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.porcentagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.equacao-1')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.equacao-2')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.funcoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.geometria-plana')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria plana</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.geometria-espacial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.teorema-pitagoras')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.media-mediana-moda')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.graficos-tabelas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.probabilidade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.juros-simples-compostos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.trigonometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('matematica.unidades-medida')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
           </div>
         `,
-        portugues: `
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        português: `
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gêneros Textuais</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Figuras de Linguagem</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções da linguagem</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Análise Sintática</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Coesão e Coerência</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interpretação de texto</a>
           </div>
         `,
-        historia: `
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        história: `
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.periodo-colonial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Colonial</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.independencia-brasil')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Independência do Brasil</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.proclamacao-republica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Proclamação da República</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.era-vargas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Era Vargas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.ditadura-militar')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ditadura militar</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.civilizacoes-antigas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Civilizações antigas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.idade-media')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Idade Média</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.revolucao-francesa')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Francesa</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.revolucao-industrial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Industrial</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('historia.guerras-mundiais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Guerras Mundiais</a>
           </div>
         `,
         geografia: `
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Hidrografia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Relevo</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Soluções químicas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
           </div>
         `,
         biologia: `
-         <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.celulas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Células</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.genetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Genética</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.evolucao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Evolução</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.ecologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ecologia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.fisiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fisiologia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.botanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Botânica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.zoologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Zoologia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.microbiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Microbiologia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.bioenergetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Bioenergética</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('biologia.interacao-ecologica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interações Ecológicas</a>
           </div>
-      
         `,
-        quimica: `
-         <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        química: `
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.estrutura-atomica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estrutura Atômica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.tabela-periodica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.ligacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.oxirreducoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.reacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Reações Químicas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.eletroquimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.radioatividade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.acidos-bases')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ácidos e Bases</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.estequiometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estequiometria</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('quimica.termodinamica-quimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica Química</a>
           </div>
         `,
-        fisica: `
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        física: `
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.mecanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Mecânica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.termodinamica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.optica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Óptica</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.eletromagnetismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletromagnetismo</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.ondas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ondas</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.trabalho-energia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trabalho e Energia</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.fluidos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fluidos</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('fisica.cinematica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cinemática</a>
           </div>
         `,
         filosofia: `
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.etica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.periodo-pre-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.periodo-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Socrático</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.filosofia-antiga')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia antiga</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.filosofia-moderna')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia Moderna</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('filosofia.existencialismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Existencialismo</a>
           </div>
         `,
         sociologia: `
-        <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+        <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('sociologia.movimentos-sociais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Movimentos sociais</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('sociologia.cidadania-direitos-humanos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cidadania e Direitos Humanos</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('sociologia.politica-estado-governo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Política, Estado e Governo</a>
           </div>
-          <div class="block text-3xl font-Montserrat text-steelblue p-2 border border-gray-700 rounded grid-item">
+          <div class="block text-3xl font-Montserrat text-steelblue p-2 border-2 border-gray-700 rounded grid-item">
             <a href="{{route('sociologia.sociedade-contemporanea')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sociedade Contemporânea</a>
           </div>
         `,
