@@ -1,4 +1,25 @@
 <x-app-layout>
+<style>
+  /* Personalização do scrollbar */
+  ::-webkit-scrollbar {
+      width: 12px; /* Largura do scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #2b2b2b; /* Cor de fundo da trilha */
+       /* Bordas arredondadas da trilha */
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #6b7280; /* Cor da barra de rolagem */
+       /* Bordas arredondadas da barra */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: #4b5563; /* Cor da barra de rolagem ao passar o mouse */
+  }
+</style>
+
     <form action="{{ route('simulados.submit') }}" id="simuladoForm" method="POST">
         @csrf
         <input type="hidden" name="categoria" value="{{ $categoria }}"> <!-- Adiciona a categoria ao formulário para depois ser registrado no banco de dados, não apague-->
