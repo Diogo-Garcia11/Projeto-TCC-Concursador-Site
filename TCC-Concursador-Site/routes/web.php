@@ -13,6 +13,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/welcome', function () {
+    return view('index2');
+});
+
 Route::get('/dashboard', [NotaController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
