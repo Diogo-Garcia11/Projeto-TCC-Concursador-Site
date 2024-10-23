@@ -31,6 +31,10 @@ export default {
             fontFamily: {
                 Montserrat: ['Montserrat', 'system-ui'],
             },
+
+            fontFamily: {
+                paytone: ['Paytone One', 'sans-serif'],
+            },
             fontWeight: {
                 'thin': '100',
                 'extra-light': '200',
