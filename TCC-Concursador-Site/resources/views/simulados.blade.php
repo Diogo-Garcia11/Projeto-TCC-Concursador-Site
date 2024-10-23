@@ -1,7 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+@vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/simulados.js', 'resources/css/simulados.css'])
 <x-app-layout>
   <div class="text-center">
     <h5 class="text-7xl font-Montserrat text-white p-8">Simulados</h5>
@@ -48,7 +48,7 @@
             <div id="provasList" class="grid grid-cols-2 grid-rows-4 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
           </div>
           <div class="grid-item">
-            <div id="gabaritoList" class="grid grid-cols-2 grid-rows-4 gap-4 text-2xl font-Montserrat text-steelblue p-8"></div>
+            <div id="gabaritoList" class="grid grid-cols-2 grid-rows-4 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
           </div>
         </div>
       </div>
@@ -128,29 +128,29 @@
       <!-- Conteúdo -->
       <div class="bg-whiteblue overflow-hidden transition-all duration-600 max-h-0 peer-checked:max-h-[600px]">
 
-      <!-- Lista de Anos (como no site do FATEC) -->
+      <!-- Lista de Anos (como no site do FUVEST) -->
       <div class="flex justify-center p-4 space-x-4 py-5 gap-4 border-b">
-        <button data-ano-fatec="2024" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2024</button>
-        <button data-ano-fatec="2023" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2023</button>
-        <button data-ano-fatec="2022" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2022</button>
-        <button data-ano-fatec="2021" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYearFatec(this)">2021</button>
-        <button data-ano-fatec="2020" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2020</button>
-        <button data-ano-fatec="2019" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2019</button>
-        <button data-ano-fatec="2018" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFatec(this)">2018</button>
-        <button data-ano-fatec="2017" class="ano-fatec-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYearFatec(this)">2017</button>
+        <button data-ano-fuvest="2024" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2024</button>
+        <button data-ano-fuvest="2023" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2023</button>
+        <button data-ano-fuvest="2022" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2022</button>
+        <button data-ano-fuvest="2021" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYearFuvest(this)">2021</button>
+        <button data-ano-fuvest="2020" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2020</button>
+        <button data-ano-fuvest="2019" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2019</button>
+        <button data-ano-fuvest="2018" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue" onclick="setActiveYearFuvest(this)">2018</button>
+        <button data-ano-fuvest="2017" class="ano-fuvest-btn py-2 px-4 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue " onclick="setActiveYearFuvest(this)">2017</button>
       <!-- Adicione mais anos conforme necessário -->
       </div>
-      <div class="flex justify-center grid grid-rows-2 grid-cols-1 place-items-center p-4">
-      <h2>Provas</h2>
-      <h2>Gabaritos</h2>
+      <div class="flex justify-center grid grid-rows-1 grid-cols-1 place-items-center p-4">
       </div>
 
-      <div id="provasContainerFatec" class="grid grid-cols-2 grid-rows-1 place-items-center">
+      <div id="provasContainerFuvest" class="grid grid-cols-1 grid-rows-1 place-items-center">
+      <h2>Primeira fase</h2>
         <div class="grid-item">
-          <div id="provasListFatec" class="grid grid-cols-1 grid-rows-2 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
+          <div id="provasListFuvest" class="grid grid-cols-2 grid-rows-1 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
         </div>
+        <h2>Segunda fase</h2>
         <div class="grid-item">
-          <div id="gabaritoListFatec" class="grid grid-cols-1 grid-rows-2 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
+          <div id="gabaritoListFuvest" class="grid grid-cols-2 grid-rows-1 gap-4 text-3xl font-Montserrat text-steelblue p-8"></div>
         </div>
       </div>
       </div>
