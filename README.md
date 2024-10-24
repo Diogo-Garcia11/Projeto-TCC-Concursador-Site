@@ -15,7 +15,7 @@ Instalar as dependências do Node.js
 npm install
 ```
 
-Gerar a chave
+Gerar a chave (necessário gerar a chave só uma vez na hora de hospedar, a chave já foi criada)
 ```
 php artisan key:generate
 ```
