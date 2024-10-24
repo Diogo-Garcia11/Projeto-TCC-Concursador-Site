@@ -132,6 +132,7 @@ Executar as bibliotecas Node.js
 npm run dev
 ```
 ##Bibliotecas opcionais
+
 Traduzir para português
 https://github.com/lucascudo/laravel-pt-BR-localization(já está traduzido)
 
