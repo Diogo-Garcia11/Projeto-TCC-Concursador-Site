@@ -134,7 +134,7 @@ npm run dev
 ## Bibliotecas opcionais
 
 Traduzir para português
-https://github.com/lucascudo/laravel-pt-BR-localization(já está traduzido)
+https://github.com/lucascudo/laravel-pt-BR-localization (já está traduzido)
 
 Instalar a biblioteca para gerar PDF
 ```
