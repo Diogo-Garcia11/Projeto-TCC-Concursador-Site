@@ -5,12 +5,12 @@
 * Node.js 20 ou superior: https://nodejs.org/en/download/package-manager
 
 ## Como rodar o projeto baixado
-Instalar as dependências do PHP
+Instalar as dependências do PHP(necessário)
 ```
 composer install
 ```
 
-Instalar as dependências do Node.js
+Instalar as dependências do Node.js(necessário)
 ```
 npm install
 ```
@@ -45,7 +45,7 @@ Acessar o conteúdo no navegador
 http://127.0.0.1:8000/
 ```
 
-## Sequencia para criar o projeto
+## Sequencia para criar o projeto (não há necessidade, só para transmitir o conhecimento)
 Criar o projeto com Laravel
 ```
 composer create-project laravel/laravel laravel-meu-projeto
