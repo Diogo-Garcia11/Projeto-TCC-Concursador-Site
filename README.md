@@ -1,8 +1,8 @@
 ## Requisitos
 
-* PHP 8.2 ou superior
-* Composer
-* Node.js 20 ou superior
+* PHP 8.2 ou superior: https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x64.zip
+* Composer: https://getcomposer.org/download/
+* Node.js 20 ou superior: https://nodejs.org/en/download/package-manager
 
 ## Como rodar o projeto baixado
 Instalar as dependências do PHP
