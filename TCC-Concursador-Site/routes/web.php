@@ -3,6 +3,7 @@
 use App\Http\Controllers\MateriasController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EventoController;
 use App\Http\Controllers\QuestaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SimuladoController;
@@ -12,6 +13,11 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/calendario', [EventoController::class, 'index'])->name('calendario');
+
+Route::get('/eventos', [EventoController::class, 'eventos']);
+
 
 Route::get('/dashboard', [NotaController::class, 'index'])
     ->middleware(['auth', 'verified'])
@@ -36,9 +42,6 @@ Route::middleware('auth')->group(function () {
         return view('downloadapp');
     })->name('downloadapp');
     
-    Route::get('/calendario', function () {
-        return view('calendario');
-    })->name('calendario');
 
     Route::get('/uploads', function () {
         return view('uploads'); // Aponta para a view do formulário de upload

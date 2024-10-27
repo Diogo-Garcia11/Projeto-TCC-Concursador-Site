@@ -1,16 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
+
+use Illuminate\Http\Request;
 use App\Models\Evento;
 
 class EventoController extends Controller
 {
     public function index()
     {
-        $eventos = Evento::all()->toArray();
+        return view('calendario');
+    }
 
-        // Retorne a visualização com os eventos
-        return view('eventos.index', ['eventos' => $eventos]);
+    public function eventos(Request $request)
+    {
+        $mes = $request->query('mes');
+        $ano = $request->query('ano');
+        $eventos = Evento::whereYear('data', $ano)->whereMonth('data', $mes)->get();
+
+        return response()->json($eventos);
     }
 }

@@ -1,266 +1,137 @@
 <x-app-layout>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calendário Vestibulares</title>
-        <style>
-            *{
-                padding: 0;
-                margin: 0;
-            }
-            .conteudo{
-                left: 50%;
-                margin: 15px 0 0 -250px;
-                position: absolute;
-                width: 500px;
-                height: 51px;
-            }
-            .calendario{
-                text-align: center;
-            }
-            .conteudo .calendario header{
-                position: relative;
-            }
-
-            h2{
-                margin-top: 60px;
-                font-size: 32px;
-                text-transform: uppercase;
-                color: #f9f9f9;
-            }
-            .btn-ant,.btn-pro{
-                position: absolute;
-                top: 50%;
-                height: 32px;
-                width: 32px;
-                line-height: 32px;
-                margin-top: -16px;
-                background-color: #f9f9f9;
-                border: 2px solid #cbd1d2;
-                border-radius: 50%;
-                color: #cbd1d2;
-                font-size: 16px;
-                font-weight: bold;
-            }
-            .btn-ant{
-                left:80px;
-            }
-            .btn-pro{
-                right: 80px;
-            }
-            .btn-ant:hover, .btn-pro:hover{
-                background: #cbd1d2;
-                color: #f9f9f9;
-            }
-            .calendario table{
-                margin-top: 20px;
-                border-collapse: collapse;
-            }
-            .calendario thead{
-                background: white;
-                font-weight: 600;
-                text-transform: uppercase;
-                border-bottom: 2px solid red;
-            }
-            .calendario thead td{
-                height: 71.4px;
-            }
-            .calendario td{
-                border: 1px solid #cbd1d2;
-                height: 71.4px;
-                text-align: center;
-                width: 71.4px;
-                border-bottom: #00addf;
-            }
-            .calendario tbody td{
-                background-color: #f9f9f9;
-                cursor: pointer;
-                border-bottom: #00addf;
-            }
-            .calendario tbody td:first-child{
-               border-left: 2px solid rgba(21, 37, 63);
-            }
-            .calendario tbody td:last-child{
-               border-right: 2px solid rgba(21, 37, 63);
-            }
-            .calendario tbody td:hover{
-                background: rgba(0, 173, 223, 0.8);
-                color: #f9f9f9;
-            }
-            .calendario table .dia-atual{
-                background: #00addf;
-                color: #f9f9f9;
-            }
-            .calendario .mes-anterior, .calendario .proximo-mes{
-                color: #cbd1d2;
-            }
-            .calendario .mes-anterior:hover, .calendario .proximo-mes:hover{
-                background: #98a0a0;
-            }
-            .event{
-                position: relative;
-            }
-            .event:after{
-                content:' ' ;
-                width: 7px;
-                height: 7px;
-                left: 50px;
-                bottom: 7px;
-                margin: -3.5px 0 0 -3.5px;
-                background: #00addf;
-                display: block;
-                position: absolute;
-                border-radius: 50%;
-            }
-            .event:hover::after{
-                background: #f9f9f9 ;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="conteudo">
-            <div class="calendario">
+    <div class="container" style="margin-top: 80px;">
+        <div class="calendario">
             <header>
-                <h2 id="mes"></h2>
-                    <a class="btn-ant" id="btn_ant"><</a>
-                    <a class="btn-pro" id="btn_prev">></a>
+                <button id="mes-anterior">&lt;</button>
+                <h2 id="mes-ano"></h2>
+                <button id="mes-posterior">&gt;</button>
             </header>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Dom</td>
-                        <td>Seg</td>
-                        <td>Ter</td>
-                        <td>Qua</td>
-                        <td>Qui</td>
-                        <td>Sex</td>
-                        <td>Sab</td>
-                    </tr>
-                </thead>
-                <tbody id="dias">
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                </tbody>
-            </table>
-            <footer>
-            <h2 id="ano"></h2>
-        </footer>
-            </div>
+            <div class="calendario-container" id="dias-calendario"></div>
         </div>
-        <script>
-    document.addEventListener('DOMContentLoaded', function(){
-            const monthsBr = ['janeiro', 'fevereiro', 'março','abril', 'maio','junho', 'julho', 'agosto', 'setembro','outubro','novembro','dezembro'];
-            const tableDays = document.getElementById('dias');
-            function GetDaysCalendar(mes,ano){
-                document.getElementById('mes').innerHTML = monthsBr[mes];
-                document.getElementById('ano').innerHTML = ano;
-                
-                let firstDayOfWeek = new Date (ano,mes,1).getDay()-1;
-                let getLastDayThisMonth = new Date(ano,mes+1,0).getDate();
+    </div>
 
-                for(var i = -firstDayOfWeek,calendario = 0; i < (42-firstDayOfWeek); i++, calendario++)
-                {
-                    let dt = new Date(ano,mes,i);
-                    let dtNow = new Date();
-                    let dayTable = tableDays.getElementsByTagName('td')[calendario];
-                    dayTable.classList.remove('mes-anterior');
-                    dayTable.classList.remove('proximo-mes');
-                    dayTable.classList.remove('dia-atual');
-                    dayTable.innerHTML = dt.getDate();
+    <style>
+        .container { text-align: center; margin: 20px auto; }
+        .calendario { 
+            display: inline-block; 
+            width: 100%; 
+            max-width: 600px; 
+            background-color: rgb(67, 93, 134); 
+            border: 2px solid #00796b; 
+            border-radius: 8px; 
+            padding: 20px; 
+        }
+        header h2 {
+             color: white; /* Muda a cor do texto para branco */
+        }
 
-                    if(dt.getFullYear() == dtNow.getFullYear() && dt.getMonth() == dtNow.getMonth() && dt.getDate() == dtNow.getDate()){
-                        dayTable.classList.add('dia-atual')
-                    }
+        header { display: flex; justify-content: space-between; align-items: center; }
+        .calendario-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .dia {
+            padding: 15px;
+            background-color:white; 
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .dia.event {
+            background-color: rgb(100, 140, 190); 
+        }
+        .evento-card {
+            display: none; 
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 150px;
+            z-index: 10;
+        }
+        .dia:hover .evento-card {
+            display: block;
+        }
+    </style>
 
-                    if(i < 1){
-                        dayTable.classList.add('mes-anterior')
-                    }
-                    if(i > getLastDayThisMonth){
-                        dayTable.classList.add('proximo-mes')
-                    }
-                }
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mesAno = document.getElementById('mes-ano');
+            const tabelaDias = document.getElementById('dias-calendario');
+            const btnMesAnterior = document.getElementById('mes-anterior');
+            const btnMesPosterior = document.getElementById('mes-posterior');
+            const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+            let dataAtual = new Date();
+
+            function carregarEventos(mes, ano) {
+                tabelaDias.querySelectorAll('.dia').forEach(dia => {
+                    dia.classList.remove('event'); 
+                });
+
+                fetch(`/eventos?mes=${mes + 1}&ano=${ano}`)
+                    .then(response => response.json())
+                    .then(eventos => {
+                        eventos.forEach(evento => {
+                            let data = new Date(evento.data);
+                            let dia = data.getDate();
+                            let celula = tabelaDias.querySelector(`.dia[data-dia='${dia}']`);
+                            if (celula) {
+                                celula.classList.add('event'); 
+                                let eventoCard = document.createElement('div');
+                                eventoCard.classList.add('evento-card');
+                                eventoCard.innerHTML = `<strong>Eventos:</strong><ul><li>${evento.descricao}</li></ul>`;
+                                celula.appendChild(eventoCard);
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Erro ao carregar eventos:', error));
             }
 
-            let now = new Date();
-            let mes = now.getMonth();
-            let ano = now.getFullYear();
-            GetDaysCalendar(mes,ano);
+            function gerarCalendario(mes, ano) {
+                mesAno.textContent = `${meses[mes]} ${ano}`;
+                tabelaDias.innerHTML = '';
+                let primeiroDiaDoMes = new Date(ano, mes, 1).getDay();
+                let diasNoMes = new Date(ano, mes + 1, 0).getDate();
+                let diaAtual = 1;
 
-            const botao_proximo = document.getElementById('btn_prev');
-            const botao_anterior = document.getElementById('btn_ant');
+                for (let i = 0; i < 6; i++) {
+                    if (diaAtual > diasNoMes) break; // Adiciona quebra se o dia atual ultrapassar o total de dias no mês
+                    for (let j = 0; j < 7; j++) {
+                        let celula = document.createElement('div');
+                        celula.classList.add('dia');
+                        if (i === 0 && j < primeiroDiaDoMes || diaAtual > diasNoMes) {
+                            celula.textContent = '';
+                        } else {
+                            celula.textContent = diaAtual;
+                            celula.setAttribute('data-dia', diaAtual); 
+                            diaAtual++;
+                        }
+                        tabelaDias.appendChild(celula);
+                    }
+                }
 
-            botao_proximo.onclick = function(){
-                mes++;
-                if(mes > 11){
-                    mes = 0;
-                    ano++;
-                }
-                GetDaysCalendar(mes,ano);
+                carregarEventos(mes, ano);
             }
-            botao_anterior.onclick = function(){
-                mes--;
-                if(mes < 0){
-                    mes = 11;
-                    ano--;
-                }
-                GetDaysCalendar(mes,ano);
-            }
-        })
-        </script>
-    </body>
-    </html>
+
+            btnMesAnterior.onclick = function () {
+                dataAtual.setMonth(dataAtual.getMonth() - 1);
+                gerarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
+            };
+
+            btnMesPosterior.onclick = function () {
+                dataAtual.setMonth(dataAtual.getMonth() + 1);
+                gerarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
+            };
+
+            gerarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
+        });
+    </script>
 </x-app-layout>
