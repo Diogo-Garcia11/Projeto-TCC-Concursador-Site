@@ -47,8 +47,6 @@ Route::middleware('auth')->group(function () {
         return view('uploads'); // Aponta para a view do formulário de upload
     })->name('uploads');
     
-    Route::post('/extrair-questoes', [QuestaoController::class, 'extrairQuestoes'])->name('extrairQuestoes');
-    Route::post('/uploadImagem', [QuestaoController::class, 'uploadImagem'])->name('uploadImagem');
     
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
