@@ -44,12 +44,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'connection' => env('DB_CONNECTION', 'mysql'),
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'tcc'),
-            'username' => env('DB_USERNAME', 'root'),
+            'database' => env('DB_DATABASE', ''),
+            'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8'),
@@ -78,6 +77,7 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
+            'ssl_mode' => env('SSL_MODE'),
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
