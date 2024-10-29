@@ -27,10 +27,12 @@
         <img class="w-full h-auto" src="{{ asset('imagens/meiocirculo.png') }}" alt="Semicirculo">
         <div class="absolute inset-0">
             <h1 class="text-white font-paytone text-7xl mt-[10%] ml-[5%] ">BAIXE NOSSO APLICATIVO!</h1>
-            <h1 class="text-white font-paytone text-2xl mt-[8%] ml-[5%]">Clique no botão abaixo para fazer o download! ⬎</h1>
-            <a href="/caminho/do/seu/arquivo" download>
-                <img class="button-image mt-[8%] ml-[5%] cursor-pointer" src="{{ asset('imagens/botaomaior.png') }}" alt="Botão de Download">
+            <h1 class="text-white font-paytone text-4xl mt-[6%] ml-[5%]">Clique no botão abaixo para fazer o download! ⬎</h1>
+            <a href="" download>
+                <img class="button-image mt-[5%] ml-[5%] cursor-pointer" src="{{ asset('imagens/botaomaior.png') }}" alt="Botão de Download">
             </a>
+            <h1 class="text-white font-Montserrat text-3xl mt-[6%] ml-[5%]">Acesse também as nossas redes sociais!</h1>
+            <img class="button-image mt-[3%] ml-[5%] cursor-pointer" src="{{ asset('imagens/instagram-logo.png') }}" alt="Botão de Download">
         </div>
     </div>
 </x-app-layout>
