@@ -1,13 +1,19 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-DeuyT_A1.css",
+    "file": "assets/app-B78Rg46t.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CTsqnFiZ.js",
+    "file": "assets/app-Bucf558u.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/simulados.js": {
+    "file": "assets/simulados-5zleshUe.js",
+    "name": "simulados",
+    "src": "resources/js/simulados.js",
     "isEntry": true
   }
 }
