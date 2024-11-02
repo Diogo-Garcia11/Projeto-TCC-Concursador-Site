@@ -8,7 +8,6 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/simulados.js',
-                'resources/js/simulados.css'
             ],
             refresh: true,
         }),

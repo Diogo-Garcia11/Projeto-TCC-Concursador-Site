@@ -305,52 +305,69 @@ text-decoration: none;
 
 
 
+
 .ano-btn::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: steelblue;
-    transition: width 0.3s ease;
-  }
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: steelblue;
+  transition: width 0.3s ease;
+}
 
-  .ano-btn.active::after {
-    width: 100%;
-  }
+.ano-btn.active::after {
+  width: 100%;
+}
 
-  .ano-fatec-btn::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: steelblue;
-    transition: width 0.3s ease;
-  }
+.ano-fatec-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: steelblue;
+  transition: width 0.3s ease;
+}
 
-  .ano-fatec-btn.active::after {
-    width: 100%;
-  }
+.ano-fatec-btn.active::after {
+  width: 100%;
+}
 
-  .bg-amarelo {
-    --tw-bg-opacity: 1;
-    background-color: #faee6f;
-  }
 
-  .bg-azul{
-    --tw-bg-opacity: 1;
-    background-color: #75dcfc;
-  }
+.ano-fuvest-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: steelblue;
+  transition: width 0.3s ease;
+}
 
-  .bg-rosa{
-    --tw-bg-opacity: 1;
-    background-color: #fcc0db;
-  }
+.ano-fuvest-btn.active::after {
+  width: 100%;
+}
 
-  .bg-cinza{
-    --tw-bg-opacity: 1;
-    background-color: #d7dadd;
-  }
+.bg-amarelo {
+  --tw-bg-opacity: 1;
+  background-color: #faee6f;
+}
+
+.bg-azul{
+  --tw-bg-opacity: 1;
+  background-color: #75dcfc;
+}
+
+.bg-rosa{
+  --tw-bg-opacity: 1;
+  background-color: #fcc0db;
+}
+
+.bg-cinza{
+  --tw-bg-opacity: 1;
+  background-color: #d7dadd;
+}
