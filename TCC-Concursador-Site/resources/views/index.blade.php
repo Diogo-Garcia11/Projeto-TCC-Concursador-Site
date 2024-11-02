@@ -6,8 +6,7 @@
     <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Big+Shoulders+Display:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Página Inicial</title>
-    <link href="{{ asset('TCC-Concursador-Site/resources/css/app.css') }}" rel="stylesheet">
-    <!-- @vite('resources/css/app.css')-->
+    @vite('resources/css/app.css')
     <style>
         
     </style>
