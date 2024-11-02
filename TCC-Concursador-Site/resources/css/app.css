@@ -1,3 +1,356 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root 
+{
+--cor-site: rgb(44, 61, 91);
+--cor-nav: rgb(67, 93, 134);
+--font-principal: 'Montserrat', sans-serif;
+--font-titulo: 'Big Shoulders Display', cursive;
+}
+
+body 
+{
+margin: 0;
+font-family: --font-principal;
+background-color: #F4F5F7;
+background-size: cover;
+color: white;
+padding-top: 70px; 
+overflow-x: hidden;
+}
+
+.nav-con
+{
+  font-family: var(--font-titulo);
+  font-size: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+nav 
+{
+  background-color: var(--cor-nav);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+.nav-logo 
+{
+  display: flex;
+  align-items: center;
+}
+
+.nav-link 
+{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  transition: color 0.1s ease;
+}
+
+
+.nav-link::after 
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.1s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after 
+{
+  width: 100%;
+}
+
+.logosite 
+{
+  width: 135px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.logosite:hover
+{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+
+.header-right 
+{
+  display: flex;
+  gap: 20px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right a 
+{
+  color: white; 
+  padding: 10px 15px; 
+  position: relative; 
+  transition: color 0.3s ease, transform 0.2s ease-in-out; 
+}
+
+.header-right a::after 
+{
+  content: ""; 
+  position: absolute;
+  width: 0; 
+  height: 2px; 
+  background-color: white;
+  left: 0; 
+  bottom: 5px; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.header-right a:hover 
+{
+  transform: translateY(-2px); 
+}
+
+.header-right a:hover::after 
+{
+  width: 100%; 
+}
+
+
+
+
+
+
+.header-center 
+{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; 
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-center a 
+{
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.header-center a::after 
+{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.header-center a:hover 
+{
+  transform: translateY(-2px);
+}
+
+.header-center a:hover::after 
+{
+  width: 100%;
+}
+
+
+.botao 
+{
+font-size: 14px;
+border-radius: 30px;
+padding: 15px 30px;
+background-color: rgb(60, 95, 155);
+color: white;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-left: 10px; /* Adiciona espaço entre os botões */
+}
+
+.botao:hover 
+{
+background-color: rgb(173, 203, 234);
+}
+
+
+.container 
+{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+.main 
+{
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 1300px; /* Define a largura máxima para centralizar o conteúdo */
+margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.main img 
+{
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.main .text, .main .image 
+{
+flex: 1;
+padding: 20px;
+text-align: center;
+}
+
+.section 
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+footer 
+{
+background-color: var(--cor-nav);
+padding: 20px;
+text-align: center;
+color: white;
+position: relative;
+bottom: 0;
+width: 100%;
+margin-top: 20px;
+}
+
+.glass-effect 
+{
+background: rgba(231, 215, 215, 0.027);
+border-radius: 10px;
+backdrop-filter: blur(10px);
+padding-bottom: 50px;
+}
+
+.glass-titulo
+{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 125px;
+  font-family: var(--font-titulo);
+  color: #333;
+  
+}
+
+.glass-texto
+{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 30px;
+  font-family: var(--font-principal);
+  color: #333;
+}
+
+/* ainda nao coloquei responsividade */
+.text a 
+{
+text-decoration: none;
+}
+@media (max-width: 768px) 
+{
+.main {
+    flex-direction: column;
+    text-align: center;
+}
+
+.main .text, .main .image {
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ano-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: steelblue;
+    transition: width 0.3s ease;
+  }
+
+  .ano-btn.active::after {
+    width: 100%;
+  }
+
+  .ano-fatec-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: steelblue;
+    transition: width 0.3s ease;
+  }
+
+  .ano-fatec-btn.active::after {
+    width: 100%;
+  }
+
+  .bg-amarelo {
+    --tw-bg-opacity: 1;
+    background-color: #faee6f;
+  }
+
+  .bg-azul{
+    --tw-bg-opacity: 1;
+    background-color: #75dcfc;
+  }
+
+  .bg-rosa{
+    --tw-bg-opacity: 1;
+    background-color: #fcc0db;
+  }
+
+  .bg-cinza{
+    --tw-bg-opacity: 1;
+    background-color: #d7dadd;
+  }
