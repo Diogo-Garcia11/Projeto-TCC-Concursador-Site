@@ -24,6 +24,13 @@ class DatabaseSeeder extends Seeder
             'is_admin' => '1',
         ]);
         
+        User::factory()->create([
+            'name' => 'DanDaDan',
+            'email' => 'reisleinad162@gmail.com',
+            'password' => 'ovomaltine',
+            'is_admin' => '2',
+        ]);
+        
         
     }
 }
