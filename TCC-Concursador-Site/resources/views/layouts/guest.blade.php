@@ -17,7 +17,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-genericwhite antialiased">
+    <body class="min-h-screen bg-blueberry dark:bg-gray-900 font-sans text-genericwhite antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-blueberry dark:bg-gray-900">
             <div>
                 <a href="/">

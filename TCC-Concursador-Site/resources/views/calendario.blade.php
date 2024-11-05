@@ -40,6 +40,7 @@
             text-align: center;
             border: 1px solid #ddd;
             border-radius: 5px;
+            color: darkblue;
         }
         .dia.event {
             background-color: rgb(100, 140, 190); 
