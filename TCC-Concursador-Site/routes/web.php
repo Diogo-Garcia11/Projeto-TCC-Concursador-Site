@@ -4,19 +4,18 @@ use App\Http\Controllers\MateriasController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventoController;
-use App\Http\Controllers\QuestaoController;
+
+use App\Http\Controllers\RedacaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SimuladoController;
-use App\Http\Controllers\ProvasAntigasController; // Adicione este controlador
+
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/calendario', [EventoController::class, 'index'])->name('calendario');
 
-Route::get('/eventos', [EventoController::class, 'eventos']);
 
 
 Route::get('/dashboard', [NotaController::class, 'index'])
@@ -46,8 +45,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/uploads', function () {
         return view('uploads'); // Aponta para a view do formulário de upload
     })->name('uploads');
+    Route::get('/calendario', [EventoController::class, 'index'])->name('calendario');
+
+    Route::get('/eventos', [EventoController::class, 'eventos']);
     
-    
+    Route::post('/essay', [RedacaoController::class, 'submitEssay'])->name('essay.submit');
+
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
         Route::get('/fatec', [SimuladoController::class, 'fatec'])->name('simulados.fatec');
@@ -58,17 +61,9 @@ Route::middleware('auth')->group(function () {
 
         // Rotas para Submissão
         Route::post('/submit', [SimuladoController::class, 'submit'])->name('simulados.submit');
-    });
 
-    Route::prefix('provas-antigas')->group(function () {
-        Route::get('/enem', [ProvasAntigasController::class, 'enem'])->name('provas.antigas.enem');
-        Route::get('/fatec', [ProvasAntigasController::class, 'fatec'])->name('provas.antigas.fatec');
-        Route::get('/fuvest', [ProvasAntigasController::class, 'fuvest'])->name('provas.antigas.fuvest');
-        Route::get('/unicamp', [ProvasAntigasController::class, 'unicamp'])->name('provas.antigas.unicamp');
-        Route::get('/senac', [ProvasAntigasController::class, 'senac'])->name('provas.antigas.senac');
-        Route::get('/ifsp', [ProvasAntigasController::class, 'ifsp'])->name('provas.antigas.ifsp');
+        
     });
-
     
     Route::get('/materias', function () {
         return view('materias');
@@ -196,9 +191,11 @@ Route::middleware('auth')->group(function () {
                 return view('materias.matematica.trigonometria');
             })->name('trigonometria');
 
-            Route::get('/unidades-medida', function () {
-                return view('materias.matematica.unidades-medida');
-            })->name('unidades-medida');
+            Route::get('/redacao', function () {
+                return view('materias.portugues.redacao');
+            })->name('portugues.redacao');
+
+            Route::post('/api/corrigir-redacao', 'CorrecaoController@corrigir');
 
             Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias_prova_portugues');
         }); #Fim do agrupamento de português

@@ -135,7 +135,7 @@
             <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
+            <a href="{{route('portugues.redacao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Redacao</a>
           </div>
         </div>
       </div>

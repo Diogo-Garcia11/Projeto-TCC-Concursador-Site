@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'DanDaDan',
             'email' => 'reisleinad162@gmail.com',
             'password' => 'ovomaltine',
-            'is_admin' => '2',
+            'is_admin' => '1',
         ]);
         
         
