@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Adicione seu CSS aqui */
+        .loading {
+            display: none;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -181,11 +189,16 @@
                             <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" type="submit">Enviar</button>
                         </form>
                         <div id="result" style="margin-top: 20px;" class="text-black"></div>
+                        <div class="loading">Carregando...</div>
 
                         <script>
                             $(document).ready(function() {
                                 $('#essay-form').on('submit', function(event) {
                                     event.preventDefault();
+
+                                    // Mostrar a animação de carregamento
+                                    $('.loading').show();
+                                    $('#result').html('');
 
                                     $.ajax({
                                         url: "{{ route('essay.submit') }}",
@@ -195,9 +208,19 @@
                                             essay: $('#essay').val()
                                         },
                                         success: function(response) {
-                                            $('#result').html('<p>' + response.correctedEssay + '</p>');
+                                            // Esconder a animação de carregamento
+                                            $('.loading').hide();
+
+                                            if (response.correctedEssay) {
+                                                $('#result').html('<p>' + response.correctedEssay + '</p>');
+                                            } else if (response.error) {
+                                                $('#result').html('<p>Erro: ' + response.error + '</p>');
+                                            }
                                         },
                                         error: function(xhr) {
+                                            // Esconder a animação de carregamento
+                                            $('.loading').hide();
+
                                             console.log(xhr.responseText); // Adicione esta linha para verificar a resposta do erro
                                             $('#result').html('<p>Ocorreu um erro ao processar sua redação. Por favor, tente novamente.</p>');
                                         }
