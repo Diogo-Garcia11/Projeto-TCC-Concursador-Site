@@ -9,18 +9,7 @@
             height: 100vh; 
         }
 
-        .button-image {
-            transition: transform 0.3s, opacity 0.3s; /* Transição suave */
-        }
 
-        .button-image:hover {
-            transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
-            opacity: 0.8; /* Levemente transparente ao passar o mouse */
-        }
-
-        .button-image:active {
-            transform: scale(0.95); /* Levemente reduzido ao clicar */
-        }
     </style>
     
     <div class="relative inline-block h-screen flex">

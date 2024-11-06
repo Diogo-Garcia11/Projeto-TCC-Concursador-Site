@@ -1,7 +1,7 @@
 <x-app-layout>
-    <div class="container" style="margin-top: 80px;">
+    <div class="container-c" style="margin-top: 80px;">
         <div class="calendario">
-            <header>
+            <header class="calendario-header">
                 <button id="mes-anterior">&lt;</button>
                 <h2 id="mes-ano"></h2>
                 <button id="mes-posterior">&gt;</button>
@@ -11,56 +11,7 @@
     </div>
 
     <style>
-        .container { text-align: center; margin: 20px auto; }
-        .calendario { 
-            display: inline-block; 
-            width: 100%; 
-            max-width: 600px; 
-            background-color: rgb(67, 93, 134); 
-            border: 2px solid #00796b; 
-            border-radius: 8px; 
-            padding: 20px; 
-        }
-        header h2 {
-             color: white; /* Muda a cor do texto para branco */
-        }
-
-        header { display: flex; justify-content: space-between; align-items: center; }
-        .calendario-container {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .dia {
-            padding: 15px;
-            background-color:white; 
-            position: relative;
-            cursor: pointer;
-            text-align: center;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            color: darkblue;
-        }
-        .dia.event {
-            background-color: rgb(100, 140, 190); 
-        }
-        .evento-card {
-            display: none; 
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            width: 150px;
-            z-index: 10;
-        }
-        .dia:hover .evento-card {
-            display: block;
-        }
+        
     </style>
 
     <script>
