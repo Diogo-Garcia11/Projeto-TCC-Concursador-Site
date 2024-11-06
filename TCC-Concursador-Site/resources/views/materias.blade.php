@@ -492,7 +492,7 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="{{route('filosofia.etica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética</a>
+            <a href="{{route('filosofia.etica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sócrates, Platão e Aristóteles</a>
           </div>
           <div class="grid-item">
             <a href="{{route('filosofia.periodo-pre-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
