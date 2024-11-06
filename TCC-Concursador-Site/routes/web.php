@@ -53,22 +53,15 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
-        Route::get('/fatec', [SimuladoController::class, 'fatec'])->name('simulados.fatec');
-        Route::get('/fuvest', [SimuladoController::class, 'fuvest'])->name('simulados.fuvest');
-        Route::get('/unicamp', [SimuladoController::class, 'unicamp'])->name('simulados.unicamp');
-        Route::get('/senac', [SimuladoController::class, 'senac'])->name('simulados.senac');
-        Route::get('/ifsp', [SimuladoController::class, 'ifsp'])->name('simulados.ifsp');
-
+        
         // Rotas para Submissão
         Route::post('/submit', [SimuladoController::class, 'submit'])->name('simulados.submit');
-
-        
     });
     
     Route::get('/materias', function () {
         return view('materias');
-
     })->name('materias');
+
     Route::prefix('materias')->group(function () { 
         Route::prefix('matematica')->group(function () {// Grupo de rotas para a matéria matemática
             Route::get('/fracao', function () {
@@ -139,65 +132,12 @@ Route::middleware('auth')->group(function () {
                 return view('materias.portugues');
             })->name('portugues.');
             
-            Route::get('/conjuntos-numericos', function () {
-                return view('materias.matematica.conjuntos-numericos');
-            })->name('conjuntos-numericos');
-
-            Route::get('/porcentagem', function () {
-                return view('materias.matematica.porcentagem');
-            })->name('porcentagem');
-
-            Route::get('/equacao-1', function () {
-                return view('materias.matematica.equacao-1');
-            })->name('equacao-1');
-
-            Route::get('/equacao-2', function () {
-                return view('materias.matematica.equacao-2');
-            })->name('equacao-2');
-
-            Route::get('/funcoes', function () {
-                return view('materias.matematica.funcoes');
-            })->name('funcoes');
-
-            Route::get('/geometria-plana', function () {
-                return view('materias.matematica.geometria-plana');
-            })->name('geometria-plana');
-
-            Route::get('/geometria-espacial', function () {
-                return view('materias.matematica.geometria-espacial');
-            })->name('geometria-espacial');
-
-            Route::get('/teorema-pitagoras', function () {
-                return view('materias.matematica.teorema-pitagoras');
-            })->name('teorema-pitagoras');
-
-            Route::get('/media-mediana-moda', function () {
-                return view('materias.matematica.media-mediana-moda');
-            })->name('media-mediana-moda');
-
-            Route::get('/graficos-tabelas', function () {
-                return view('materias.matematica.graficos-tabelas');
-            })->name('graficos-tabelas');
-
-            Route::get('/probabilidade', function () {
-                return view('materias.matematica.probabilidade');
-            })->name('probabilidade');
-
-            Route::get('/juros-simples-compostos', function () {
-                return view('materias.matematica.juros-simples-compostos');
-            })->name('juros-simples-compostos');
-
-            Route::get('/trigonometria', function () {
-                return view('materias.matematica.trigonometria');
-            })->name('trigonometria');
-
+           
             Route::get('/redacao', function () {
                 return view('materias.portugues.redacao');
             })->name('portugues.redacao');
 
-            Route::post('/api/corrigir-redacao', 'CorrecaoController@corrigir');
-
-            Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias_prova_portugues');
+            Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('portugues.materias_prova_portugues');
         }); #Fim do agrupamento de português
 
         Route::prefix('biologia')->group(function () { // Grupo de rotas para a matéria biologia            
@@ -222,7 +162,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.biologia.citologia');
             })->name('biologia.citologia');
 
-            Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('materias_prova_biologia');
+            Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('biologia.materias_prova_biologia');
         }); #Fim do agrupamento de biologia
 
         Route::prefix('fisica')->group(function () { // Grupo de rotas para a matéria fisica
@@ -258,7 +198,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.fisica.trabalho-energia');
             })->name('fisica.trabalho-energia');
 
-            Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('materias_prova_fisica');
+            Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('fisica.materias_prova_fisica');
         }); #Fim do agrupamento de fisica
 
         Route::prefix('filosofia')->group(function () { // Grupo de rotas para a matéria filosofia
@@ -286,7 +226,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.filosofia.periodo-socratico');
             })->name('filosofia.periodo-socratico');
 
-            Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('materias_prova_filosofia');
+            Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('filosofia.materias_prova_filosofia');
         }); #Fim do agrupamento de filosofia
 
         Route::prefix('historia')->group(function () { // Grupo de rotas para a matéria historia
@@ -330,8 +270,18 @@ Route::middleware('auth')->group(function () {
                 return view('materias.historia.revolucao-industrial');
             })->name('historia.revolucao-industrial');
 
-            Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('materias_prova_historia');
+            Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('historia.materias_prova_historia');
         }); #Fim do agrupamento de historia
+
+        Route::prefix('geografia')->group(function () { // Grupo de rotas para a matéria Geografia
+            Route::get('/', function () {
+                return view('materias.geografia.');
+            })->name('geografia.');
+            
+            
+
+            Route::get('/prova_geografia', [MateriasController::class, 'prova_geografia'])->name('geografia.materias_prova_geografia');
+        }); #Fim do agrupamento de geografia
 
         Route::prefix('quimica')->group(function () { // Grupo de rotas para a matéria quimica
             Route::get('/acidos-bases', function () {
@@ -374,7 +324,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.quimica.termodinamica');
             })->name('quimica.termodinamica-quimica');
 
-            Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('materias_prova_quimica');
+            Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('quimica.materias_prova_quimica');
         }); #Fim do agrupamento de quimica
 
         Route::prefix('sociologia')->group(function () { // Grupo de rotas para a matéria sociologia
@@ -394,7 +344,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.sociologia.socidade-contemporanea');
             })->name('sociologia.sociedade-contemporanea');
 
-            Route::get('/prova_quimica', [MateriasController::class, 'prova_quimica'])->name('materias_prova_quimica');
+            Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_quimica');
         }); #Fim do agrupamento de quimica
     });
    

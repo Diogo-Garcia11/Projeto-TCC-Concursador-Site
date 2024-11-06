@@ -12,15 +12,13 @@ class NotaController extends Controller
         $user = Auth::user();
 
         // Categorias que você deseja exibir
-        $categorias = ['enem', 'fatec', 'fuvest', 'matematica', 'portugues', 'historia', 'geografia', 'biologia', 'quimica', 'fisica', 'filosofia', 'sociologia'];
+        $categorias = ['enem', 'matematica', 'portugues', 'historia', 'geografia', 'biologia', 'quimica', 'fisica', 'filosofia', 'sociologia'];
 
         // Array para armazenar as notas de cada categoria
         $notasPorCategoria = [];
 
         $totalQuestoes = [
             'enem' => 180,
-            'fatec' => 54,
-            'fuvest' => 90,
             'matematica' => 30,
             'portugues' => 30,
             'historia' => 30,

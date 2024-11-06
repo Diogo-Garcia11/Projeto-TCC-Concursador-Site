@@ -46,7 +46,7 @@
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-[80px]">
                 <h1 class="text-3xl font-Montserrat font-bold text-black mb-[20px]">Ecologia</h1>
-                <p>O objetivo central da ecologia é compreender a distribuição e a abundância dos organismos e como fatores ambientais, como o clima, o solo e a disponibilidade de nutrientes, influenciam essas interações.</p>
+                <p class="text-black">O objetivo central da ecologia é compreender a distribuição e a abundância dos organismos e como fatores ambientais, como o clima, o solo e a disponibilidade de nutrientes, influenciam essas interações.</p>
                 <img class="mt-6 w-96" src="{{asset('imagens/ecologia.webp')}}" alt="">
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
@@ -58,7 +58,7 @@
                     </ul>
                 </div>
                 <h2 id="o-que-e-ecologia" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é ecologia</h2>
-                <p class="text-justify mb-4">A ecologia é a ciência que investiga as interações entre os seres vivos e o ambiente em que habitam. A origem da palavra vem dos termos gregos oikos, que significa "casa" ou "lugar onde se vive", e logos, que significa "estudo". Portanto, a ecologia pode ser entendida como o estudo do "lugar onde se vive". O termo foi introduzido pelo biólogo alemão Ernst Haeckel em 1869, que o definiu como a ciência que explora a relação dos organismos com seu ambiente.
+                <p class="text-justify mb-4 text-black">A ecologia é a ciência que investiga as interações entre os seres vivos e o ambiente em que habitam. A origem da palavra vem dos termos gregos oikos, que significa "casa" ou "lugar onde se vive", e logos, que significa "estudo". Portanto, a ecologia pode ser entendida como o estudo do "lugar onde se vive". O termo foi introduzido pelo biólogo alemão Ernst Haeckel em 1869, que o definiu como a ciência que explora a relação dos organismos com seu ambiente.
 
                     <br><br>A definição de ecologia foi aprimorada ao longo dos anos, com a contribuição de diversos pesquisadores. Um dos mais influentes, Eugene Odum, descreve a ecologia como o "estudo das relações dos organismos ou grupos de organismos com seu ambiente, ou a ciência das inter-relações que conectam os seres vivos ao seu entorno". Assim, a ecologia busca entender como os organismos e suas interações influenciam o meio em que vivem e, ao mesmo tempo, como as condições ambientais moldam as características e o comportamento desses organismos.
 
@@ -72,7 +72,7 @@
                 </p>
 
                 <h2 id="niveis-de-organizacao" class="text-3xl font-Montserrat font-bold text-black mb-4">Níveis de organização</h2>
-                <p class="text-justify mb-4">
+                <p class="text-justify mb-4 text-black">
                     Os níveis de organização na biologia, especialmente na ecologia, representam diferentes escalas que os ecologistas utilizam para estudar e entender os sistemas naturais. Esses níveis, dispostos em ordem crescente de complexidade, são:
 
                     <br><br> <span class="font-bold">• Organismo individual:</span> Este é o nível mais básico, onde os ecologistas analisam um único organismo e suas características, comportamentos e adaptações ao ambiente. Por exemplo, uma onça-pintada pode ser estudada em termos de seu habitat, dieta, comportamento de caça e estratégias de sobrevivência.
@@ -89,7 +89,7 @@
                     <img class="p-1 mb-4" src="{{asset('imagens/niveis-organizacao-ecologia.webp')}}" alt="">
                 </div>
                 <h2 id="conceitos-basicos" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos Básicos</h2>
-                <p class="text-justify mb-4"> <span class="font-bold">• Fatores bióticos</span>Esses são todos os organismos vivos que existem em um ecossistema, além das interações que ocorrem entre eles. Os fatores bióticos incluem não apenas as relações entre indivíduos da mesma espécie (interações intraespecíficas), mas também as interações entre diferentes espécies (interações interespecíficas). Exemplos de fatores bióticos são plantas, animais, fungos e microorganismos.
+                <p class="text-justify mb-4 text-black"> <span class="font-bold">• Fatores bióticos</span>Esses são todos os organismos vivos que existem em um ecossistema, além das interações que ocorrem entre eles. Os fatores bióticos incluem não apenas as relações entre indivíduos da mesma espécie (interações intraespecíficas), mas também as interações entre diferentes espécies (interações interespecíficas). Exemplos de fatores bióticos são plantas, animais, fungos e microorganismos.
 
                     <br><br> <span class="font-bold">• Fatores abióticos</span> Os fatores abióticos referem-se aos componentes não vivos do ambiente que influenciam a presença e a distribuição dos fatores bióticos. Esses fatores podem ser divididos em:
                     <br><br>Fatores abióticos físicos: Incluem clima, temperatura, umidade do ar, velocidade do vento, pH do solo e da água, entre outros. Esses elementos determinam as condições ambientais em que os organismos vivem.
@@ -110,7 +110,7 @@
 
                 <h2 id="exercicios" class="text-3xl font-Montserrat font-bold text-black mt-6">Exercícios</h2>
                 <div class="mt-6">
-                    <ul>
+                    <ul class="text-black">
                         <li class="mb-2">
                             <p>1) Qual é o objetivo central da ecologia?</p>
                         </li>
