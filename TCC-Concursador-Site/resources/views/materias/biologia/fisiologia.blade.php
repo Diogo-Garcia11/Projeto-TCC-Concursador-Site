@@ -50,17 +50,17 @@
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-e-citologia" class="text-kblue hover:text-black hover:!text-black">1- O que
+                        <li><a href="#o-que-e-fisiologia" class="text-kblue hover:text-black hover:!text-black">1- O que
                                 é
                                 fisiologia?</a></li>
-                        <li><a href="#tipos-de-celulas" class="text-kblue hover:text-black hover:!text-black">2- Fisiologia humana</a></li>
-                        <li><a href="#partes-das-celulas" class="text-kblue hover:text-black hover:!text-black">3- Fisiologia vegetal</a></li>
-                        <li><a href="#teoria-celular" class="text-kblue hover:text-black hover:!text-black">4- História da fisiologia</a></li>
+                        <li><a href="#fisiologia-humana" class="text-kblue hover:text-black hover:!text-black">2- Fisiologia humana</a></li>
+                        <li><a href="#fisiologia-vegetal" class="text-kblue hover:text-black hover:!text-black">3- Fisiologia vegetal</a></li>
+                        <li><a href="#historia-da-fisiologia" class="text-kblue hover:text-black hover:!text-black">4- História da fisiologia</a></li>
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">5-
                                 Exercicios</a></li>
                     </ul>
                 </div>
-                <h2 id="o-que-e-citologia" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é fisiologia?
+                <h2 id="o-que-e-fisiologia" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é fisiologia?
                 </h2>
                 <p class="text-justify mb-4 text-black">A fisiologia é um campo da biologia que se dedica ao estudo do funcionamento dos organismos vivos, abrangendo os processos físicos, químicos e biológicos essenciais à manutenção da vida. Ela vai além da simples identificação dos órgãos e estruturas que compõem um ser vivo, buscando entender como esses componentes trabalham de maneira integrada para garantir a homeostase e o funcionamento adequado do organismo.
 
@@ -69,7 +69,7 @@
                     Estudar fisiologia é fundamental não apenas para compreender como o corpo humano e de outros seres vivos funcionam normalmente, mas também para identificar e tratar disfunções e doenças. Por exemplo, é essencial saber como os sistemas reguladores, como o sistema nervoso e o endócrino, mantêm o equilíbrio interno do corpo. A homeostase — ou o equilíbrio dinâmico que o corpo mantém frente às variações internas e externas — é um conceito central na fisiologia.
                 </p>
 
-                <h2 id="historia-da-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">Fisiologia humana</h2>
+                <h2 id="fisiologia-humana" class="text-3xl font-Montserrat font-bold text-black mb-4">Fisiologia humana</h2>
                 <p class="text-justify mb-4 text-black">
                 <p class="text-black">A fisiologia humana é o ramo da biologia que se dedica ao estudo do funcionamento do corpo humano, abordando os processos físicos, químicos e biológicos que mantêm o organismo vivo e funcionando de maneira integrada. Ela se concentra em como os diferentes sistemas do corpo interagem para garantir a sobrevivência, o crescimento, a reprodução e a resposta adequada a estímulos internos e externos. O objetivo principal da fisiologia humana é compreender como as diversas funções do corpo estão interligadas e como cada célula, órgão e sistema contribuem para o funcionamento global do organismo.</p>
 
