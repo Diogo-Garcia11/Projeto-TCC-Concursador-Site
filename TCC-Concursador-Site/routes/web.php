@@ -53,12 +53,7 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
-        Route::get('/fatec', [SimuladoController::class, 'fatec'])->name('simulados.fatec');
-        Route::get('/fuvest', [SimuladoController::class, 'fuvest'])->name('simulados.fuvest');
-        Route::get('/unicamp', [SimuladoController::class, 'unicamp'])->name('simulados.unicamp');
-        Route::get('/senac', [SimuladoController::class, 'senac'])->name('simulados.senac');
-        Route::get('/ifsp', [SimuladoController::class, 'ifsp'])->name('simulados.ifsp');
-
+        
         // Rotas para Submissão
         Route::post('/submit', [SimuladoController::class, 'submit'])->name('simulados.submit');
 
