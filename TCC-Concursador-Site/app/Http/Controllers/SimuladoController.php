@@ -10,7 +10,14 @@ class SimuladoController extends Controller
 {
     public function enem()
     {
-        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->inRandomOrder()->get();
+        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'linguagens')->inRandomOrder()->take(45)->get();
+        
+        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'ciencias-humanas')->inRandomOrder()->take(45)->get();
+
+        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'ciencias-natureza')->inRandomOrder()->take(45)->get();
+
+        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'matematica')->inRandomOrder()->take(45)->get();
+        
         $categoria = 'Enem'; // Define a categoria
         
         return view('simulado.enem', compact('questoes', 'categoria'));
