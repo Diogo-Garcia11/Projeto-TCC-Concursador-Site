@@ -203,18 +203,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/prova_portugues', [MateriasController::class, 'prova_portugues'])->name('materias_prova_portugues');
         }); #Fim do agrupamento de português
 
-        Route::prefix('biologia')->group(function () { // Grupo de rotas para a matéria biologia
-            Route::get('/bioenergetica', function () {
-                return view('materias.biologia.bioenergetica');
-            })->name('biologia.bioenergetica');
-            
-            Route::get('/botanica', function () {
-                return view('materias.biologia.botanica');
-            })->name('biologia.botanica');
-
-            Route::get('/celulas', function () {
-                return view('materias.biologia.celulas');
-            })->name('biologia.celulas');
+        Route::prefix('biologia')->group(function () { // Grupo de rotas para a matéria biologia            
 
             Route::get('/ecologia', function () {
                 return view('materias.biologia.ecologia');
@@ -232,17 +221,9 @@ Route::middleware('auth')->group(function () {
                 return view('materias.biologia.genetica');
             })->name('biologia.genetica');
 
-            Route::get('/interacao-ecologica', function () {
-                return view('materias.biologia.interacao-ecologica');
-            })->name('biologia.interacao-ecologica');
-
-            Route::get('/microbiologia', function () {
-                return view('materias.biologia.microbiologia');
-            })->name('biologia.microbiologia');
-
-            Route::get('/zoologia', function () {
-                return view('materias.biologia.zoologia');
-            })->name('biologia.zoologia');
+            Route::get('/citologia', function () {
+                return view('materias.biologia.citologia');
+            })->name('biologia.citologia');
 
             Route::get('/prova_biologia', [MateriasController::class, 'prova_biologia'])->name('materias_prova_biologia');
         }); #Fim do agrupamento de biologia

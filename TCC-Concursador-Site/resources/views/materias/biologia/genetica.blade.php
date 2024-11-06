@@ -33,34 +33,44 @@
         }
 
         html {
-            scroll-behavior: smooth; /* Adiciona rolagem suave ao clicar em links âncora */
+            scroll-behavior: smooth;
+            /* Adiciona rolagem suave ao clicar em links âncora */
         }
     </style>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <a href="{{route('materias')}}" class="mb-4 text-gray-500 underline inline-block">Matérias</a>
-<p class="mb-4 text-gray-500 inline-block mx-2">></p> <!-- Adicionei uma margem horizontal -->
-<a href="{{ route('materias', ['section' => 'biologia']) }}#biologia" class="mb-4 text-gray-500 underline inline-block">Biologia</a>
+            <a href="{{route('materias')}}" class="mb-4 text-gray-500 underline inline-block">Matérias</a>
+            <p class="mb-4 text-gray-500 inline-block mx-2">></p> <!-- Adicionei uma margem horizontal -->
+            <a href="{{ route('materias', ['section' => 'biologia']) }}#biologia"
+                class="mb-4 text-gray-500 underline inline-block">Biologia</a>
 
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-[80px]">
                 <h1 class="text-3xl font-Montserrat font-bold text-black mb-[20px]">Genética</h1>
-                <p>A genética é a ciência que estuda os genes, a hereditariedade e a variação dos organismos vivos. Essa
+                <p class="text-black">A genética é a ciência que estuda os genes, a hereditariedade e a variação dos
+                    organismos vivos. Essa
                     área da biologia investiga como as características são transmitidas de uma geração para outra e como
                     essas informações são codificadas, expressas e controladas em organismos vivos.</p>
                 <img class="mt-6 w-96" src="{{asset('imagens/geneticabiologia.avif')}}" alt="">
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-e-genetica" class="text-kblue hover:text-black hover:!text-black">1- O que é genética</a></li>
-                        <li><a href="#historia-da-genetica" class="text-kblue hover:text-black hover:!text-black">2- História da genética</a></li>
-                        <li><a href="#conceitos-basicos" class="text-kblue hover:text-black hover:!text-black">3- Conceitos Básicos</a></li>
-                        <li><a href="#gregor-mendel" class="text-kblue hover:text-black hover:!text-black">4- Gregor Mendel</a></li>
-                        <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">4- Exercicios</a></li>
+                        <li><a href="#o-que-e-genetica" class="text-kblue hover:text-black hover:!text-black">1- O que é
+                                genética</a></li>
+                        <li><a href="#historia-da-genetica" class="text-kblue hover:text-black hover:!text-black">2-
+                                História da genética</a></li>
+                        <li><a href="#conceitos-basicos" class="text-kblue hover:text-black hover:!text-black">3-
+                                Conceitos Básicos</a></li>
+                        <li><a href="#gregor-mendel" class="text-kblue hover:text-black hover:!text-black">4- Gregor
+                                Mendel</a></li>
+                        <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">4-
+                                Exercicios</a></li>
                     </ul>
                 </div>
-                <h2 id="o-que-e-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é genética</h2>
-                <p class="text-justify mb-4">A Genética é uma ramificação fundamental da Biologia que se dedica ao
+                <h2 id="o-que-e-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é genética
+                </h2>
+                <p class="text-justify mb-4 text-black">A Genética é uma ramificação fundamental da Biologia que se
+                    dedica ao
                     estudo da hereditariedade, ou seja, como as características são transmitidas dos pais para seus
                     descendentes. Central nesse processo, encontramos o DNA (ácido desoxirribonucleico), que é a
                     molécula responsável por carregar as informações genéticas. Essas informações são passadas para os
@@ -75,8 +85,10 @@
                     genes são "traduzidas" em estruturas funcionais que realizam as atividades necessárias para a vida.
                 </p>
 
-                <h2 id="historia-da-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">História da genética</h2>
-                <p class="text-justify mb-4">A história da Genética é marcada por questionamentos e investigações que
+                <h2 id="historia-da-genetica" class="text-3xl font-Montserrat font-bold text-black mb-4">História da
+                    genética</h2>
+                <p class="text-justify mb-4 text-black">A história da Genética é marcada por questionamentos e
+                    investigações que
                     surgem da busca por respostas sobre a hereditariedade e a transmissão de características entre
                     gerações. Essa jornada científica começou há cerca de 2.400 anos, por volta de 410 a.C., com a
                     introdução da teoria da Pangênese, proposta por Hipócrates. Ele sugeriu que os órgãos do corpo
@@ -129,27 +141,37 @@
                 <div class="flex justify-center">
                     <img class="p-1 mb-4" src="{{asset('imagens/mendel.jpg')}}" alt="">
                 </div>
-                <h2 id="conceitos-basicos"  class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos Básicos</h2>
-                <class="text-justify mb-4"> <span class="font-bold">• DNA (Ácido Desoxirribonucleico):</span> O DNA é a
+                <h2 id="conceitos-basicos" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos Básicos
+                </h2>
+                <class="text-justify mb-4 text-black"> <span class="text-black">
+                        <p>• DNA (Ácido Desoxirribonucleico):
+                    </span> O DNA é a
                     molécula que contém toda a informação genética necessária para o desenvolvimento e funcionamento de
                     um organismo. Ele é formado por duas cadeias que se entrelaçam, formando uma estrutura conhecida
-                    como dupla hélice.
+                    como dupla hélice.</p>
 
-                    <br><br> <span class="font-bold">• Cromossomos:</span> São estruturas que contêm DNA compactado. O
-                    DNA se enrola em proteínas chamadas histonas, formando os cromossomos, que se tornam visíveis
-                    durante a divisão celular. Os seres humanos possuem 46 cromossomos, organizados em 23 pares.
+                    <br><br> <span class="font-bold">• Cromossomos:</span>
+                    <p>São estruturas que contêm DNA compactado. O
+                        DNA se enrola em proteínas chamadas histonas, formando os cromossomos, que se tornam visíveis
+                        durante a divisão celular. Os seres humanos possuem 46 cromossomos, organizados em 23 pares.</p>
 
-                    <br><br> <span class="font-bold">• Genes:</span> Os genes são segmentos específicos de DNA
-                    localizados em locais determinados nos cromossomos. Eles são responsáveis pela codificação de
-                    proteínas, que desempenham funções essenciais nas células e influenciam características físicas e
-                    funcionais do organismo.
+                    <br><br> <span class="font-bold">• Genes:</span>
+                    <p> Os genes são segmentos específicos de DNA
+                        localizados em locais determinados nos cromossomos. Eles são responsáveis pela codificação de
+                        proteínas, que desempenham funções essenciais nas células e influenciam características físicas
+                        e
+                        funcionais do organismo.</p>
 
-                    <br><br> <span class="font-bold">• Lócus:</span> O lócus refere-se à localização específica de um
-                    gene em um cromossomo. Cada gene ocupa um lugar definido, que pode ser identificado e estudado.
+                    <br><br> <span class="font-bold">• Lócus:</span>
+                    <p> O lócus refere-se à localização específica de um
+                        gene em um cromossomo. Cada gene ocupa um lugar definido, que pode ser identificado e estudado.
+                    </p>
 
-                    <br><br> <span class="font-bold">• Alelos:</span> Os alelos são diferentes variantes de um mesmo
-                    gene que ocupam o mesmo lócus em cromossomos homólogos. Por exemplo, um gene que determina a cor dos
-                    olhos pode ter alelos para olhos azuis ou marrons.
+                    <br><br> <span class="font-bold">• Alelos:</span>
+                    <p> Os alelos são diferentes variantes de um mesmo
+                        gene que ocupam o mesmo lócus em cromossomos homólogos. Por exemplo, um gene que determina a cor
+                        dos
+                        olhos pode ter alelos para olhos azuis ou marrons.</p>
 
                     <br><br> <span class="font-bold">• Características Dominantes e Recessivas:</span>
 
@@ -197,70 +219,91 @@
 
                     <h2 id="exercicios" class="text-3xl font-Montserrat font-bold text-black mt-6">Exercícios</h2>
                     <div class="mt-6">
-                        <ul>
+                        <ul class="text-black">
                             <li class="mb-2">
                                 <p>1) Qual é a definição de Genética?</p>
                             </li>
                             <li class="radio-container"><input type="radio" name="questao-1" value="0"
-                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">A) O estudo da variação das espécies.</span></li>
+                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">A) O estudo da
+                                    variação das espécies.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-1" value="1"
-                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">B) A ciência que investiga a hereditariedade e a transmissão de características dos organismos.</span></li>
+                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">B) A ciência que
+                                    investiga a hereditariedade e a transmissão de características dos
+                                    organismos.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-1" value="0"
-                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">C) O estudo da ecologia e dos ambientes naturais.</span></li>
+                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">C) O estudo da
+                                    ecologia e dos ambientes naturais.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-1" value="0"
-                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">D) A análise das estruturas celulares.</span></li>
+                                    onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">D) A análise das
+                                    estruturas celulares.</span></li>
                             <br>
 
                             <li class="mb-2">
                                 <p>2) O que é o DNA?</p>
                             </li>
                             <li class="radio-container"><input type="radio" name="questao-2" value="0"
-                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">A) Um tipo de proteína encontrada nas células.</span></li>
+                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">A) Um tipo de
+                                    proteína encontrada nas células.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-2" value="0"
-                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">B) Um cromossomo específico encontrado em organismos humanos.</span></li>
+                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">B) Um cromossomo
+                                    específico encontrado em organismos humanos.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-2" value="1"
-                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">C) A molécula que carrega as informações genéticas de um organismo.</span></li>
+                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">C) A molécula que
+                                    carrega as informações genéticas de um organismo.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-2" value="0"
-                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">D) Um tipo de célula do corpo humano.</span></li>
+                                    onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">D) Um tipo de
+                                    célula do corpo humano.</span></li>
                             <br>
 
                             <li class="mb-2">
                                 <p>3) Qual é a primeira lei de Mendel?</p>
                             </li>
                             <li class="radio-container"><input type="radio" name="questao-3" value="0"
-                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">A) A Lei da Segregação Independente.</span></li>
+                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">A) A Lei da
+                                    Segregação Independente.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-3" value="0"
-                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">B) A Lei da Hereditariedade.</span></li>
+                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">B) A Lei da
+                                    Hereditariedade.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-3" value="1"
-                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">C) A Lei da Segregação dos Fatores.</span></li>
+                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">C) A Lei da
+                                    Segregação dos Fatores.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-3" value="0"
-                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">D) A Lei dos Cromossomos.</span></li>
+                                    onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">D) A Lei dos
+                                    Cromossomos.</span></li>
                             <br>
 
                             <li class="mb-2">
                                 <p>4) Como uma característica recessiva se manifesta em um organismo?</p>
                             </li>
                             <li class="radio-container"><input type="radio" name="questao-4" value="0"
-                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">A) Quando apenas um alelo é presente.</span></li>
+                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">A) Quando apenas
+                                    um alelo é presente.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-4" value="0"
-                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">B) Quando dois alelos iguais estão presentes.</span></li>
+                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">B) Quando dois
+                                    alelos iguais estão presentes.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-4" value="0"
-                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">C) Quando apenas um alelo dominante é presente.</span></li>
+                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">C) Quando apenas
+                                    um alelo dominante é presente.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-4" value="1"
-                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">D) Quando não há alelos recessivos no organismo.</span></li>
+                                    onclick="checkAnswer(event, 'questao-4')"><span class="radio-text">D) Quando não há
+                                    alelos recessivos no organismo.</span></li>
                             <br>
 
                             <li class="mb-2">
                                 <p>5) Qual é a diferença entre genótipo e fenótipo? </p>
                             </li>
                             <li class="radio-container"><input type="radio" name="questao-5" value="1"
-                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">A) O genótipo é a composição genética, enquanto o fenótipo é a expressão externa.</span></li>
+                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">A) O genótipo é a
+                                    composição genética, enquanto o fenótipo é a expressão externa.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-5" value="0"
-                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">B) O genótipo é a expressão externa, enquanto o fenótipo é a composição genética.</span></li>
+                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">B) O genótipo é a
+                                    expressão externa, enquanto o fenótipo é a composição genética.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-5" value="0"
-                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">C) Ambos se referem à mesma coisa.</span></li>
+                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">C) Ambos se
+                                    referem à mesma coisa.</span></li>
                             <li class="radio-container"><input type="radio" name="questao-5" value="0"
-                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">D) O genótipo é apenas relacionado a características físicas.</span></li>
+                                    onclick="checkAnswer(event, 'questao-5')"><span class="radio-text">D) O genótipo é
+                                    apenas relacionado a características físicas.</span></li>
 
 
                         </ul>
@@ -293,20 +336,20 @@
         }
     </script>
 
-<script>
-                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                        anchor.addEventListener('click', function(e) {
-                            e.preventDefault(); // Evita o comportamento padrão de rolagem
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita o comportamento padrão de rolagem
 
-                            const targetId = this.getAttribute('href'); // Obtém o ID do elemento de destino
-                            const targetElement = document.querySelector(targetId); // Seleciona o elemento de destino
+                const targetId = this.getAttribute('href'); // Obtém o ID do elemento de destino
+                const targetElement = document.querySelector(targetId); // Seleciona o elemento de destino
 
-                            // Realiza a rolagem suave para o elemento de destino
-                            targetElement.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start' // Faz o scroll para o início do elemento
-                            });
-                        });
-                    });
-                </script>
+                // Realiza a rolagem suave para o elemento de destino
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' // Faz o scroll para o início do elemento
+                });
+            });
+        });
+    </script>
 </x-app-layout>

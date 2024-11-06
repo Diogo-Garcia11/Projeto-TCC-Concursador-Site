@@ -293,7 +293,7 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="{{route('biologia.celulas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Células</a>
+            <a href="{{route('biologia.citologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Citologia</a>
           </div>
           <div class="grid-item">
             <a href="{{route('biologia.genetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Genética</a>
@@ -306,23 +306,7 @@
           </div>
           <div class="grid-item">
             <a href="{{route('biologia.fisiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fisiologia</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('biologia.botanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Botânica</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('biologia.zoologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Zoologia</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('biologia.microbiologia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Microbiologia</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('biologia.bioenergetica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Bioenergética</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('biologia.interacao-ecologica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interações Ecológicas</a>
-          </div>
-         
+          </div>         
         </div>
       </div>
     </div>
