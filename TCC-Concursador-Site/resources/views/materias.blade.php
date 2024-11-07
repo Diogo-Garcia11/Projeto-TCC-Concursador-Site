@@ -229,19 +229,19 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia física</a>
+            <a href="{{route('geografia.geografia-fisica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia física</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geopolítica</a>
+            <a href="{{route('geografia.geopolitica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geopolítica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia Econômica</a>
+            <a href="{{route('geografia.geografia-economica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia Econômica</a>
           </div>
           <div class="grid-item">
             <a href="{{route('geografia.cartografia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cartografia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ População</a>
+            <a href="{{route('geografia.populacao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ População</a>
           </div>
         </div>
       </div>
