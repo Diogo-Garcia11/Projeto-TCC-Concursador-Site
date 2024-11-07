@@ -274,9 +274,9 @@ Route::middleware('auth')->group(function () {
         }); #Fim do agrupamento de historia
 
         Route::prefix('geografia')->group(function () { // Grupo de rotas para a matéria Geografia
-            Route::get('/', function () {
-                return view('materias.geografia.');
-            })->name('geografia.');
+            Route::get('/cartografia', function () {
+                return view('materias.geografia.cartografia');
+            })->name('geografia.cartografia');
             
             
 

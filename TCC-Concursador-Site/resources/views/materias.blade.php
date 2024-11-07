@@ -201,6 +201,8 @@
 
     <!-- GEOGRAFIA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-geografia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'geografia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-kblue h-40 w-full pl-5 flex items-center">
         <div class=" right-3 ">
@@ -227,40 +229,19 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Hidrografia</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia física</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Relevo</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geopolítica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geografia Econômica</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
+            <a href="{{route('geografia.cartografia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cartografia</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Soluções químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gdfgd</a>
+            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ População</a>
           </div>
         </div>
       </div>
