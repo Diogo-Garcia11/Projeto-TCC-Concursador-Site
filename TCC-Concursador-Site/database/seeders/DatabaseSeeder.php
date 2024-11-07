@@ -30,6 +30,12 @@ class DatabaseSeeder extends Seeder
             'password' => 'ovomaltine',
             'is_admin' => '1',
         ]);
+        User::factory()->create([
+            'name' => 'ket',
+            'email' => 'ketelilino@gmail.com',
+            'password' => '12345678',
+            'is_admin' => '1',
+        ]);
         
         
     }
