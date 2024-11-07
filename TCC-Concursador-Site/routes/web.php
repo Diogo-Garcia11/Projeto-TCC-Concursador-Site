@@ -202,29 +202,26 @@ Route::middleware('auth')->group(function () {
         }); #Fim do agrupamento de fisica
 
         Route::prefix('filosofia')->group(function () { // Grupo de rotas para a matéria filosofia
-            Route::get('/etica', function () {
-                return view('materias.filosofia.etica');
-            })->name('filosofia.etica');
+            Route::get('/filosofos', function () {
+                return view('materias.filosofia.filosofos');
+            })->name('filosofia.filosofos');
+            
+            Route::get('/contratualismo', function () {
+                return view('materias.filosofia.contratualismo');
+            })->name('filosofia.contratualismo');
 
-            Route::get('/existencialismo', function () {
-                return view('materias.filosofia.existencialismo');
-            })->name('filosofia.existencialismo');
+            Route::get('/kant', function () {
+                return view('materias.filosofia.kant');
+            })->name('filosofia.kant');
 
-            Route::get('/filosofia-antiga', function () {
-                return view('materias.filosofia.filosofia-antiga');
-            })->name('filosofia.filosofia-antiga');
+            Route::get('/marxismo', function () {
+                return view('materias.filosofia.marxismo');
+            })->name('filosofia.marxismo');
 
-            Route::get('/filosofia-moderna', function () {
-                return view('materias.filosofia.filosofia-moderna');
-            })->name('filosofia.filosofia-moderna');
+            Route::get('/iluminismo', function () {
+                return view('materias.filosofia.iluminismo');
+            })->name('filosofia.iluminismo');
 
-            Route::get('/periodo-pre-socratico', function () {
-                return view('materias.filosofia.periodo-pre-socratico');
-            })->name('filosofia.periodo-pre-socratico');
-
-            Route::get('/periodo-socratico', function () {
-                return view('materias.filosofia.periodo-socratico');
-            })->name('filosofia.periodo-socratico');
 
             Route::get('/prova_filosofia', [MateriasController::class, 'prova_filosofia'])->name('filosofia.materias_prova_filosofia');
         }); #Fim do agrupamento de filosofia

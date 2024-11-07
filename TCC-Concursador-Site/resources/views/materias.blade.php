@@ -473,22 +473,19 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="{{route('filosofia.etica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sócrates, Platão e Aristóteles</a>
+            <a href="{{route('filosofia.filosofos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Sócrates, Platão e Aristóteles</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('filosofia.periodo-pre-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Pré-socrático</a>
+            <a href="{{route('filosofia.contratualismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Contratualismo</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('filosofia.periodo-socratico')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Socrático</a>
+            <a href="{{route('filosofia.kant')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ética de Kant</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('filosofia.filosofia-antiga')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia antiga</a>
+            <a href="{{route('filosofia.marxismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Marxismo</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('filosofia.filosofia-moderna')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Filosofia Moderna</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('filosofia.existencialismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Existencialismo</a>
+            <a href="{{route('filosofia.iluminismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Iluminismo</a>
           </div>
         </div>
       </div>
