@@ -27,7 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    
+
 
     Route::get('/simulados', function () {
         return view('simulados');
@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/downloadapp', function () {
         return view('downloadapp');
     })->name('downloadapp');
-    
+
 
     Route::get('/uploads', function () {
         return view('uploads'); // Aponta para a view do formulário de upload
@@ -48,26 +48,26 @@ Route::middleware('auth')->group(function () {
     Route::get('/calendario', [EventoController::class, 'index'])->name('calendario');
 
     Route::get('/eventos', [EventoController::class, 'eventos']);
-    
+
     Route::post('/essay', [RedacaoController::class, 'submitEssay'])->name('essay.submit');
 
     Route::prefix('simulados')->group(function () {
         Route::get('/enem', [SimuladoController::class, 'enem'])->name('simulados.enem');
-        
+
         // Rotas para Submissão
         Route::post('/submit', [SimuladoController::class, 'submit'])->name('simulados.submit');
     });
-    
+
     Route::get('/materias', function () {
         return view('materias');
     })->name('materias');
 
-    Route::prefix('materias')->group(function () { 
-        Route::prefix('matematica')->group(function () {// Grupo de rotas para a matéria matemática
+    Route::prefix('materias')->group(function () {
+        Route::prefix('matematica')->group(function () { // Grupo de rotas para a matéria matemática
             Route::get('/fracao', function () {
                 return view('materias.matematica.fracao');
             })->name('matematica.fracao');
-            
+
             Route::get('/conjuntos-numericos', function () {
                 return view('materias.matematica.conjuntos-numericos');
             })->name('matematica.conjuntos-numericos');
@@ -126,13 +126,13 @@ Route::middleware('auth')->group(function () {
 
             Route::get('/prova_matematica', [MateriasController::class, 'prova_matematica'])->name('matematica.materias_prova_matematica');
         }); #Fim do agrupamento de matemática
-        
+
         Route::prefix('portugues')->group(function () { // Grupo de rotas para a matéria portugues
             Route::get('/', function () {
                 return view('materias.portugues');
             })->name('portugues.');
-            
-           
+
+
             Route::get('/redacao', function () {
                 return view('materias.portugues.redacao');
             })->name('portugues.redacao');
@@ -169,7 +169,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/cinematica', function () {
                 return view('materias.fisica.cinematica');
             })->name('fisica.cinematica');
-            
+
             Route::get('/eletromagnetismo', function () {
                 return view('materias.fisica.eletromagnetismo');
             })->name('fisica.eletromagnetismo');
@@ -205,7 +205,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/etica', function () {
                 return view('materias.filosofia.etica');
             })->name('filosofia.etica');
-            
+
             Route::get('/existencialismo', function () {
                 return view('materias.filosofia.existencialismo');
             })->name('filosofia.existencialismo');
@@ -233,7 +233,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/civilizacoes-antigas', function () {
                 return view('materias.historia.civilizacoes-antigas');
             })->name('historia.civilizacoes-antigas');
-            
+
             Route::get('/ditadura-militar', function () {
                 return view('materias.historia.ditadura-militar');
             })->name('historia.ditadura-militar');
@@ -265,7 +265,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/revolucao-francesa', function () {
                 return view('materias.historia.revolucao-francesa');
             })->name('historia.revolucao-francesa');
-            
+
             Route::get('/revolucao-industrial', function () {
                 return view('materias.historia.revolucao-industrial');
             })->name('historia.revolucao-industrial');
@@ -277,8 +277,24 @@ Route::middleware('auth')->group(function () {
             Route::get('/cartografia', function () {
                 return view('materias.geografia.cartografia');
             })->name('geografia.cartografia');
-            
-            
+
+            Route::get('/geografia-fisica', function () {
+                return view('materias.geografia.geografia-fisica');
+            })->name('geografia.geografia-fisica');
+
+            Route::get('/geopolitica', function () {
+                return view('materias.geografia.geopolitica');
+            })->name('geografia.geopolitica');
+
+            Route::get('/populacao', function () {
+                return view('materias.geografia.populacao');
+            })->name('geografia.populacao');
+
+            Route::get('/geografia-economica', function () {
+                return view('materias.geografia.geografia-economica');
+            })->name('geografia.geografia-economica');
+
+
 
             Route::get('/prova_geografia', [MateriasController::class, 'prova_geografia'])->name('geografia.materias_prova_geografia');
         }); #Fim do agrupamento de geografia
@@ -287,7 +303,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/acidos-bases', function () {
                 return view('materias.quimica.acidos-bases');
             })->name('quimica.acidos-bases');
-            
+
             Route::get('/eletroquimica', function () {
                 return view('materias.quimica.eletroquimica');
             })->name('quimica.eletroquimica');
@@ -319,7 +335,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/tabela-periodica', function () {
                 return view('materias.quimica.tabela-periodica');
             })->name('quimica.tabela-periodica');
-            
+
             Route::get('/termodinamica', function () {
                 return view('materias.quimica.termodinamica');
             })->name('quimica.termodinamica-quimica');
@@ -331,7 +347,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/movimentos-sociais', function () {
                 return view('materias.sociologia.movimentos-sociais');
             })->name('sociologia.movimentos-sociais');
-            
+
             Route::get('/cidadania-direitos-humanos', function () {
                 return view('materias.sociologia.cidadania-direitos-humanos');
             })->name('sociologia.cidadania-direitos-humanos');
@@ -347,7 +363,6 @@ Route::middleware('auth')->group(function () {
             Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_quimica');
         }); #Fim do agrupamento de quimica
     });
-   
-});//fim da middleware('auth') que verifica se voce esta logado para dar acesso às rotas
+}); //fim da middleware('auth') que verifica se voce esta logado para dar acesso às rotas
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
