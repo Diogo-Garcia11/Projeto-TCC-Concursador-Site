@@ -63,7 +63,7 @@
                                 Conceitos Básicos</a></li>
                         <li><a href="#gregor-mendel" class="text-kblue hover:text-black hover:!text-black">4- Gregor
                                 Mendel</a></li>
-                        <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">4-
+                        <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">5-
                                 Exercicios</a></li>
                     </ul>
                 </div>

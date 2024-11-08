@@ -394,29 +394,21 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="{{route('fisica.mecanica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Mecânica</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.termodinamica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.optica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Óptica</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.eletromagnetismo')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletromagnetismo</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.ondas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ondas</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.trabalho-energia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trabalho e Energia</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('fisica.fluidos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fluidos</a>
-          </div>
-          <div class="grid-item">
             <a href="{{route('fisica.cinematica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Cinemática</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('fisica.newton')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Leis de Newton</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('fisica.energia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Energia, Trabalho e Potência</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('fisica.ondulatoria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ondulatória</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('fisica.eletricidade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletricidade e Circuitos Elétricos</a>
+          </div>
+
         </div>
       </div>
     </div>

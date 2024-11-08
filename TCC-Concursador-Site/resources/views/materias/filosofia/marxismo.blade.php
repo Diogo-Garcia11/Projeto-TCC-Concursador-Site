@@ -89,4 +89,46 @@
         </div>
     </div>
 
+    <script>
+        function checkAnswer(event, question) {
+            // Remove estilos anteriores
+            const radios = document.getElementsByName(question);
+            radios.forEach(radio => {
+                const label = radio.parentElement;
+                label.classList.remove('radio-checked', 'radio-wrong');
+            });
+
+            // Adiciona a classe apropriada
+            const selectedLabel = event.target.parentElement;
+            if (event.target.value === "1") {
+                selectedLabel.classList.add('radio-checked');
+            } else {
+                selectedLabel.classList.add('radio-wrong');
+
+                const correctRadio = Array.from(radios).find(r => r.value === "1");
+                if (correctRadio) {
+                    const correctLabel = correctRadio.parentElement;
+                    correctLabel.classList.add('radio-checked');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita o comportamento padrão de rolagem
+
+                const targetId = this.getAttribute('href'); // Obtém o ID do elemento de destino
+                const targetElement = document.querySelector(targetId); // Seleciona o elemento de destino
+
+                // Realiza a rolagem suave para o elemento de destino
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' // Faz o scroll para o início do elemento
+                });
+            });
+        });
+    </script>
+
 </x-app-layout>

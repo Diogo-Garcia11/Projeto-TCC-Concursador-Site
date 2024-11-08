@@ -170,33 +170,23 @@ Route::middleware('auth')->group(function () {
                 return view('materias.fisica.cinematica');
             })->name('fisica.cinematica');
 
-            Route::get('/eletromagnetismo', function () {
-                return view('materias.fisica.eletromagnetismo');
-            })->name('fisica.eletromagnetismo');
+            Route::get('/eletricidade', function () {
+                return view('materias.fisica.eletricidade');
+            })->name('fisica.eletricidade');
 
-            Route::get('/fluidos', function () {
-                return view('materias.fisica.fluidos');
-            })->name('fisica.fluidos');
+            Route::get('/energia', function () {
+                return view('materias.fisica.energia');
+            })->name('fisica.energia');
 
-            Route::get('/mecanica', function () {
-                return view('materias.fisica.mecanica');
-            })->name('fisica.mecanica');
+            Route::get('/newton', function () {
+                return view('materias.fisica.newton');
+            })->name('fisica.newton');
 
-            Route::get('/ondas', function () {
-                return view('materias.fisica.ondas');
-            })->name('fisica.ondas');
+            Route::get('/ondulatoria', function () {
+                return view('materias.fisica.ondulatoria');
+            })->name('fisica.ondulatoria');
 
-            Route::get('/optica', function () {
-                return view('materias.fisica.optica');
-            })->name('fisica.optica');
-
-            Route::get('/termodinamica', function () {
-                return view('materias.fisica.termodinamica');
-            })->name('fisica.termodinamica');
-
-            Route::get('/trabalho-energia', function () {
-                return view('materias.fisica.trabalho-energia');
-            })->name('fisica.trabalho-energia');
+            
 
             Route::get('/prova_fisica', [MateriasController::class, 'prova_fisica'])->name('fisica.materias_prova_fisica');
         }); #Fim do agrupamento de fisica
