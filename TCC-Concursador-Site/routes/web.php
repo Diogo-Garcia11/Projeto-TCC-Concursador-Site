@@ -354,7 +354,7 @@ Route::middleware('auth')->group(function () {
             })->name('sociologia.politica-estado-governo');
 
             Route::get('/socidade-contemporanea', function () {
-                return view('materias.sociologia.socidade-contemporanea');
+                return view('materias.sociologia.sociedade-contemporanea');
             })->name('sociologia.sociedade-contemporanea');
 
             Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_quimica');

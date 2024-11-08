@@ -9,6 +9,8 @@
   <main class="flex flex-col items-center justify-center p-10">
     <!-- Matemática -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-matematica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'matematica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-steelblue h-40 w-full pl-5 flex items-center">
         <div class=" left-3 ">
@@ -78,6 +80,8 @@
 
     <!-- PORTUGUÊS -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-portugues" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'portugues') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-kblue h-40 w-full pl-5 flex items-center">
         <div class=" right-3 ">
@@ -143,6 +147,8 @@
 
     <!-- HISTÓRIA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-historia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'historia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-steelblue h-40 w-full pl-5 flex items-center">
         <div class=" left-3 ">
@@ -294,6 +300,8 @@
 
     <!-- QUÍMICA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-quimica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'quimica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-kblue h-40 w-full pl-5 flex items-center">
         <div class=" right-3 ">
@@ -423,6 +431,8 @@
 
     <!-- FILOSOFIA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-filosofia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'filosofia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-kblue h-40 w-full pl-5 flex items-center">
         <div class=" right-3 ">
@@ -493,6 +503,8 @@
 
     <!-- SOCIOLOGIA -->
     <div class="relative w-[80%] overflow-hidden">
+    <input type="checkbox" id="toggle-sociologia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
+    @if(request()->get('section') === 'sociologia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
       <div class="bg-steelblue h-40 w-full pl-5 flex items-center">
         <div class=" left-3 ">
