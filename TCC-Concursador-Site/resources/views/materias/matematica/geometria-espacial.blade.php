@@ -129,7 +129,7 @@
 
                         <li class="mb-2">
                             <p>3) (Enem 2021) Uma das Sete Maravilhas do Mundo Moderno é o Templo de Kukulkán, localizado na cidade de Chichén Itzá, no México. Geometricamente, esse templo pode ser representado por um tronco reto de pirâmide de base quadrada.
-As quantidades de cada tipo de figura plana que formam esse tronco de pirâmide são</p>
+                                As quantidades de cada tipo de figura plana que formam esse tronco de pirâmide são</p>
                         </li>
                         <li class="radio-container"><input type="radio" name="questao-3" value="0" onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">A) 2 quadrados e 4 retângulos.</span></li>
                         <li class="radio-container"><input type="radio" name="questao-3" value="0" onclick="checkAnswer(event, 'questao-3')"><span class="radio-text">B) 1 retângulo e 4 triângulos isósceles.</span></li>
