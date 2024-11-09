@@ -29,22 +29,23 @@
                 });
 
                 fetch(`/eventos?mes=${mes + 1}&ano=${ano}`)
-                    .then(response => response.json())
-                    .then(eventos => {
-                        eventos.forEach(evento => {
-                            let data = new Date(evento.data);
-                            let dia = data.getDate();
-                            let celula = tabelaDias.querySelector(`.dia[data-dia='${dia}']`);
-                            if (celula) {
-                                celula.classList.add('event'); 
-                                let eventoCard = document.createElement('div');
-                                eventoCard.classList.add('evento-card');
-                                eventoCard.innerHTML = `<strong>Eventos:</strong><ul><li>${evento.descricao}</li></ul>`;
-                                celula.appendChild(eventoCard);
-                            }
-                        });
-                    })
-                    .catch(error => console.error('Erro ao carregar eventos:', error));
+    .then(response => response.json())
+    .then(eventos => {
+        eventos.forEach(evento => {
+            let data = new Date(evento.dataEvento); // Certifique-se que 'dataEvento' é o campo correto
+            let dia = data.getDate();
+            let celula = tabelaDias.querySelector(`.dia[data-dia='${dia}']`);
+            if (celula) {
+                celula.classList.add('event'); // Adiciona a classe de evento
+                let eventoCard = document.createElement('div');
+                eventoCard.classList.add('evento-card');
+                eventoCard.innerHTML = `<strong>Eventos:</strong><ul><li>${evento.descricaoEvento}</li></ul>`; // Certifique-se que 'descricaoEvento' é o campo correto
+                celula.appendChild(eventoCard);
+            }
+        });
+    })
+    .catch(error => console.error('Erro ao carregar eventos:', error));
+
             }
 
             function gerarCalendario(mes, ano) {

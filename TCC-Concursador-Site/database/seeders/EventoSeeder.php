@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Evento; // Importa o modelo Evento
+use App\Models\Evento;
 
 class EventoSeeder extends Seeder
 {
@@ -13,18 +13,18 @@ class EventoSeeder extends Seeder
     public function run(): void
     {
         Evento::create([
-            'data' => '2024-10-26',
-            'descricao' => 'Prova da Fuvest',
+            'dataEvento' => '2024-10-26',
+            'descricaoEvento' => 'Prova da Fuvest',
         ]);
 
         Evento::create([
-            'data' => '2024-11-05',
-            'descricao' => 'Prova do Enem',
+            'dataEvento' => '2024-11-05',
+            'descricaoEvento' => 'Prova do Enem',
         ]);
 
         Evento::create([
-            'data' => '2024-12-20',
-            'descricao' => 'Férias',
+            'dataEvento' => '2024-12-20',
+            'descricaoEvento' => 'Férias',
         ]);
     }
 }

@@ -16,8 +16,8 @@ class EventoController extends Controller
     {
         $mes = $request->query('mes');
         $ano = $request->query('ano');
-        $eventos = Evento::whereYear('data', $ano)->whereMonth('data', $mes)->get();
-
+        $eventos = Evento::whereYear('dataEvento', $ano)->whereMonth('dataEvento', $mes)->get();
+    
         return response()->json($eventos);
     }
 }
