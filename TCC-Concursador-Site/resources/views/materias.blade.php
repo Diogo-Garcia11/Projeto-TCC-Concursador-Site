@@ -342,30 +342,14 @@
             <a href="{{route('quimica.tabela-periodica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Tabela periódica</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('quimica.ligacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ligações químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('quimica.oxirreducoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Oxirreduções</a>
+            <a href="{{route('quimica.quimica-organica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Química Orgânica</a>
           </div>
           <div class="grid-item">
             <a href="{{route('quimica.reacoes-quimicas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Reações Químicas</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('quimica.eletroquimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Eletroquímica</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('quimica.radioatividade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('quimica.acidos-bases')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ácidos e Bases</a>
-          </div>
-          <div class="grid-item">
             <a href="{{route('quimica.estequiometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Estequiometria</a>
           </div>
-          <div class="grid-item">
-            <a href="{{route('quimica.termodinamica-quimica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Termodinâmica Química</a>
-          </div>
-          
         </div>
       </div>
     </div>

@@ -307,9 +307,9 @@ Route::middleware('auth')->group(function () {
                 return view('materias.quimica.ligacoes-quimicas');
             })->name('quimica.ligacoes-quimicas');
 
-            Route::get('/oxirreducoes', function () {
-                return view('materias.quimica.oxirreducoes');
-            })->name('quimica.oxirreducoes');
+            Route::get('/quimica-organica', function () {
+                return view('materias.quimica.quimica-organica');
+            })->name('quimica.quimica-organica');
 
             Route::get('/radiotividade', function () {
                 return view('materias.quimica.radiotividade');
