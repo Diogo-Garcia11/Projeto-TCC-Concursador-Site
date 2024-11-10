@@ -3,39 +3,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <x-app-layout>
-    <style>
-        .radio-container {
-            display: flex;
-            align-items: center;
-            margin: 8px 0;
-            cursor: pointer;
-
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .radio-checked {
-            background-color: green;
-            /* Fundo verde para resposta correta */
-            color: white;
-        }
-
-        .radio-wrong {
-            background-color: red;
-            /* Fundo vermelho para resposta errada */
-            color: white;
-        }
-
-        .radio-text {
-            margin-left: 10px;
-            /* Espaçamento entre o botão e o texto */
-        }
-
-        html {
-            scroll-behavior: smooth;
-            /* Adiciona rolagem suave ao clicar em links âncora */
-        }
-    </style>
+    
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <a href="{{route('materias')}}" class="mb-4 text-gray-500 underline inline-block">Matérias</a>
