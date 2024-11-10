@@ -172,34 +172,19 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="{{route('historia.periodo-colonial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Período Colonial</a>
+            <a href="{{route('historia.brasil')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ História do Brasil</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('historia.independencia-brasil')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Independência do Brasil</a>
+            <a href="{{route('historia.revolucoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revoluções e Movimentos Sociais</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('historia.proclamacao-republica')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Proclamação da República</a>
+            <a href="{{route('historia.guerramundial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Guerras Mundiais</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('historia.era-vargas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Era Vargas</a>
+            <a href="{{route('historia.guerrafria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geopolítica e Guerra Fria</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('historia.ditadura-militar')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Ditadura militar</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('historia.civilizacoes-antigas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Civilizações antigas</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('historia.idade-media')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Idade Média</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('historia.revolucao-francesa')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Francesa</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('historia.revolucao-industrial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Revolução Industrial</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('historia.guerras-mundiais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Guerras Mundiais</a>
+            <a href="{{route('historia.idademedia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Idade Média</a>
           </div>
         </div>
       </div>

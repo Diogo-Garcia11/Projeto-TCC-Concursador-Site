@@ -217,45 +217,25 @@ Route::middleware('auth')->group(function () {
         }); #Fim do agrupamento de filosofia
 
         Route::prefix('historia')->group(function () { // Grupo de rotas para a matéria historia
-            Route::get('/civilizacoes-antigas', function () {
-                return view('materias.historia.civilizacoes-antigas');
-            })->name('historia.civilizacoes-antigas');
+            Route::get('/brasil', function () {
+                return view('materias.historia.brasil');
+            })->name('historia.brasil');
 
-            Route::get('/ditadura-militar', function () {
-                return view('materias.historia.ditadura-militar');
-            })->name('historia.ditadura-militar');
+            Route::get('/revolucoes', function () {
+                return view('materias.historia.revolucoes');
+            })->name('historia.revolucoes');
 
-            Route::get('/era-vargas', function () {
-                return view('materias.historia.era-vargas');
-            })->name('historia.era-vargas');
+            Route::get('/guerramundial', function () {
+                return view('materias.historia.guerramundial');
+            })->name('historia.guerramundial');
 
-            Route::get('/guerras-mundiais', function () {
-                return view('materias.historia.guerras-mundiais');
-            })->name('historia.guerras-mundiais');
+            Route::get('/guerrafria', function () {
+                return view('materias.historia.guerrafria');
+            })->name('historia.guerrafria');
 
-            Route::get('/idade-media', function () {
-                return view('materias.idade-media');
-            })->name('historia.idade-media');
-
-            Route::get('/independencia-brasil', function () {
-                return view('materias.historia.independencia-brasil');
-            })->name('historia.independencia-brasil');
-
-            Route::get('/periodo-colonial', function () {
-                return view('materias.historia.periodo-colonial');
-            })->name('historia.periodo-colonial');
-
-            Route::get('/proclamacao-republica', function () {
-                return view('materias.historia.proclamacao-republica');
-            })->name('historia.proclamacao-republica');
-
-            Route::get('/revolucao-francesa', function () {
-                return view('materias.historia.revolucao-francesa');
-            })->name('historia.revolucao-francesa');
-
-            Route::get('/revolucao-industrial', function () {
-                return view('materias.historia.revolucao-industrial');
-            })->name('historia.revolucao-industrial');
+            Route::get('/idademedia', function () {
+                return view('materias.idademedia');
+            })->name('historia.idademedia'); 
 
             Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('historia.materias_prova_historia');
         }); #Fim do agrupamento de historia
