@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-blueberry dark:bg-steelblue dark:border-gray-700 "> 
+<nav x-data="{ open: false }" class="bg-blueberry dark:bg-steelblue dark:border-gray-700 ">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -30,6 +30,13 @@
                     <x-nav-link :href="route('calendario')" :active="request()->routeIs('calendario')">
                         {{ __('Calendário de Vestibulares') }}
                     </x-nav-link>
+                    @csrf
+                    @if (Auth::user()->is_admin == 1)
+                    <x-nav-link :href="url('admin/dashboard')" :active="request()->is('admin/dashboard')">
+                        {{ __('Admin') }}
+                    </x-nav-link>
+
+                    @endif
                 </div>
             </div>
 
@@ -58,7 +65,7 @@
                             @csrf
 
                             <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
+                                onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
@@ -111,7 +118,7 @@
                 {{ __('Calendário de Vestibulares') }}
             </x-responsive-nav-link>
         </div>
-        
+
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
@@ -129,7 +136,7 @@
                     @csrf
 
                     <x-responsive-nav-link :href="route('logout')"
-                            onclick="event.preventDefault();
+                        onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
