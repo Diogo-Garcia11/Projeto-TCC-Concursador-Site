@@ -18,6 +18,10 @@ return new class extends Migration
             $table->date('dataEvento'); // Campo 'data DATE NOT NULL'
             $table->string('descricaoEvento', 255); // Campo 'descricao VARCHAR(255) NOT NULL'
             $table->timestamps(); // Adiciona os campos 'created_at' e 'updated_at'
+
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
         });
     }
 

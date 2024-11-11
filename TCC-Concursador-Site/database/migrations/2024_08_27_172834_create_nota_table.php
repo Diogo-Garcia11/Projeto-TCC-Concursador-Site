@@ -24,6 +24,10 @@ return new class extends Migration
             $table->foreign('idUser')->references('id')->on('users')->onDelete('cascade');
             
             $table->timestamps(); // Adiciona created_at e updated_at
+
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
         });
     }
 

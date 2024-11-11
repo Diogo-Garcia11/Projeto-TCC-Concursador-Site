@@ -21,6 +21,10 @@ return new class extends Migration
             $table->integer('anoQuestao')->nullable();
             $table->integer('numeroQuestao')->nullable();
             $table->timestamps(); // Adiciona created_at e updated_at
+
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
         });
     }
 
