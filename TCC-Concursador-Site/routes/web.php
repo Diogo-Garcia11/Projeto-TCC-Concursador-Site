@@ -133,6 +133,26 @@ Route::middleware('auth')->group(function () {
             })->name('portugues.');
 
 
+            Route::get('/coesao-e-coerencia', function () {
+                return view('materias.portugues.coesao-e-coerencia');
+            })->name('portugues.coesao-e-coerencia');
+
+            Route::get('/figuras-de-linguagem', function () {
+                return view('materias.portugues.figuras-de-linguagem');
+            })->name('portugues.figuras-de-linguagem');
+
+            Route::get('/funcoes-da-linguagem', function () {
+                return view('materias.portugues.funcoes-da-linguagem');
+            })->name('portugues.funcoes-da-linguagem');
+
+            Route::get('/generos-textuais', function () {
+                return view('materias.portugues.generos-textuais');
+            })->name('portugues.generos-textuais');
+
+            Route::get('/interpretacao-de-texto', function () {
+                return view('materias.portugues.interpretacao-de-texto');
+            })->name('portugues.interpretacao-de-texto');
+
             Route::get('/redacao', function () {
                 return view('materias.portugues.redacao');
             })->name('portugues.redacao');
