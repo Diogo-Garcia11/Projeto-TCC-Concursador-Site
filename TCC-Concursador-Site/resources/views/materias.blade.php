@@ -106,37 +106,19 @@
         <div class="p-4 grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
 
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gêneros Textuais</a>
+            <a href="{{route('portugues.figuras-de-linguagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Figuras de Linguagem</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Figuras de Linguagem</a>
+            <a href="{{route('portugues.funcoes-da-linguagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções da linguagem</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções da linguagem</a>
+            <a href="{{route('portugues.coesao-e-coerencia')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Coesão e Coerência</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Análise Sintática</a>
+            <a href="{{route('portugues.interpretacao-de-texto')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interpretação de texto</a>
           </div>
           <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Coesão e Coerência</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Interpretação de texto</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Radioatividade</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ Soluções químicas</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfgfdgdf</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gfdgd</a>
-          </div>
-          <div class="grid-item">
-            <a href="" class="text-3xl font-Montserrat text-steelblue p-8">➤ gddfgdf</a>
+            <a href="{{route('portugues.generos-textuais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gêneros textuais</a>
           </div>
           <div class="grid-item">
             <a href="{{route('portugues.redacao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Redacao</a>
