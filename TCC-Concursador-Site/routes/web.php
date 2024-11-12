@@ -254,7 +254,7 @@ Route::middleware('auth')->group(function () {
             })->name('historia.guerrafria');
 
             Route::get('/idademedia', function () {
-                return view('materias.idademedia');
+                return view('materias.historia.idademedia');
             })->name('historia.idademedia'); 
 
             Route::get('/prova_historia', [MateriasController::class, 'prova_historia'])->name('historia.materias_prova_historia');
