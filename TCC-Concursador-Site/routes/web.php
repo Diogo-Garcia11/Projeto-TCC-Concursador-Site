@@ -348,7 +348,31 @@ Route::middleware('auth')->group(function () {
             })->name('sociologia.sociedade-contemporanea');
 
             Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_quimica');
-        }); #Fim do agrupamento de quimica
+        });
+
+        Route::prefix('literatura')->group(function () { 
+            Route::get('/escolas', function () {
+                return view('materias.literatura.escolas');
+            })->name('literatura.escolas');
+
+            Route::get('/modernismo-brasileiro', function () {
+                return view('materias.literatura.modernismo-brasileiro');
+            })->name('literatura.modernismo-brasileiro');
+
+            Route::get('/contexto-historico', function () {
+                return view('materias.literatura.contexto-historico');
+            })->name('literatura.contexto-historico');
+
+            Route::get('/textos-literarios', function () {
+                return view('materias.literatura.textos-literarios');
+            })->name('literatura.textos-literarios');
+
+            Route::get('/movimentos-literarios', function () {
+                return view('materias.literatura.movimentos-literarios');
+            })->name('literatura.movimentos-literarios');
+
+            Route::get('/prova_literatura', [MateriasController::class, 'prova_literatura'])->name('literatura.materias_prova_quimica');
+        });
     });
 }); //fim da middleware('auth') que verifica se voce esta logado para dar acesso às rotas
 
