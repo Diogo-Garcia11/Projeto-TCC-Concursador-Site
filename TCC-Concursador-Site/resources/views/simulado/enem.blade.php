@@ -14,7 +14,7 @@
                 <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                        <h3 class="text-justify">{{ $contador.$par."(".$categoria." ". $questao->anoQuestao . ") Questão:" . $questao->numeroQuestao."." }}
+                        <h3 class="text-justify">{{ $contador.$par."(".$categoria." ". $questao->anoQuestao . " Questão " . $questao->numeroQuestao . ")" }}
                             @if ($questao->contextoQuestao != null)
                             {{ $questao->contextoQuestao }}
                         </h3> <br>
@@ -26,7 +26,8 @@
                         @else
 
                         @endif
-                        {{$questao->introducaoAlternativaQuestao}}<br><br>
+                        <h3>{{$questao->introducaoalternativaQuestao}}</h3>
+                        <br><br>
                         @foreach($questao->relAlternativa as $alternativa)
 
                         @if($alternativa->textoAlternativa != null)
