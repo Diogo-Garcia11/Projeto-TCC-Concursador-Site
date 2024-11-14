@@ -11,28 +11,23 @@ export default {
 
     theme: {
         extend: {
-            colors:{
+            colors: {
                 'allblue': '#465E84',
                 'blueberry': '#15253F',
                 'steelblue': '#435D86',
                 'genericwhite': '#FFFFFF',
                 'stormblue': '#2C3D5B',
-                'kblue':'#768fb8',
+                'kblue': '#768fb8',
                 'whiteblue': '#BAC7DC',
-                'amarelo' : '#FFF35F',
-                'azul' : '#00BDF2',
-                'rosa' : '#F066A5',
-                'cinza' : '#C5C7CA'
+                'amarelo': '#FFF35F',
+                'azul': '#00BDF2',
+                'rosa': '#F066A5',
+                'cinza': '#C5C7CA'
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-
-            },
-            fontFamily: {
-                Montserrat: ['Montserrat', 'system-ui'],
-            },
-
-            fontFamily: {
+                montserrat: ['Montserrat', 'sans-serif'],
+                bigShoulders: ['Big Shoulders Display', 'cursive'],
                 paytone: ['Paytone One', 'sans-serif'],
             },
             fontWeight: {
@@ -45,7 +40,7 @@ export default {
                 'bold': '700',
                 'extra-bold': '800',
                 'black': '900',
-              },
+            },
         },
     },
 
