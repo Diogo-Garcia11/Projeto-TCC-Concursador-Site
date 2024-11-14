@@ -28,117 +28,148 @@
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black">8 -Exercicios</a></li>
                     </ul>
                 </div>
-                <h2 id="o-que-a-geometria-espacial-estuda" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Naturais (N)</h2>
-                <p class="text-justify mb-4 text-black">O conjunto dos números naturais é representado por N. Ele reúne os números que usamos para contar (incluindo o zero) e é infinito.
-No conjunto dos naturais, há apenas números positivos (além do zero). Nele, um novo número sempre pode ser obtido ao adicionar uma unidade ao número anterior.</p>
+
+                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Naturais (N)</h2>
+                 
+
+                <p class="text-justify mb-4 text-black">
+                O conjunto dos números naturais é representado por N. Ele reúne os números que usamos para contar (incluindo o zero) e é infinito.
+
+No conjunto dos naturais, há apenas números positivos (além do zero). Nele, um novo número sempre pode ser obtido ao adicionar uma unidade ao número anterior.
+
+<br><br> <span class="font-bold">Subconjuntos dos Números Naturais</span>
+
+                    <br><br> <span class="font-bold">• N*= </span> {1, 2, 3, 4, 5..., n, ...} ou N* = N – {0}: conjuntos dos números naturais não-nulos, ou seja, sem o zero.
+
+                    <br><br> <span class="font-bold">• Np= </span> {0, 2, 4, 6, 8..., 2n, ...}, em que n ∈ N: conjunto dos números naturais pares.
+
+                    <br><br> <span class="font-bold">• Ni = </span> {1, 3, 5, 7, 9..., 2n+1, ...}, em que n ∈ N: conjunto dos números naturais ímpares.
+
+                    <br><br> <span class="font-bold">• P = </span> {2, 3, 5, 7, 11, 13, ...}: conjunto dos números naturais primos.
+                
+                <br>
+                <br>
 
                 <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Inteiros (Z)</h2>
+                 
                 <p class="text-justify mb-4 text-black">
-                Para compreender a Geometria Espacial, é importante conhecer os elementos primitivos, que são: o ponto, a reta, o plano e o espaço. Os elementos primitivos são assim chamados por serem a base da Geometria e não possuírem uma definição, entretanto, todos temos uma intuição sobre cada um deles.
-                    <br><br> <span class="font-bold">• Ponto:</span> Os pontos são representados por letras maiúsculas do nosso alfabeto e são o primeiro elemento primitivo da Geometria. O ponto não possui nenhuma dimensão, ou seja, é adimensional.
-                    <img class="mt-6 w-96" src="{{asset('imagens/ponto.webp')}}" alt="">
+                O conjunto dos números inteiros é representado por Z. Reúne os elementos dos números naturais (N) e seus opostos. Assim, conclui-se que N é um subconjunto de Z, assim, N ⊂ Z (N está contido em Z).
 
-                    <br><br> <span class="font-bold">• Reta:</span> A reta é o segundo elemento primitivo, representado por letras minúsculas do alfabeto (por exemplo, r). A reta possui infinitos pontos colineares e uma única dimensão.
-                    <img class="mt-6 w-96" src="{{asset('imagens/reta.webp')}}" alt="">
+                <img class="mt-6 w-96" src="{{asset('imagens/conjuntodosinteiros.webp')}}" alt="">
 
-                    <br><br> <span class="font-bold">• Plano:</span> O plano é o terceiro elemento primitivo. Ele é representado por letras do alfabeto grego, como α, β, entre outras. O plano possui duas dimensões.
-                    <img class="mt-6 w-96" src="{{asset('imagens/plano.webp')}}" alt="">
+                É possível obter sempre um sucessor, ao adicionar uma unidade ao elemento anterior. Também é possível obter sempre um antecessor, ao subtrair uma unidade do anterior.
 
-                    <br><br> <span class="font-bold">• Espaço:</span> O espaço possui três dimensões. Podemos representar o espaço quando temos três eixos reais, um para cada dimensão, como na imagem a seguir:
-                    <img class="mt-6 w-96" src="{{asset('imagens/espaco.webp')}}" alt="">
+O conjunto dos inteiros é infinito, tanto no sentido dos negativos como dos positivos.
+
+<br><br> <span class="font-bold">Subconjuntos dos Números Inteiros</span> 
+
+                    <br><br> <span class="font-bold">• Z* =</span>  {..., –4, –3, –2, –1, 1, 2, 3, 4, ...} ou Z* = Z – {0}: conjuntos dos números inteiros não-nulos, ou seja, sem o zero.
+                    
+
+                    <br><br> <span class="font-bold">• Z + =</span> {0, 1, 2, 3, 4, 5, ...}: conjunto dos números inteiros e não-negativos. Note que Z+ = N.
+
+                    <br><br> <span class="font-bold">• Z* + =</span> {1, 2, 3, 4, 5, ...}: conjunto dos números inteiros positivos e sem o zero.
+
+                    <br><br> <span class="font-bold">• Z_ =</span> {..., –5, –4, –3, –2, –1, 0}: conjunto dos números inteiros não-positivos.
+
+                    <br><br> <span class="font-bold">• Z*_ =</span> {..., –5, –4, –3, –2, –1}: conjunto dos números inteiros negativos e sem o zero.
                     </p>
                 
                 <br>
 
                 <h2 id="principais-formulas-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Racionais (Q)</h2>
-                <p class="text-justify mb-4 text-black"> Como diferença primordial da geometria plana, os objetos tridimensionais têm volume. Vamos ver como calcular o volume de alguns objetos.
-
-                    <br><br> <span class="font-bold">• Prisma:</span> Para calcular o volume de um prisma, basta multiplicar a área de base pela altura.
+                <p class="text-justify mb-4 text-black"> O conjunto dos números racionais é representado por Q. Reúne todos os números que podem ser escritos na forma fracionária.
                     <br>
-                       <strong>V = Ab*h, onde Ab é a área da base e h é a altura.</strong>
-                    <br>
-                        Para calcular a área da base, vamos depender do formato do polígono que forma a base.
 
-                    <br><br> <span class="font-bold">• Paralelepípedo:</span> Um paralelepípedo é um prisma quadrangular no qual as bases são paralelogramos. A fórmula de volume continua valendo.
+                sendo a e b números inteiros e b ≠ 0.
 
-                    <br><br> <span class="font-bold">• Cubo:</span> O cubo é um poliedro regular no qual todos seus lados são congruentes. Pensando em V = Ab*h, temos para o cubo:
-                    <br>V = l²*l = l³, onde l é o valor do lado.
-                    <br><br> <span class="font-bold">• Pirâmide: </span>Uma pirâmide é um poliedro definido pela união de todos os pontos entre um ponto V fora do plano e um polígono em um plano. O polígono no plano é chamado de base da pirâmide e pode assumir várias formas. O formato da base vai definir o volume da pirâmide. Temos:
-                        <br> V = (Ab*h)/3
+Q = {0, ±1, ±1/2, ±1/3, ..., ±2, ±2/3, ±2/5, ..., ±3, ±3/2, ±3/4, ...}
+<br>
 
-                    <br><br> <span class="font-bold">• Tetraedro:</span> Um tetraedro é uma pirâmide regular com quatro faces congruentes, sendo que os triângulos da face são equiláteros. Como a área de um triângulo equilátero é dada por Ab = (a²*√3)/4 e a altura é dada por h = (a*√6)/3, temos:
-                    <br>  V = Ab*h/3 = (a²*√3)*(a*√6)/3*4*3 = a³*√2/12
-                    <br><br> <span class="font-bold">• Cilindro:</span> Um cilindro é um sólido formado por bases circulares. Seu volume é dado pela multiplicação da área da base e sua altura. Como a base é um círculo, temos:
-                        <br>V = π*r²*h, onde r é o raio do círculo da base e h é a altura.
-                    <br><br> <span class="font-bold">• Cone:</span> O cone é formado por meio da revolução de um triângulo retângulo sobre um eixo. Sua base é um círculo. Portanto, temos:
-                        <br>V = (Ab*h)/3 = π*r²*h/3
-                   
+Note que todo número inteiro é também número racional. Assim, Z é um subconjunto de Q.
+
+<img class="mt-6 w-96" src="{{asset('imagens/conjuntodasracionais.webp')}}" alt="">
+
+Importante ressaltar que as dízimas periódicas são números racionais. Elas são números decimais que se repetem após a vírgula, por exemplo: 1,4444444444... Embora possua infinitas casas decimais, pode ser escrito como a fração 13/9.
+
+                    <br><br> <span class="font-bold">Subconjuntos dos Números Racionais</span>
+
+                    <br><br> <span class="font-bold">• Q* =</span> subconjunto dos números racionais não-nulos, formado pelos números racionais sem o zero.
+
+                    <br><br> <span class="font-bold">• Q+ =</span> subconjunto dos números racionais não-negativos, formado pelos números racionais positivos e o zero.
+
+                    <br><br> <span class="font-bold">• Q*+ =</span>subconjunto dos números racionais positivos, formado pelos números racionais positivos, sem o zero.
+
+                    <br><br> <span class="font-bold">• Q_ =</span> subconjunto dos números racionais não-positivos, formado pelos números racionais negativos e o zero.
+
+                    <br><br> <span class="font-bold">• Q*_ =</span> subconjunto dos números racionais negativos, formado pelos números racionais negativos, sem o zero.
     
                 </p>
 
-                <h2 id="o-que-a-geometria-espacial-estuda" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Irracionais (I)</h2>
-                <p class="text-justify mb-4 text-black">A Geometria Espacial estuda as figuras espaciais conhecidas como sólidos geométricos. O cubo, o cilindro, o cone, as pirâmides, entre outros, são objetos de estudo da Geometria Espacial.</p>
+                <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos Importantes da Geometria Espacial</h2>
+                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Irracionais (I)</h2>
                 <p class="text-justify mb-4 text-black">
-                Para compreender a Geometria Espacial, é importante conhecer os elementos primitivos, que são: o ponto, a reta, o plano e o espaço. Os elementos primitivos são assim chamados por serem a base da Geometria e não possuírem uma definição, entretanto, todos temos uma intuição sobre cada um deles.
-                    <br><br> <span class="font-bold">• Ponto:</span> Os pontos são representados por letras maiúsculas do nosso alfabeto e são o primeiro elemento primitivo da Geometria. O ponto não possui nenhuma dimensão, ou seja, é adimensional.
-                    <img class="mt-6 w-96" src="{{asset('imagens/ponto.webp')}}" alt="">
+                O conjunto dos números irracionais é representado por I. Reúne os números decimais não exatos com uma representação infinita e não periódica, por exemplo: 3,141592... ou 1,203040...
 
-                    <br><br> <span class="font-bold">• Reta:</span> A reta é o segundo elemento primitivo, representado por letras minúsculas do alfabeto (por exemplo, r). A reta possui infinitos pontos colineares e uma única dimensão.
-                    <img class="mt-6 w-96" src="{{asset('imagens/reta.webp')}}" alt="">
+Os números irracionais não contêm os racionais. São conjuntos sem intersecção.
+<img class="mt-6 w-96" src="{{asset('imagens/conjuntodosreais.webp')}}" alt="">
 
-                    <br><br> <span class="font-bold">• Plano:</span> O plano é o terceiro elemento primitivo. Ele é representado por letras do alfabeto grego, como α, β, entre outras. O plano possui duas dimensões.
-                    <img class="mt-6 w-96" src="{{asset('imagens/plano.webp')}}" alt="">
-
-                    <br><br> <span class="font-bold">• Espaço:</span> O espaço possui três dimensões. Podemos representar o espaço quando temos três eixos reais, um para cada dimensão, como na imagem a seguir:
-                    <img class="mt-6 w-96" src="{{asset('imagens/espaco.webp')}}" alt="">
-                    </p>
-                
                 <br>
 
                 <h2 id="principais-formulas-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Reais (R)</h2>
-                <p class="text-justify mb-4 text-black"> Como diferença primordial da geometria plana, os objetos tridimensionais têm volume. Vamos ver como calcular o volume de alguns objetos.
+                <p class="text-justify mb-4 text-black"> O conjunto dos números reais é representado por R. Esse conjunto é formado pelos números racionais (Q) e irracionais (I). Assim, temos que R = Q ∪ I (união entre os racionais e os irracionais).
+                <br>
+Além disso, N, Z, Q e I são subconjuntos de R.
+<img class="mt-6 w-96" src="{{asset('imagens/conjuntodosreais2.webp')}}" alt="">
 
-                    <br><br> <span class="font-bold">• Prisma:</span> Para calcular o volume de um prisma, basta multiplicar a área de base pela altura.
-                    <br>
-                       <strong>V = Ab*h, onde Ab é a área da base e h é a altura.</strong>
-                    <br>
-                        Para calcular a área da base, vamos depender do formato do polígono que forma a base.
 
-                    <br><br> <span class="font-bold">• Paralelepípedo:</span> Um paralelepípedo é um prisma quadrangular no qual as bases são paralelogramos. A fórmula de volume continua valendo.
+                    <br><br> <span class="font-bold">Subconjuntos dos Números Reais</span> 
 
-                    <br><br> <span class="font-bold">• Cubo:</span> O cubo é um poliedro regular no qual todos seus lados são congruentes. Pensando em V = Ab*h, temos para o cubo:
-                    <br>V = l²*l = l³, onde l é o valor do lado.
-                    <br><br> <span class="font-bold">• Pirâmide: </span>Uma pirâmide é um poliedro definido pela união de todos os pontos entre um ponto V fora do plano e um polígono em um plano. O polígono no plano é chamado de base da pirâmide e pode assumir várias formas. O formato da base vai definir o volume da pirâmide. Temos:
-                        <br> V = (Ab*h)/3
+                    <br><br> <span class="font-bold">• R* =</span> {x ∈ R│x ≠ 0}: conjunto dos números reais não-nulos.
 
-                    <br><br> <span class="font-bold">• Tetraedro:</span> Um tetraedro é uma pirâmide regular com quatro faces congruentes, sendo que os triângulos da face são equiláteros. Como a área de um triângulo equilátero é dada por Ab = (a²*√3)/4 e a altura é dada por h = (a*√6)/3, temos:
-                    <br>  V = Ab*h/3 = (a²*√3)*(a*√6)/3*4*3 = a³*√2/12
-                    <br><br> <span class="font-bold">• Cilindro:</span> Um cilindro é um sólido formado por bases circulares. Seu volume é dado pela multiplicação da área da base e sua altura. Como a base é um círculo, temos:
-                        <br>V = π*r²*h, onde r é o raio do círculo da base e h é a altura.
-                    <br><br> <span class="font-bold">• Cone:</span> O cone é formado por meio da revolução de um triângulo retângulo sobre um eixo. Sua base é um círculo. Portanto, temos:
-                        <br>V = (Ab*h)/3 = π*r²*h/3
+                    <br><br> <span class="font-bold">• R+ =</span> {x ∈ R│x ≥ 0}: conjunto dos números reais não-negativos.
+
+                    <br><br> <span class="font-bold">• R*+ =</span> {x ∈ R│x > 0}: conjunto dos números reais positivos.
+
+                    <br><br> <span class="font-bold">• R_ = </span>{x ∈ R│x ≤ 0}: conjunto dos números reais não-positivos.
+
+                    <br><br> <span class="font-bold">• R*_ = </span> {x ∈ R│x < 0}: conjunto dos números reais negativos.
                    
     
                 </p>
+
+                <br>
                 <h2 id="o-que-a-geometria-espacial-estuda" class="text-3xl font-Montserrat font-bold text-black mb-4">Intervalos Numéricos</h2>
-                <p class="text-justify mb-4 text-black">A Geometria Espacial estuda as figuras espaciais conhecidas como sólidos geométricos. O cubo, o cilindro, o cone, as pirâmides, entre outros, são objetos de estudo da Geometria Espacial.</p>
+                <p class="text-justify mb-4 text-black">Há ainda um subconjunto relacionado com os números reais, chamados de intervalos. Sejam a e b números reais e a < b, temos os seguintes intervalos reais:
+                    <br><br> <span class="font-bold">• Intervalo aberto de extremos: </span> ]a,b[ = {x ∈ R│a < x < b}
+<img class="mt-6 w-96" src="{{asset('imagens/intervalo_aberto.webp')}}" alt="">
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos Importantes da Geometria Espacial</h2>
+<br><br> <span class="font-bold">• Intervalo fechado de extremos: </span>  [a,b] = {x ∈ R│a ≤ x ≤ b}
+<img class="mt-6 w-96" src="{{asset('imagens/intervalo_fechado.webp')}}" alt="">
+
+<br><br> <span class="font-bold">• Intervalo aberto à direta </span> (ou fechado à esquerda) de extremos: [a,b[ = {x ∈ R│a ≤ x < b}
+<img class="mt-6 w-96" src="{{asset('imagens/intervalo_diretira.webp')}}" alt="">
+
+<br><br> <span class="font-bold">• Intervalo aberto à esquerda </span> (ou fechado à direita) de extremos: ]a,b] = {x ∈ R│a < x ≤ b}
+<img class="mt-6 w-96" src="{{asset('imagens/entervalo_esquerda.webp')}}" alt="">
+
+                </p>
+                    <br>
+                    br
+                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Propriedades dos Conjuntos Numéricos</h2>
+<img class="mt-6 w-96" src="{{asset('imagens/digrama.webp')}}" alt="">
+
                 <p class="text-justify mb-4 text-black">
-                Para compreender a Geometria Espacial, é importante conhecer os elementos primitivos, que são: o ponto, a reta, o plano e o espaço. Os elementos primitivos são assim chamados por serem a base da Geometria e não possuírem uma definição, entretanto, todos temos uma intuição sobre cada um deles.
-                    <br><br> <span class="font-bold">• Ponto:</span> Os pontos são representados por letras maiúsculas do nosso alfabeto e são o primeiro elemento primitivo da Geometria. O ponto não possui nenhuma dimensão, ou seja, é adimensional.
-                    <img class="mt-6 w-96" src="{{asset('imagens/ponto.webp')}}" alt="">
+                Para facilitar os estudos sobre os conjuntos numéricos, segue abaixo algumas de suas propriedades:
+                    <br><br> <span class="font-bold">• </span> O conjunto dos números naturais (N) é um subconjunto dos números inteiros Z, (N ⊂ Z).
 
-                    <br><br> <span class="font-bold">• Reta:</span> A reta é o segundo elemento primitivo, representado por letras minúsculas do alfabeto (por exemplo, r). A reta possui infinitos pontos colineares e uma única dimensão.
-                    <img class="mt-6 w-96" src="{{asset('imagens/reta.webp')}}" alt="">
 
-                    <br><br> <span class="font-bold">• Plano:</span> O plano é o terceiro elemento primitivo. Ele é representado por letras do alfabeto grego, como α, β, entre outras. O plano possui duas dimensões.
-                    <img class="mt-6 w-96" src="{{asset('imagens/plano.webp')}}" alt="">
+                    <br><br> <span class="font-bold">• </span> O conjunto dos números inteiros (Z) é um subconjunto dos números racionais Q, (Z ⊂ Q).
 
-                    <br><br> <span class="font-bold">• Espaço:</span> O espaço possui três dimensões. Podemos representar o espaço quando temos três eixos reais, um para cada dimensão, como na imagem a seguir:
-                    <img class="mt-6 w-96" src="{{asset('imagens/espaco.webp')}}" alt="">
+                    <br><br> <span class="font-bold">• </span> O conjunto dos números racionais (Q) é um subconjunto dos números reais (R). (Q ⊂ R)
+
+                    <br><br> <span class="font-bold">• </span> Os conjuntos dos números naturais (N), inteiros (Z), racionais (Q) e irracionais (I) são subconjuntos dos números reais (R).
                     </p>
                 
                 <br>

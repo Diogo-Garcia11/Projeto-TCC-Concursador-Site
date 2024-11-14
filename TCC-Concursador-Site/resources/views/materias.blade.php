@@ -33,13 +33,7 @@
             <a href="{{route('matematica.conjuntos-numericos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Conjuntos numéricos</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('matematica.fracao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Fração</a>
-          </div>
-          <div class="grid-item">
             <a href="{{route('matematica.porcentagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.equacao-1')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 1º grau</a>
           </div>
           <div class="grid-item">
             <a href="{{route('matematica.equacao-2')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
@@ -53,27 +47,11 @@
           <div class="grid-item">
             <a href="{{route('matematica.geometria-espacial')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Geometria espacial</a>
           </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.teorema-pitagoras')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Teorema de Pitágoras</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.media-mediana-moda')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Média, mediana e moda</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.graficos-tabelas')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gráficos e tabelas</a>
-          </div>
+          
           <div class="grid-item">
             <a href="{{route('matematica.probabilidade')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Probabilidade</a>
           </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.juros-simples-compostos')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Juros simples e compostos</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.trigonometria')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Trigonometria</a>
-          </div>
-          <div class="grid-item">
-            <a href="{{route('matematica.unidades-medida')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Unidades de medida</a>
-          </div>
+      
         </div>
       </div>
     </div>
