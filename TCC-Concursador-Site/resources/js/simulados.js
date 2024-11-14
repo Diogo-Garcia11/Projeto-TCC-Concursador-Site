@@ -409,27 +409,27 @@ document.addEventListener('DOMContentLoaded', function() {
       { title: 'Prova Q', link: 'https://acervo.fuvest.br/fuvest/2022/fuvest_2022_primeira_fase_tipo_Q.pdf', color: "bg-cinza" },
       { title: 'Prova X', link: 'https://acervo.fuvest.br/fuvest/2022/fuvest_2022_primeira_fase_tipo_X.pdf', color: "bg-cinza" },
       { title: 'Prova Z', link: 'https://acervo.fuvest.br/fuvest/2022/fuvest_2022_primeira_fase_tipo_Z.pdf', color: "bg-cinza" },
-      { title: 'Gabarito', link: 'https://acervo.fuvest.br/fuvest/2022/fuvest_2022_primeira_fase_gabarito_retificado.pdf', color: "bg-cinza" },
+      { title: 'Gabarito', link: 'https://acervo.fuvest.br/fuvest/2022/fuvest_2022_primeira_fase_gabarito_retificado.pdf', color: "bg-azul" },
   ],
   '2021': [
       { title: 'Prova - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2021/fuvest_2021_primeira_fase.pdf', color: "bg-cinza" },
-      { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2021/fuvest_2021_primeira_fase_gabarito_v2.pdf', color: "bg-cinza" },
+      { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2021/fuvest_2021_primeira_fase_gabarito_v2.pdf', color: "bg-azul" },
   ],
   '2020': [
     { title: 'Prova - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2020/fuvest_2020_primeira_fase_prova_V.pdf', color: "bg-cinza" },
-    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2020/fuvest_2020_primeira_fase_gabaritos.pdf', color: "bg-cinza" },
+    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2020/fuvest_2020_primeira_fase_gabaritos.pdf', color: "bg-azul" },
   ],
   '2019': [
     { title: 'Prova - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2019/fuvest_2019_primeira_fase.pdf', color: "bg-cinza" },
-    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2019/fuv2019.gabarito.oficial.pdf', color: "bg-cinza" },
+    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2019/fuv2019.gabarito.oficial.pdf', color: "bg-azul" },
   ],
   '2018': [
     { title: 'Prova - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2018/fuv2018_1fase_prova_V.pdf', color: "bg-cinza" },
-    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2018/fuv2018_1fase_prova_gab.pdf', color: "bg-cinza" },
+    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2018/fuv2018_1fase_prova_gab.pdf', color: "bg-azul" },
   ],
   '2017': [
     { title: 'Prova - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2017/fuv2017_1fase_prova_V.pdf', color: "bg-cinza" },
-    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2017/fuv2017_1fase_prova_gab.pdf', color: "bg-cinza" },
+    { title: 'Gabarito - 1° Fase', link: 'https://acervo.fuvest.br/fuvest/2017/fuv2017_1fase_prova_gab.pdf', color: "bg-azul" },
   ],
     // Adicione outros anos conforme necessário
   };
