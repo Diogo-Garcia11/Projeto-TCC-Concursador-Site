@@ -23,14 +23,14 @@ Por exemplo, uma função de A em B significa associar cada elemento pertencente
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-a-geometria-espacial-estuda" class="text-kblue hover:text-black hover:!text-black"> 1- Representação das funções</a></li>
-                        <li><a href="#conceitos-importantes-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 2 - Tipos de Funções</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 3 - Gráficos de uma Função</a></li>
+                        <li><a href="#representacao-das-funcoes" class="text-kblue hover:text-black hover:!text-black"> 1- Representação das funções</a></li>
+                        <li><a href="#tipos-de-funcoes" class="text-kblue hover:text-black hover:!text-black"> 2 - Tipos de Funções</a></li>
+                        <li><a href="#graficos-de-uma-funcao" class="text-kblue hover:text-black hover:!text-black"> 3 - Gráficos de uma Função</a></li>
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black">4 -Exercicios</a></li>
                     </ul>
                 </div>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Representação das funções</h2>
+                <h2 id="representacao-das-funcoes" class="text-3xl font-Montserrat font-bold text-black mb-4">Representação das funções</h2>
                  
 
                 <p class="text-justify mb-4 text-black">
@@ -53,7 +53,7 @@ Portanto, para essa função:
 
                 <br>
                 <br>
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Tipos de Funções</h2>
+                <h2 id="tipos-de-funcoes" class="text-3xl font-Montserrat font-bold text-black mb-4">Tipos de Funções</h2>
                  
 
                 <p class="text-justify mb-4 text-black">
@@ -94,7 +94,7 @@ Portanto, para essa função:
                 
                 <br>
 
-                <br>
+                
 
                 <br><br> <span class="font-bold">Função Bijetora</span> 
         <p class="text-justify mb-4 text-black">
@@ -112,30 +112,24 @@ Portanto, para essa função:
                     <br><br> <span class="font-bold">•</span> O conjunto imagem é {2, 3, 5, 7}
                 
                 <br>
-
-                <br>
-
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Inversa</h2>
+                <br><br> <span class="font-bold">Função Inversa</span>
                 <p class="text-justify mb-4 text-black">
                 A função inversa é um tipo de função bijetora, por isso é sobrejetora e injetora ao mesmo tempo.
 
 Através desse tipo de função é possível criar novas funções ao inverter os elementos.
 
                 <br>
-
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Par</h2>
+                <br><br> <span class="font-bold">Função Par</span>
                 <p class="text-justify mb-4 text-black">
                 Uma função é par quando f(-x) = f(x). Assim a função possui a mesma imagem, tanto para x quanto para -x.
 
                 <br>
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Modular</h2>
+                <br><br> <span class="font-bold">Função Modular</span>
                 <p class="text-justify mb-4 text-black">
                 A função modular associa elementos em módulos e seus números são sempre positivos.
-                <img class="mt-6 w-96" src="{{asset('imagens/baixados.png')}}" alt="">
+                <img class="mt-6 w-96" src="{{asset('imagens/ins.jpeg')}}" alt="">
 
-                <br>
-
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Afim</h2>
+                <br><br> <span class="font-bold">Função Afim</span>
                 <p class="text-justify mb-4 text-black">
                 A função afim, também chamada de função do 1º grau, apresenta uma taxa de crescimento e um termo constante.
 <br>
@@ -144,16 +138,14 @@ f(x) = ax + b
 a: coeficiente angular
 b: coeficiente linear
                 <br>
-
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Linear</h2>
+                <br><br> <span class="font-bold">Função Linear</span>
                 <p class="text-justify mb-4 text-black">
                 A função linear é um caso particular da função afim, sendo definida como f(x) = ax.
 <br>
 Quando o valor do coeficiente (a) que acompanha o x da função for igual a 1, a função linear é uma função identidade.
                 <br>
 
-
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Quadrática</h2>
+                <br><br> <span class="font-bold">Função Quadrática</span>
                 <p class="text-justify mb-4 text-black">
               A função quadrática é também chamada de função do 2º grau.
 <br>
@@ -163,23 +155,21 @@ a, b e c: coeficientes da função polinomial de grau 2.
 
 
                 <br>
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Logarítmica</h2>
+                <br><br> <span class="font-bold">Função Logarítmica</span>
                 <p class="text-justify mb-4 text-black">
                 A função logarítmica de base a é representada por f(x) = loga x, sendo a real positivo e a ≠ 1.
 <br>
 Ao invertermos a função logarítmica passamos a ter uma função exponencial.
                 <br>
 
-                <br>
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Exponencial</h2>
+                <br><br> <span class="font-bold">Função Exponencial</span>
                 <p class="text-justify mb-4 text-black">
                 A função exponencial apresenta uma variável no expoente e a base é sempre maior que zero e diferente de um.
 <br>
 f(x) = ax, sendo a > 0 e a ≠ 0
                 <br>
 
-                <br>
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Polinomial</h2>
+                <br><br> <span class="font-bold">Função Polinomial</span>
                 <p class="text-justify mb-4 text-black">
                 A função polinomial é definida por expressões polinomiais.
 <br>
@@ -189,8 +179,8 @@ an, an-1, ... , a2, a1, a0: números complexos
 <br>
 n: número inteiro
 x: variável complexa
+<br><br> <span class="font-bold">Função Trigonométricas</span>
 
-<h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Função Trigonométricas</h2>
                 <p class="text-justify mb-4 text-black">
                 As funções trigonométricas estão relacionadas com as voltas no ciclo trigonométrico, como:
 <br>
@@ -204,7 +194,7 @@ Função Tangente: f(x) = tg x
 
 
                 <br>
-                <h2 id="o-que-a-geometria-espacial-estuda" class="text-3xl font-Montserrat font-bold text-black mb-4">Gráficos de uma Função</h2>
+                <h2 id="graficos-de-uma-funcao" class="text-3xl font-Montserrat font-bold text-black mb-4">Gráficos de uma Função</h2>
                 <p class="text-justify mb-4 text-black">A maneira como um elemento y se relaciona com um elemento x é expressa através de um gráfico, que nos dá a ideia do comportamento da função.
 
 Cada ponto no gráfico é dado por um par ordenado de x e y, onde x é o valor de entrada e y é o resultado da relação definida pela função, ou seja, x → função → y.

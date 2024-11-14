@@ -30,7 +30,7 @@ Uma equação do segundo grau possui no máximo duas raízes reais.
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-a-geometria-espacial-estuda" class="text-kblue hover:text-black hover:!text-black"> 1- Representação das funções</a></li>
+                        <li><a href="#o-que-a-geometria-espacial-estuda" class="text-kblue hover:text-black hover:!text-black"> 1- Equações do 2º Grau Completas e Incompletas</a></li>
                         <li><a href="#conceitos-importantes-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 2 - Tipos de Funções</a></li>
                         <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 3 - Gráficos de uma Função</a></li>
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black">4 -Exercicios</a></li>
