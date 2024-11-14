@@ -18,17 +18,17 @@
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-a-geometria-espacial-estuda" class="text-kblue hover:text-black hover:!text-black"> 1- O que é a Probabilidade?</a></li>
-                        <li><a href="#conceitos-importantes-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 2 - Conceitos Básicos</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 3 - Tipos de Probabilidade</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black">4 - Eventos na Probabilidade</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 5- Fórmulas na Probabilidade</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black">6 -Como Calcular a Probabilidade</a></li>
+                        <li><a href="#o-que-a-probabilidade" class="text-kblue hover:text-black hover:!text-black"> 1- O que é a Probabilidade?</a></li>
+                        <li><a href="#conceitos-basicos" class="text-kblue hover:text-black hover:!text-black"> 2 - Conceitos Básicos</a></li>
+                        <li><a href="#tipos-de-probabilidade" class="text-kblue hover:text-black hover:!text-black"> 3 - Tipos de Probabilidade</a></li>
+                        <li><a href="#eventos-na-probabilidade" class="text-kblue hover:text-black hover:!text-black">4 - Eventos na Probabilidade</a></li>
+                        <li><a href="#formulas-na-probabilidade" class="text-kblue hover:text-black hover:!text-black"> 5- Fórmulas na Probabilidade</a></li>
+                        <li><a href="#como-calcular-a-probabilidade" class="text-kblue hover:text-black hover:!text-black">6 -Como Calcular a Probabilidade</a></li>
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black">8 -Exercicios</a></li>
                     </ul>
                 </div>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é a Probabilidade?</h2>
+                <h2 id="o-que-a-probabilidade" class="text-3xl font-Montserrat font-bold text-black mb-4">O que é a Probabilidade?</h2>
                  
 
                 <p class="text-justify mb-4 text-black">
@@ -36,7 +36,7 @@
 
 Para desenvolver o estudo da probabilidade, precisamos compreender alguns conceitos básicos.
 
-<h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos básicos</h2>
+<h2 id="conceitos-basicos" class="text-3xl font-Montserrat font-bold text-black mb-4">Conceitos básicos</h2>
 <p class="text-justify mb-4 text-black">A probabilidade conta com conceitos importantes, como:
     <br>
                     <br> <span class="font-bold">• Ponto amostral na probabilidade: </span>Considere uma situação ou experimento que pode produzir diferentes resultados cada vez que ocorrer (ou seja, um experimento aleatório). Cada resultado particular é chamado de ponto amostral.
@@ -56,7 +56,7 @@ Exemplo: Ao lançar um dado comum (também chamado de “não viciado”) de 6 f
                 <br>
                 <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Tipos de Probabilidade</h2>
+                <h2 id="tipos-de-probabilidade" class="text-3xl font-Montserrat font-bold text-black mb-4">Tipos de Probabilidade</h2>
                  
                 <p class="text-justify mb-4 text-black">
                 Existem diferentes concepções acerca do estudo de probabilidade.
@@ -71,7 +71,7 @@ Exemplo: Ao lançar um dado comum (também chamado de “não viciado”) de 6 f
                 
                 <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Eventos na Probabilidade</h2>
+                <h2 id="eventos-na-probabilidade" class="text-3xl font-Montserrat font-bold text-black mb-4">Eventos na Probabilidade</h2>
                  
                 <p class="text-justify mb-4 text-black">
                Um <strong>evento é um conjunto especifíco de resultados</strong>e geralmente é representado por uma letra maiúscula.
@@ -91,7 +91,7 @@ Considere o experimento de lançar um dado de 6 faces e observar a face superior
             
                 <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Fórmulas na Probabilidade</h2>
+                <h2 id="formulas-na-probabilidade" class="text-3xl font-Montserrat font-bold text-black mb-4">Fórmulas na Probabilidade</h2>
                  
                 <p class="text-justify mb-4 text-black">
                 Agora que conheçemos esses conceitos fundamentais, podemos seguir com o cálculo básico de probabilidade. Vamos representar a probabilidade de um evento A acontecer por P(A).
@@ -99,8 +99,7 @@ Considere o experimento de lançar um dado de 6 faces e observar a face superior
 A probabilidade de um evento A ocorrer a partir de um experimento é a razão entre o número de casos favoráveis a esse evento e o número total de casos possíveis. Isso significa, respectivamente, a razão entre o número de elementos do conjunto A e o número de elementos do espaço amostral do experimento.
 <br>
 <img class="mt-6 w-96" src="{{asset('imagens/baixados (6).png')}}" alt="">
-                   
-<br><br> <span class="font-bold">Exemplo de eventos são:</span>
+
                     <br><br> <span class="font-bold">•</span> P(A) →  probabilidade do evento A ocorrer.
                     <br><br> <span class="font-bold">•</span> n(A) →  número de elementos do conjunto A, ou seja, a quantidade pontos amostrais favoráveis à ocorrência de A.
                     <br><br> <span class="font-bold">•</span> n(Ω) →  número de elementos do espaço amostral.
@@ -117,7 +116,7 @@ A probabilidade de um evento A ocorrer a partir de um experimento é a razão en
 
         
 
-                <h2 id="principais-formulas-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Como calcular a Probabilidade</h2>
+                <h2 id="como-calcular-a-probabilidade" class="text-3xl font-Montserrat font-bold text-black mb-4">Como calcular a Probabilidade</h2>
                 <p class="text-justify mb-4 text-black"> A fórmula para calcular uma probabilidade é relativamente simples e podemos encontrá-la ao dividir o número de eventos favoráveis e o número total de resultados possíveis.
 <br>
 Seja um evento A

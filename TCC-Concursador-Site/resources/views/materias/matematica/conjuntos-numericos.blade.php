@@ -18,18 +18,18 @@
                 <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
                 <div class="mb-4 mt-4">
                     <ul>
-                        <li><a href="#o-que-a-geometria-espacial-estuda" class="text-kblue hover:text-black hover:!text-black"> 1- Conjunto dos Números Naturais (N)</a></li>
-                        <li><a href="#conceitos-importantes-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 2 - Conjunto dos Números Inteiros (Z)</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 3 - Conjunto dos Números Racionais (Q)</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black">4 - Conjunto dos Números Irracionais (I)</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 5- Conjunto dos Números Reais (R)</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black">6 -Intervalos Numéricos</a></li>
-                        <li><a href="#principais-formulas-da-geometria-espacial" class="text-kblue hover:text-black hover:!text-black"> 7 -Propriedades dos Conjuntos Numéricos</a></li>
+                        <li><a href="#conjunto-naturais" class="text-kblue hover:text-black hover:!text-black"> 1- Conjunto dos Números Naturais (N)</a></li>
+                        <li><a href="#conjunto-inteiros" class="text-kblue hover:text-black hover:!text-black"> 2 - Conjunto dos Números Inteiros (Z)</a></li>
+                        <li><a href="#conjunto-racionais" class="text-kblue hover:text-black hover:!text-black"> 3 - Conjunto dos Números Racionais (Q)</a></li>
+                        <li><a href="#conjunto-irracionais" class="text-kblue hover:text-black hover:!text-black">4 - Conjunto dos Números Irracionais (I)</a></li>
+                        <li><a href="#conjunto-reais" class="text-kblue hover:text-black hover:!text-black"> 5- Conjunto dos Números Reais (R)</a></li>
+                        <li><a href="#intervalos-reais" class="text-kblue hover:text-black hover:!text-black">6 -Intervalos Numéricos</a></li>
+                        <li><a href="#propriedades" class="text-kblue hover:text-black hover:!text-black"> 7 -Propriedades dos Conjuntos Numéricos</a></li>
                         <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black">8 -Exercicios</a></li>
                     </ul>
                 </div>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Naturais (N)</h2>
+                <h2 id="conjunto-naturais" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Naturais (N)</h2>
                  
 
                 <p class="text-justify mb-4 text-black">
@@ -50,7 +50,7 @@ No conjunto dos naturais, há apenas números positivos (além do zero). Nele, u
                 <br>
                 <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Inteiros (Z)</h2>
+                <h2 id="conjunto-inteiros" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Inteiros (Z)</h2>
                  
                 <p class="text-justify mb-4 text-black">
                 O conjunto dos números inteiros é representado por Z. Reúne os elementos dos números naturais (N) e seus opostos. Assim, conclui-se que N é um subconjunto de Z, assim, N ⊂ Z (N está contido em Z).
@@ -77,7 +77,7 @@ O conjunto dos inteiros é infinito, tanto no sentido dos negativos como dos pos
                 
                 <br>
 
-                <h2 id="principais-formulas-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Racionais (Q)</h2>
+                <h2 id="conjunto-racionais" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Racionais (Q)</h2>
                 <p class="text-justify mb-4 text-black"> O conjunto dos números racionais é representado por Q. Reúne todos os números que podem ser escritos na forma fracionária.
                     <br>
 
@@ -108,7 +108,7 @@ Importante ressaltar que as dízimas periódicas são números racionais. Elas s
 
                 <br>
 
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Irracionais (I)</h2>
+                <h2 id="conjunto-irracionais" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Irracionais (I)</h2>
                 <p class="text-justify mb-4 text-black">
                 O conjunto dos números irracionais é representado por I. Reúne os números decimais não exatos com uma representação infinita e não periódica, por exemplo: 3,141592... ou 1,203040...
 
@@ -117,7 +117,7 @@ Os números irracionais não contêm os racionais. São conjuntos sem intersecç
 
                 <br>
 
-                <h2 id="principais-formulas-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Reais (R)</h2>
+                <h2 id="conjunto-reais" class="text-3xl font-Montserrat font-bold text-black mb-4">Conjunto dos Números Reais (R)</h2>
                 <p class="text-justify mb-4 text-black"> O conjunto dos números reais é representado por R. Esse conjunto é formado pelos números racionais (Q) e irracionais (I). Assim, temos que R = Q ∪ I (união entre os racionais e os irracionais).
                 <br>
 Além disso, N, Z, Q e I são subconjuntos de R.
@@ -140,7 +140,7 @@ Além disso, N, Z, Q e I são subconjuntos de R.
                 </p>
 
                 <br>
-                <h2 id="o-que-a-geometria-espacial-estuda" class="text-3xl font-Montserrat font-bold text-black mb-4">Intervalos Numéricos</h2>
+                <h2 id="intervalos-reais" class="text-3xl font-Montserrat font-bold text-black mb-4">Intervalos Numéricos</h2>
                 <p class="text-justify mb-4 text-black">Há ainda um subconjunto relacionado com os números reais, chamados de intervalos. Sejam a e b números reais e a < b, temos os seguintes intervalos reais:
                     <br><br> <span class="font-bold">• Intervalo aberto de extremos: </span> ]a,b[ = {x ∈ R│a < x < b}
 <img class="mt-6 w-96" src="{{asset('imagens/intervalo_aberto.webp')}}" alt="">
@@ -157,7 +157,7 @@ Além disso, N, Z, Q e I são subconjuntos de R.
                 </p>
                     <br>
                     br
-                <h2 id="conceitos-importantes-da-geometria-espacial" class="text-3xl font-Montserrat font-bold text-black mb-4">Propriedades dos Conjuntos Numéricos</h2>
+                <h2 id="propriedades" class="text-3xl font-Montserrat font-bold text-black mb-4">Propriedades dos Conjuntos Numéricos</h2>
 <img class="mt-6 w-96" src="{{asset('imagens/digrama.webp')}}" alt="">
 
                 <p class="text-justify mb-4 text-black">

@@ -36,9 +36,6 @@
             <a href="{{route('matematica.porcentagem')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Porcentagem</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('matematica.equacao-2')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Equação 2º grau</a>
-          </div>
-          <div class="grid-item">
             <a href="{{route('matematica.funcoes')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Funções</a>
           </div>
           <div class="grid-item">
