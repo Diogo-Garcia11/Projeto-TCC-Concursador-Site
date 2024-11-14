@@ -10,10 +10,6 @@
         </div>
     </div>
 
-    <style>
-        
-    </style>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const mesAno = document.getElementById('mes-ano');
@@ -23,14 +19,14 @@
             const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
             let dataAtual = new Date();
 
-            function carregarEventos(mes, ano) {
+    function carregarEventos(mes, ano) {
                 tabelaDias.querySelectorAll('.dia').forEach(dia => {
                     dia.classList.remove('event'); 
                 });
 
                 fetch(`/eventos?mes=${mes + 1}&ano=${ano}`)
-    .then(response => response.json())
-    .then(eventos => {
+                .then(response => response.json())
+                .then(eventos => {
         eventos.forEach(evento => {
             let data = new Date(evento.dataEvento); // Certifique-se que 'dataEvento' é o campo correto
             let dia = data.getDate();
@@ -45,8 +41,7 @@
         });
     })
     .catch(error => console.error('Erro ao carregar eventos:', error));
-
-            }
+}
 
             function gerarCalendario(mes, ano) {
                 mesAno.textContent = `${meses[mes]} ${ano}`;
