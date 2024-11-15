@@ -1,4 +1,3 @@
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -67,7 +66,7 @@
                     uma aceleração constante. Esse estudo é essencial para entender como a velocidade de um objeto pode mudar ao longo de seu percurso,
                     proporcionando uma base para análises mais complexas da dinâmica.
                 </p>
-                
+
 
                 <h2 id="exercicios" class="text-3xl font-Montserrat font-bold text-black mt-6">Exercícios</h2>
                 <div class="mt-6">
@@ -88,6 +87,25 @@
                         <li class="radio-container"><input type="radio" name="questao-2" value="0" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">C) Deslocamento é sempre maior que a distância percorrida.</span></li>
                         <li class="radio-container"><input type="radio" name="questao-2" value="0" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">D) Não há diferença entre distância percorrida e deslocamento.</span></li>
                     </ul>
+                    <div class="mt-6">
+                        <ul class="text-black">
+                            <li class="mb-2">
+                                <p>3) Em relação a um ponto de referência fixo, o que indica que um objeto está em movimento?</p>
+                            </li>
+                            <li class="radio-container"><input type="radio" name="questao-1" value="1" onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">A) Mudança de posição ao longo do tempo.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-1" value="0" onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">B) Manter a mesma posição ao longo do tempo.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-1" value="0" onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">C) Aceleração constante.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-1" value="0" onclick="checkAnswer(event, 'questao-1')"><span class="radio-text">D) Velocidade nula.</span></li>
+                            <li class="mb-2 mt-4">
+                                <p>4) Qual a diferença entre distância percorrida e deslocamento?</p>
+                            </li>
+                            <li class="radio-container"><input type="radio" name="questao-2" value="0" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">A) Distância percorrida inclui o tempo total do percurso.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-2" value="1" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">B) Distância percorrida é o caminho total, enquanto o deslocamento considera apenas a posição inicial e final.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-2" value="0" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">C) Deslocamento é sempre maior que a distância percorrida.</span></li>
+                            <li class="radio-container"><input type="radio" name="questao-2" value="0" onclick="checkAnswer(event, 'questao-2')"><span class="radio-text">D) Não há diferença entre distância percorrida e deslocamento.</span></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -120,7 +138,7 @@
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault(); // Evita o comportamento padrão de rolagem
 
                 const targetId = this.getAttribute('href'); // Obtém o ID do elemento de destino
