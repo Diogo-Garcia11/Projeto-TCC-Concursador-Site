@@ -413,56 +413,108 @@ text-decoration: none;
 
 /* Calendário */
 
-.container-c { text-align: center; margin: 20px auto; }
-        .calendario { 
-            display: inline-block; 
-            width: 100%; 
-            max-width: 600px; 
-            background-color: rgb(67, 93, 134); 
-            border: 2px solid #00796b; 
-            border-radius: 8px; 
-            padding: 20px; 
-        }
-        .calendario-header h2 {
-             color: white; /* Muda a cor do texto para branco */
-        }
+.container-c {
+  text-align: center;
+  margin: 20px auto;
+}
 
-        .calendario-header { display: flex; justify-content: space-between; align-items: center; }
-        .calendario-container {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .dia {
-            padding: 15px;
-            background-color:white; 
-            position: relative;
-            cursor: pointer;
-            text-align: center;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            color: darkblue;
-        }
-        .dia.event {
-            background-color: rgb(100, 140, 190); 
-        }
-        .evento-card {
-            display: none; 
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            width: 150px;
-            z-index: 10;
-        }
-        .dia:hover .evento-card {
-            display: block;
-        }
+.calendario {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(67, 93, 134);
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.calendario-header h2 {
+  font-size: 20px;
+  color: white; /* Muda a cor do texto para branco */
+}
+
+.calendario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendario-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dia {
+  font-size: 16px;
+  padding: 14px;
+  background-color: white;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 3.5px;
+  color: darkblue;
+}
+
+.dia.event {
+  background-color: #15253F;
+  color: rgb(76, 76, 76);
+}
+
+.evento-card {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 150px;
+  z-index: 10;
+}
+
+.dia:hover .evento-card {
+  display: block;
+}
+
+/* Estilo para os botões de navegação */
+.calendario-header button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Deixa o botão redondo */
+  background-color:rgb(87, 114, 159); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none;
+  font-size: 25px; /* Tamanho da seta */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.calendario-header button:hover {
+  background-color: rgb(57, 92, 152); /* Cor ao passar o mouse */
+}
+
+.calendario-dias-semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dia-semana {
+  color: white;
+  text-align: center;
+  padding: 10px;;
+  border-radius: 5px;
+}
 
 
 
