@@ -26,7 +26,8 @@
                         @else
 
                         @endif
-                        {{$questao->introducaoAlternativaQuestao}}<br><br>
+                        <h3>{{$questao->introducaoalternativaQuestao}}</h3>
+                        <br><br>
                         @foreach($questao->relAlternativa as $alternativa)
 
                         @if($alternativa->textoAlternativa != null)
@@ -55,7 +56,7 @@
         <input type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" value="Enviar">
     </form>
     <script>
-        var timeLimit = 7200; // 9 horas e meia em segundos 
+        var timeLimit = 7200; // 2 horas 
 
         function startTimer(duration, display) {
             var timer = duration,

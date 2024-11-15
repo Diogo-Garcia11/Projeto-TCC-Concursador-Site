@@ -12,7 +12,7 @@ class NotaController extends Controller
         $user = Auth::user();
 
         // Categorias que você deseja exibir
-        $categorias = ['enem', 'matematica', 'portugues', 'historia', 'geografia', 'biologia', 'quimica', 'fisica', 'filosofia', 'sociologia'];
+        $categorias = ['enem', 'matematica', 'portugues', 'historia', 'geografia', 'biologia', 'quimica', 'fisica', 'filosofia', 'sociologia','literatura'];
 
         // Array para armazenar as notas de cada categoria
         $notasPorCategoria = [];
@@ -28,6 +28,7 @@ class NotaController extends Controller
             'geografia' => 30,
             'filosofia' => 30,
             'sociologia' => 30,
+            'literatura' => 30,
         ];
 
         foreach ($categorias as $categoria) {
