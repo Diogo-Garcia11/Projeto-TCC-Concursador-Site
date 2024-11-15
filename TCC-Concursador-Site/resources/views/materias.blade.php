@@ -96,7 +96,7 @@
             <a href="{{route('portugues.generos-textuais')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Gêneros textuais</a>
           </div>
           <div class="grid-item">
-            <a href="{{route('portugues.redacao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Redacao</a>
+            <a href="{{route('portugues.redacao')}}" class="text-3xl font-Montserrat text-steelblue p-8">➤ Redação</a>
           </div>
         </div>
       </div>

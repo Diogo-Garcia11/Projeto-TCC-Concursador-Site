@@ -77,6 +77,14 @@ class MateriasController extends Controller
         $categoria = 'sociologia'; // Define a categoria
         
         return view('materias.sociologia.prova-sociologia', compact('questoes', 'categoria'));
+    } 
+    
+    public function prova_literatura(){
+        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'literatura')->inRandomOrder()->take(30)->get();
+        
+        $categoria = 'literatura'; // Define a categoria
+        
+        return view('materias.literatura.prova-literatura', compact('questoes', 'categoria'));
     }
     
     public function submit (Request $request)
