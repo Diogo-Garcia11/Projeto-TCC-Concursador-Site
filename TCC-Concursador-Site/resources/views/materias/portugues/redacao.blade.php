@@ -31,20 +31,8 @@
 
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-[80px]">
                     <h1 class="text-3xl font-Montserrat font-bold text-black mb-[20px]">Redação</h1>
-                    <p>A genética é a ciência que estuda os genes, a hereditariedade e a variação dos organismos vivos. Essa
-                        área da biologia investiga como as características são transmitidas de uma geração para outra e como
-                        essas informações são codificadas, expressas e controladas em organismos vivos.</p>
-                    <img class="mt-6 w-96" src="{{asset('imagens/geneticabiologia.avif')}}" alt="">
-                    <h2 class="text-3xl font-Montserrat font-bold text-black mt-6">Tópicos</h2>
-                    <div class="mb-4 mt-4">
-                        <ul>
-                            <li><a href="#o-que-e-genetica" class="text-kblue hover:text-black hover:!text-black">1- O que é genética</a></li>
-                            <li><a href="#historia-da-genetica" class="text-kblue hover:text-black hover:!text-black">2- História da genética</a></li>
-                            <li><a href="#conceitos-basicos" class="text-kblue hover:text-black hover:!text-black">3- Conceitos Básicos</a></li>
-                            <li><a href="#gregor-mendel" class="text-kblue hover:text-black hover:!text-black">4- Gregor Mendel</a></li>
-                            <li><a href="#exercicios" class="text-kblue hover:text-black hover:!text-black ">5- Exercicios</a></li>
-                        </ul>
-                    </div>
+                    
+                    
                     
 
                         <h2 id="exercicios" class="text-3xl font-Montserrat font-bold text-black mt-6">Corrija sua redação aqui</h2><br>
