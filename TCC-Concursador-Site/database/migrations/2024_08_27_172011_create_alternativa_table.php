@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('alternativa', function (Blueprint $table) {
             $table->id('idAlternativa'); // AUTO_INCREMENT é implícito com o método id()
-            $table->string('textoAlternativa', 255)->nullable();
+            $table->string('textoAlternativa', 500)->nullable();
             $table->boolean('corretaAlternativa');
-            $table->string('imagemAlternativa', 200)->nullable();
+            $table->string('imagemAlternativa', 255)->nullable();
             $table->unsignedBigInteger('idQuestao'); // Tipo da chave estrangeira deve ser compatível com a tabela referenciada
             $table->foreign('idQuestao')->references('idQuestao')->on('questao')->onDelete('cascade'); // Define a chave estrangeira
             $table->timestamps(); // Adiciona created_at e updated_at
