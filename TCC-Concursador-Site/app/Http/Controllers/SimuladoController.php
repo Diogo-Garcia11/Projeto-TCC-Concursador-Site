@@ -10,13 +10,47 @@ class SimuladoController extends Controller
 {
     public function enem()
     {
-        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'linguagens')->inRandomOrder()->take(45)->get();
-        
-        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'ciencias-humanas')->inRandomOrder()->take(45)->get();
+        $questoes = collect(); // Inicializa uma coleção vazia
 
-        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'ciencias-natureza')->inRandomOrder()->take(45)->get();
+        // Adiciona as questões de linguagens
+        $questoes = $questoes->merge(
+            Questao::with('relAlternativa')
+                ->where('categoriaQuestao', 'enem')
+                ->where('materiaQuestao', 'linguagens')
+                ->inRandomOrder()
+                ->take(45)
+                ->get()
+        );
 
-        $questoes = Questao::with('relAlternativa')->where('categoriaQuestao', 'enem')->where('materiaQuestao', 'matematica')->inRandomOrder()->take(45)->get();
+        // Adiciona as questões de ciências humanas
+        $questoes = $questoes->merge(
+            Questao::with('relAlternativa')
+                ->where('categoriaQuestao', 'enem')
+                ->where('materiaQuestao', 'ciencias-humanas')
+                ->inRandomOrder()
+                ->take(45)
+                ->get()
+        );
+
+        // Adiciona as questões de ciências da natureza
+        $questoes = $questoes->merge(
+            Questao::with('relAlternativa')
+                ->where('categoriaQuestao', 'enem')
+                ->where('materiaQuestao', 'ciencias-natureza')
+                ->inRandomOrder()
+                ->take(45)
+                ->get()
+        );
+
+        // Adiciona as questões de matemática
+        $questoes = $questoes->merge(
+            Questao::with('relAlternativa')
+                ->where('categoriaQuestao', 'enem')
+                ->where('materiaQuestao', 'matematica')
+                ->inRandomOrder()
+                ->take(45)
+                ->get()
+        );
         
         $categoria = 'enem'; // Define a categoria
         
