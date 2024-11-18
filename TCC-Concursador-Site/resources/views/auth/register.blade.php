@@ -3,8 +3,8 @@
 @section('content')
     <div class="flex h-screen mx-auto bg-gray-100 shadow-md overflow-hidden sm:rounded-lg p-6 space-x-6">
         <!-- Coluna do Formulário -->
-        <div class="w-1/2 flex flex-col justify-center items-center space-y-6">
-            <h1 class="font-bigShoulders text-8xl text-shadow">CRIE SUA CONTA</h1>
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-center space-y-6">
+            <h1 class="font-bigShoulders text-6xl lg:text-8xl text-shadow">CRIE SUA CONTA</h1>
         
             <!-- Formulário de Registro -->
             <form method="POST" action="{{ route('register') }}" class="w-3/4 flex flex-col space-y-4">
@@ -48,7 +48,7 @@
             </form>
         </div>
         <!-- Coluna da Imagem (Caso queira manter o layout com duas colunas) -->
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="w-1/2 hidden lg:flex justify-center items-center">
             <img src="{{ asset('imagens/teste111.svg') }}" alt="imagem" height="500" width="540">
         </div>
     </div>

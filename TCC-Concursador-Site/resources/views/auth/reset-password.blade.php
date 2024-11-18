@@ -14,12 +14,12 @@
     <!-- Conteúdo Principal Centralizado -->
     <div class="flex min-h-screen justify-center items-center mx-auto bg-gray-100 shadow-md sm:rounded-lg space-x-6">
         <!-- Coluna da Imagem -->
-        <div class="w-1/2 flex justify-center items-center">
+        <div class="w-1/2 hidden lg:flex justify-center items-center">
             <img src="{{ asset('imagens/teste111.svg') }}" alt="imagem" height="500" width="540">
         </div>
 
         <!-- Coluna do Formulário -->
-        <div class="w-1/2 flex flex-col justify-center items-center space-y-6">
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-center space-y-6">
             <h1 class="font-bigShoulders text-8xl text-shadow">REDIFINIÇÃO DE SENHA</h1>
 
             <!-- Exibe status de sessão -->

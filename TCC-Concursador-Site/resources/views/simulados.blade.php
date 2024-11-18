@@ -24,7 +24,7 @@
       </div>
 
       <!-- Conteúdo -->
-      <div class="bg-whiteblue overflow-hidden transition-all duration-600 max-h-0 peer-checked:max-h-[600px]">
+      <div class="bg-whiteblue overflow-hidden transition-all duration-900 max-h-0 peer-checked:max-h-[800px]">
 
         <!-- Lista de Anos (como no site do ENEM) -->
         <div class="flex justify-center p-4 space-x-4 py-5 gap-4 border-b">

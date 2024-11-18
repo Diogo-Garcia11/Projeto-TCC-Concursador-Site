@@ -23,7 +23,9 @@
 <body class="bg-gray-100 font-montserrat text-gray-900 antialiased overflow-hidden">
     <nav class="nav-au">
         <div class="nav-logo">
-            <img class="logosite" src="{{ asset('imagens/logocon.svg') }}" alt="logo">
+            <a href="/">
+                <img class="logosite" src="{{ asset('imagens/logocon.svg') }}" alt="logo">
+            </a>
             <h1 class="nav-titulo">CONCURSADOR</h1>
         </div>
     </nav>
