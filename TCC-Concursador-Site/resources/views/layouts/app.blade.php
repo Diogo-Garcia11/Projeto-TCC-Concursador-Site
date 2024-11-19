@@ -8,22 +8,22 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-         
-        <link rel="shortcut icon" href="{{asset('imagens/logo.ico')}}" type="image/x-icon">
+        <link rel="shortcut icon" href="{{ asset('imagens/logo.ico') }}" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Big+Shoulders+Display:wght@300;400;700&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="min-h-screen bg-gray-900 dark:bg-gray-900 font-sans antialiased">
-        <div class="min-h-screen bg-gray-900 dark:bg-gray-900">
+    <body class="h-screen bg-gray-900 dark:bg-gray-900 font-sans antialiased">
+        <div class="h-screen bg-gray-900 dark:bg-gray-900">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-gray dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="bg-gray-800 dark:bg-gray-800 shadow">
+                    <div class="w-full sm:w-full lg:w-3/4 mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>

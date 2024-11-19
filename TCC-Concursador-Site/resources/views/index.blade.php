@@ -33,8 +33,7 @@
 
     </div>
     <div class="dropdown_menu">
-        <li><a class="nav-cad" href="{{route('login')}}">ENTRAR</a></li>
-        <li><a class="nav-cad" href="{{route('register')}}">CADASTRAR</a></li>
+        <li><a class="nav-cad" href="">DOWNLOAD DO APP</a></li>
     </div>
 </nav>
 <main>
