@@ -1,5 +1,8 @@
 <x-app-layout>
-    <div class="container-c" style="margin-top: 80px;">
+    <div class="container-c">
+        <div class="titulo-calendario">
+            <h1>CALENDÁRIO DE VESTIBULARES</h1>
+        </div>
         <div class="calendario">
             <header class="calendario-header">
                 <button id="mes-anterior">&lt;</button>

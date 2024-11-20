@@ -3,7 +3,7 @@
 
     <x-slot name="header">
         <a id="a_header"></a>
-        <h2 class="font-Monserrat text-xl lg:text-xs text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-Monserrat text-xs xl:text-base 2xl:text-xl text-gray-800 dark:text-gray-200 leading-tight">
             <ul class="flex flex-row justify-center space-x-4">
                 @foreach($notasPorCategoria as $categoria => $dados)
                     <li class="inline-flex">

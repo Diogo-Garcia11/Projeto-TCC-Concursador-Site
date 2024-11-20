@@ -22,7 +22,7 @@ export default {
                 'amarelo': '#FFF35F',
                 'azul': '#00BDF2',
                 'rosa': '#F066A5',
-                'cinza': '#C5C7CA'
+                'cinza': '#C5C7CA',
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -40,6 +40,9 @@ export default {
                 'bold': '700',
                 'extra-bold': '800',
                 'black': '900',
+            },
+            height: {
+                '90vh': '90vh',
             },
         },
     },

@@ -481,13 +481,18 @@ text-decoration: none;
 
 /* Calendário */
 
+/* Estilo para o container principal */
 .container-c {
-  text-align: center;
-  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding-top: 70px;
+  gap: 30px; 
+  align-items: center; 
 }
 
 .calendario {
-  display: inline-block;
+  flex: 1;
   width: 100%;
   max-width: 600px;
   background-color: rgb(67, 93, 134);
@@ -498,7 +503,7 @@ text-decoration: none;
 
 .calendario-header h2 {
   font-size: 20px;
-  color: white; /* Muda a cor do texto para branco */
+  color: white;
 }
 
 .calendario-header {
@@ -550,24 +555,23 @@ text-decoration: none;
   display: block;
 }
 
-/* Estilo para os botões de navegação */
 .calendario-header button {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Deixa o botão redondo */
-  background-color:rgb(87, 114, 159); /* Cor de fundo */
-  color: white; /* Cor do texto */
+  border-radius: 50%;
+  background-color: rgb(87, 114, 159);
+  color: white;
   border: none;
-  font-size: 25px; /* Tamanho da seta */
+  font-size: 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
+  transition: background-color 0.3s ease;
 }
 
 .calendario-header button:hover {
-  background-color: rgb(57, 92, 152); /* Cor ao passar o mouse */
+  background-color: rgb(57, 92, 152);
 }
 
 .calendario-dias-semana {
@@ -580,13 +584,28 @@ text-decoration: none;
 .dia-semana {
   color: white;
   text-align: center;
-  padding: 10px;;
+  padding: 10px;
   border-radius: 5px;
 }
 
+/* Estilo para o título do calendário */
+.titulo-calendario {
+  flex: 0.4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo-calendario h1 {
+  font-family: var(--font-titulo);
+  font-size: 3rem; 
+  color: #fff;
+  font-weight: bold;
+}
 
 
-        /*Matérias*/
+/*Matérias*/
 
         .radio-container {
           display: flex;
@@ -611,9 +630,8 @@ text-decoration: none;
       }
 
       .radio-text {
-          margin-left: 10px;
-          
-      }
+          margin-left: 10px;          
+}
 
 
 /*Login e Registro*/

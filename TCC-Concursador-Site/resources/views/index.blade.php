@@ -33,7 +33,7 @@
 
     </div>
     <div class="dropdown_menu">
-        <li><a class="nav-cad" href="">DOWNLOAD DO APP</a></li>
+        <li><a class="nav-cad" href="{{asset('Concursador.apk')}}" download="Concursador.apk">DOWNLOAD DO APP</a></li>
     </div>
 </nav>
 <main>

@@ -4,6 +4,7 @@ use App\Http\Controllers\MateriasController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\ContactController;
 
 use App\Http\Controllers\RedacaoController;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +37,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/comunidade', function () {
         return view('comunidade');
     })->name('comunidade');
+
+    Route::post('/contact-send', [ContactController::class, 'send'])->name('contact.send');
+
+
 
     Route::get('/downloadapp', function () {
         return view('downloadapp');
