@@ -8,7 +8,7 @@
   </div>
   <main class="flex flex-col items-center justify-center p-10">
     <!-- Matemática -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="matematica">
     <input type="checkbox" id="toggle-matematica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'matematica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -56,7 +56,7 @@
     </div>
 
     <!-- PORTUGUÊS -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="portugues">
     <input type="checkbox" id="toggle-portugues" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'portugues') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -108,7 +108,7 @@
     </div>
 
     <!-- HISTÓRIA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="historia">
     <input type="checkbox" id="toggle-historia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'historia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -156,7 +156,7 @@
     </div>
 
     <!-- GEOGRAFIA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="geografia">
     <input type="checkbox" id="toggle-geografia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'geografia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -207,7 +207,7 @@
     </div>
 
     <!-- BIOLOGIA -->
-    <div id="biologia" class="relative w-[80%] overflow-hidden">
+    <div id="biologia" class="relative w-[80%] overflow-hidden" id="biologia">
     <input type="checkbox" id="toggle-biologia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'biologia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -255,7 +255,7 @@
     </div>
 
     <!-- QUÍMICA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="quimica">
     <input type="checkbox" id="toggle-quimica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'quimica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -314,7 +314,7 @@
     </div>
 
     <!-- FÍSICA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="física">
     <input type="checkbox" id="toggle-fisica" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'fisica') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -368,7 +368,7 @@
     </div>
 
     <!-- FILOSOFIA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="filosofia">
     <input type="checkbox" id="toggle-filosofia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'filosofia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -410,7 +410,7 @@
     </div>
 
     <!-- SOCIOLOGIA -->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="sociologia">
     <input type="checkbox" id="toggle-sociologia" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'sociologia') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -451,7 +451,7 @@
     </div>
 
     <!--Literatura-->
-    <div class="relative w-[80%] overflow-hidden">
+    <div class="relative w-[80%] overflow-hidden" id="literatura">
     <input type="checkbox" id="toggle-literatura" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer" 
     @if(request()->get('section') === 'literatura') checked @endif>
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">
@@ -493,14 +493,22 @@
     </div>
   </main>
 
-  <script>document.addEventListener("DOMContentLoaded", function () {
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Obter o valor de 'section' na query string
     const section = new URLSearchParams(window.location.search).get('section');
-    if (section === 'biologia') {
-        const element = document.getElementById('biologia');
+    
+    // Se houver uma 'section' especificada na URL
+    if (section) {
+        // Encontrar o elemento correspondente à 'section'
+        const element = document.getElementById(section);
+        
+        // Se o elemento for encontrado, rolar para ele
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     }
-});</script>
+});
+</script>
 </x-app-layout>
 
