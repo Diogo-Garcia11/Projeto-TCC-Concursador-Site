@@ -13,19 +13,31 @@ class EventoSeeder extends Seeder
     public function run(): void
     {
         Evento::create([
-            'dataEvento' => '2024-10-26',
-            'descricaoEvento' => 'Prova da Fuvest',
+            'dataEvento' => '2024-11-04',
+            'descricaoEvento' => 'Primeiro dia do Enem',
         ]);
 
         Evento::create([
-            'dataEvento' => '2024-11-05',
-            'descricaoEvento' => 'Prova do Enem',
+            'dataEvento' => '2024-11-11',
+            'descricaoEvento' => 'Segundo dia do Enem',
+        ]);
+        Evento::create([
+            'dataEvento' => '2024-11-18',
+            'descricaoEvento' => 'Primeira Fase da Fuvest',
+        ]);
+        Evento::create([
+            'dataEvento' => '2024-12-17',
+            'descricaoEvento' => 'Segunda Fase da Fuvest',
+        ]);
+        Evento::create([
+            'dataEvento' => '2024-12-16',
+            'descricaoEvento' => 'Segunda Fase da Fuvest',
+        ]);
+        Evento::create([
+            'dataEvento' => '2025-01-25',
+            'descricaoEvento' => 'Divulgação do resultado da Fuvest',
         ]);
 
-        Evento::create([
-            'dataEvento' => '2024-12-20',
-            'descricaoEvento' => 'Férias',
-        ]);
 
     }
 }
