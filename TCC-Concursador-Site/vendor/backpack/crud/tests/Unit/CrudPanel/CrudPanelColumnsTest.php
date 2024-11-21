@@ -370,6 +370,43 @@ class CrudPanelColumnsTest extends \Backpack\CRUD\Tests\config\CrudPanel\BaseCru
         }
     }
 
+    public function testAddRelationByNameWithMutator()
+    {
+        $this->crudPanel->setModel(User::class);
+        $this->crudPanel->addColumn('accountDetails.nicknamutator');
+        if (backpack_pro()) {
+            $this->assertEquals(['accountDetails__nicknamutator' => [
+                'name' => 'accountDetails.nicknamutator',
+                'label' => 'AccountDetails.nicknamutator',
+                'type' => 'relationship',
+                'key' => 'accountDetails__nicknamutator',
+                'priority' => 0,
+                'attribute' => 'nicknamutator',
+                'tableColumn' => false,
+                'orderable' => false,
+                'searchLogic' => false,
+                'relation_type' => 'HasOne',
+                'entity' => 'accountDetails.nicknamutator',
+                'model' => 'Backpack\CRUD\Tests\Config\Models\AccountDetails',
+            ]], $this->crudPanel->columns());
+        } else {
+            $this->assertEquals(['accountDetails__nicknamutator' => [
+                'name' => 'accountDetails.nicknamutator',
+                'label' => 'AccountDetails.nicknamutator',
+                'type' => 'text',
+                'key' => 'accountDetails__nicknamutator',
+                'priority' => 0,
+                'attribute' => 'nicknamutator',
+                'tableColumn' => false,
+                'orderable' => false,
+                'searchLogic' => false,
+                'relation_type' => 'HasOne',
+                'entity' => 'accountDetails.nicknamutator',
+                'model' => 'Backpack\CRUD\Tests\Config\Models\AccountDetails',
+            ]], $this->crudPanel->columns());
+        }
+    }
+
     public function testAddRelationColumn()
     {
         $this->crudPanel->setModel(User::class);
@@ -927,5 +964,22 @@ class CrudPanelColumnsTest extends \Backpack\CRUD\Tests\config\CrudPanel\BaseCru
         $this->crudPanel->entry = $this->makeAnArticleModel();
         $url = $columnArray['wrapper']['href']($this->crudPanel, $columnArray, $this->crudPanel->entry, 1);
         $this->assertEquals('http://localhost/admin/articles/1/show?test=testing&test2=Some%20Content', $url);
+    }
+
+    public function testItCanInferFieldAttributesFromADynamicRelation()
+    {
+        User::resolveRelationUsing('dynamicRelation', function ($user) {
+            return $user->belongsTo(\Backpack\CRUD\Tests\config\Models\Bang::class);
+        });
+
+        $this->crudPanel->setModel(User::class);
+        $this->crudPanel->addColumn('dynamicRelation');
+
+        $column = $this->crudPanel->columns()['dynamicRelation'];
+
+        $this->assertEquals('dynamicRelation', $column['name']);
+        $this->assertEquals('name', $column['attribute']);
+        $this->assertEquals('relationship', $column['type']);
+        $this->assertEquals('BelongsTo', $column['relation_type']);
     }
 }

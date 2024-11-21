@@ -25,7 +25,7 @@ trait Search
         return $this->query->where(function ($query) use ($searchTerm) {
             foreach ($this->columns() as $column) {
                 if (! isset($column['type'])) {
-                    abort(400, 'Missing column type when trying to apply search term.');
+                    abort(500, 'Missing column type when trying to apply search term.', ['developer-error-exception']);
                 }
 
                 $this->applySearchLogicForColumn($query, $column, $searchTerm);
@@ -286,6 +286,11 @@ trait Search
                                            ->with('row_number', $rowNumber)
                                            ->render();
             $row_items[0] = $details_row_button.$row_items[0];
+        }
+
+        if ($this->getResponsiveTable()) {
+            $responsiveTableTrigger = '<div class="dtr-control d-none cursor-pointer"></div>';
+            $row_items[0] = $responsiveTableTrigger.$row_items[0];
         }
 
         return $row_items;
