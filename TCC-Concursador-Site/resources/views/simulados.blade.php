@@ -4,37 +4,9 @@
 @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/simulados.js'])
 <x-app-layout>
   <div class="text-center">
-    <h5 class="text-7xl font-Montserrat text-white p-8">Simulado e Provas Anteriores</h5>
+    <h5 class="text-7xl font-Montserrat text-white p-8">Simulados</h5>
   </div>
   <main class="flex flex-col items-center justify-center p-10">
-    
-      <!-- Simulado -->
-    <div class="relative w-[80%] overflow-hidden">
-      <div class="flex flex-rows-2 bg-kblue h-40 w-full pl-5 flex items-center">
-        <div class=" right-3 ">
-          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" class="w-20 h-20">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <title>book</title>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="icon" fill="#000000" transform="translate(42.666667, 106.666667)">
-                  <path d="M175.702784,2.84217094e-14 L213.333333,18.7946667 L250.963883,2.84217094e-14 L426.666667,2.84217094e-14 L426.666667,320 L261.013333,320 L213.333333,343.851392 L165.632,320 L3.55271368e-14,320 L3.55271368e-14,2.84217094e-14 L175.702784,2.84217094e-14 Z M165.632,42.6666667 L42.6666667,42.6666667 L42.6666667,277.333333 L175.702784,277.333333 L192,285.473 L192,55.851 L165.632,42.6666667 Z M384,42.6666667 L261.013333,42.6666667 L234.666,55.846 L234.666,285.473 L250.963883,277.333333 L384,277.333333 L384,42.6666667 Z M362.666667,170.666667 L362.666667,202.666667 L256,202.666667 L256,170.666667 L362.666667,170.666667 Z M170.666667,170.666667 L170.666667,202.666667 L64,202.666667 L64,170.666667 L170.666667,170.666667 Z M362.666667,85.3333333 L362.666667,117.333333 L256,117.333333 L256,85.3333333 L362.666667,85.3333333 Z M170.666667,85.3333333 L170.666667,117.333333 L64,117.333333 L64,85.3333333 L170.666667,85.3333333 Z" id="Path-2"> </path>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </div>
-        <button 
-          onclick="window.location.href='{{route('simulados.enem')}}'" 
-          class="relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px]">
-          <h1 class="text-5xl font-Montserrat text-steelblue p-10 text-right after:bg-green-500 relative text-steelblue hover:after:w-full after:transition-all after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-steelblue">
-          SIMULADOS
-          </h1>
-        </button>
-      </div>
-    </div>
-
     <!-- Enem -->
     <div class="relative w-[80%] overflow-hidden">
       <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-40 opacity-0 z-10 cursor-pointer">

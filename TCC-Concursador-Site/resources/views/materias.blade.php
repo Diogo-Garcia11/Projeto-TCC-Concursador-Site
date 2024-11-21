@@ -44,9 +44,11 @@
           <div class="grid-item">
             <a href="{{route('matematica.geometria-espacial')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Geometria espacial</a>
           </div>
-          
           <div class="grid-item">
             <a href="{{route('matematica.probabilidade')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Probabilidade</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('matematica.materias_prova_matematica')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Matemática</a>
           </div>
       
         </div>
@@ -98,6 +100,9 @@
           <div class="grid-item">
             <a href="{{route('portugues.redacao')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Redação</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('portugues.materias_prova_portugues')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Português</a>
+          </div>
         </div>
       </div>
     </div>
@@ -142,6 +147,9 @@
           </div>
           <div class="grid-item">
             <a href="{{route('historia.idademedia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Idade Média</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('historia.materias_prova_historia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de História</a>
           </div>
         </div>
       </div>
@@ -191,6 +199,9 @@
           <div class="grid-item">
             <a href="{{route('geografia.populacao')}}" class="text-3xl font-Montserrat text-steelblue ">➤ População</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('geografia.materias_prova_geografia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Geografia</a>
+          </div>
         </div>
       </div>
     </div>
@@ -235,7 +246,10 @@
           </div>
           <div class="grid-item">
             <a href="{{route('biologia.fisiologia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Fisiologia</a>
-          </div>         
+          </div>   
+          <div class="grid-item">
+            <a href="{{route('biologia.materias_prova_biologia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Biologia</a>
+          </div>      
         </div>
       </div>
     </div>
@@ -292,6 +306,9 @@
           <div class="grid-item">
             <a href="{{route('quimica.estequiometria')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Estequiometria</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('quimica.materias_prova_quimica')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Química</a>
+          </div>
         </div>
       </div>
     </div>
@@ -342,6 +359,9 @@
           <div class="grid-item">
             <a href="{{route('fisica.eletricidade')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Eletricidade e Circuitos Elétricos</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('fisica.materias_prova_fisica')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Física</a>
+          </div>
 
         </div>
       </div>
@@ -382,6 +402,9 @@
           <div class="grid-item">
             <a href="{{route('filosofia.iluminismo')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Iluminismo</a>
           </div>
+          <div class="grid-item">
+            <a href="{{route('filosofia.materias_prova_filosofia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de filosofia</a>
+          </div>
         </div>
       </div>
     </div>
@@ -419,6 +442,9 @@
           </div>
           <div class="grid-item">
             <a href="{{route('sociologia.sociedade-contemporanea')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Sociedade Contemporânea</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('sociologia.materias_prova_sociologia')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Sociologia</a>
           </div>
         </div>
       </div>
@@ -458,6 +484,9 @@
           </div>
           <div class="grid-item">
             <a href="{{route('literatura.movimentos-literarios')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Movimentos Literários e Seus Autores</a>
+          </div>
+          <div class="grid-item">
+            <a href="{{route('literatura.materias_prova_literatura')}}" class="text-3xl font-Montserrat text-steelblue ">➤ Prova de Literatura</a>
           </div>
         </div>
       </div>
