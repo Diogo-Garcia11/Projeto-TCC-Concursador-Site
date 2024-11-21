@@ -658,7 +658,7 @@ class CrudPanelFieldsTest extends BaseCrudPanel
         } catch (\Throwable $e) {
         }
         $this->assertEquals(
-            new \Symfony\Component\HttpKernel\Exception\HttpException(500, 'Looks like field <code>doesNotExist</code> is not properly defined. The <code>doesNotExist()</code> relationship doesn\'t seem to exist on the <code>Backpack\CRUD\Tests\Config\Models\TestModel</code> model.'),
+            new \Symfony\Component\HttpKernel\Exception\HttpException(500, 'Looks like field <code>doesNotExist</code> is not properly defined. The <code>doesNotExist()</code> relationship doesn\'t seem to exist on the <code>Backpack\CRUD\Tests\Config\Models\TestModel</code> model.', null, ['developer-error-exception']),
             $e
         );
     }
@@ -777,7 +777,7 @@ class CrudPanelFieldsTest extends BaseCrudPanel
             ],
             'store_in' => 'some',
             'wrapper' => [
-                'class' => 'form-group col-md-6',
+                'class' => 'form-group col-md-6 mb-3',
             ],
             'events' => [
                 'created' => function () {
@@ -903,7 +903,7 @@ class CrudPanelFieldsTest extends BaseCrudPanel
         } catch (\Throwable $e) {
         }
         $this->assertEquals(
-            new \Symfony\Component\HttpKernel\Exception\HttpException(500, 'Field name can\'t be empty.'),
+            new \Symfony\Component\HttpKernel\Exception\HttpException(500, 'Field name can\'t be empty.', null, ['developer-error-exception']),
             $e
         );
     }
@@ -978,6 +978,28 @@ class CrudPanelFieldsTest extends BaseCrudPanel
     {
         $this->crudPanel->addField('test1, test2');
         $this->assertEquals(['test1', 'test2'], $this->crudPanel->getAllFieldNames());
+    }
+
+    public function testItCanInferFieldAttributesFromADynamicRelation()
+    {
+        User::resolveRelationUsing('dynamicRelation', function ($user) {
+            return $user->hasOne(\Backpack\CRUD\Tests\config\Models\AccountDetails::class);
+        });
+
+        $this->crudPanel->setModel(User::class);
+        $this->crudPanel->addField('dynamicRelation.nickname');
+
+        $this->assertEquals([
+            'name' => 'dynamicRelation[nickname]',
+            'type' => 'relationship',
+            'entity' => 'dynamicRelation.nickname',
+            'relation_type' => 'HasOne',
+            'attribute' => 'nickname',
+            'model' => 'Backpack\CRUD\Tests\Config\Models\AccountDetails',
+            'multiple' => false,
+            'pivot' => false,
+            'label' => 'DynamicRelation.nickname',
+        ], $this->crudPanel->fields()['dynamicRelation.nickname']);
     }
 }
 

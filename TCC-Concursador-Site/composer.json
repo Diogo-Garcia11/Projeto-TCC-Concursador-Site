@@ -11,11 +11,13 @@
         "guzzlehttp/guzzle": "^7.9",
         "illuminate/database": "*",
         "intervention/image": "^3.8",
-        "laravel/framework": "^11.9",
+        "laravel/framework": "11.31.0",
         "laravel/tinker": "^2.9",
         "setasign/fpdf": "^1.8",
         "setasign/fpdi": "^2.6",
-        "smalot/pdfparser": "^2.11"
+        "smalot/pdfparser": "^2.11",
+        "symfony/http-foundation": "7.1.7",
+        "symfony/process": "7.1.7"
     },
     "require-dev": {
         "backpack/generators": "^4.0",

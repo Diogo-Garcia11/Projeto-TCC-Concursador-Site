@@ -1,4 +1,4 @@
-<x-app-layout>         
+<x-app-layout>
         <div class="flex h-90vh mx-auto shadow-md sm:rounded-lg space-x-6">
             <!-- Coluna da Imagem -->
             <div class="w-1/2 hidden lg:flex justify-center items-center">

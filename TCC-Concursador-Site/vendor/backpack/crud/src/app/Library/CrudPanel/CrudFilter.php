@@ -363,6 +363,7 @@ class CrudFilter
     public function view($value)
     {
         $this->view = $value;
+        $this->options['view'] = $value;
 
         return $this->save();
     }
@@ -557,7 +558,7 @@ class CrudFilter
                 break;
 
             default:
-                abort(500, 'Unknown filter operator.');
+                abort(500, 'Unknown filter operator.', ['developer-error-exception']);
                 break;
         }
     }
