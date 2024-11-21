@@ -352,7 +352,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.sociologia.sociedade-contemporanea');
             })->name('sociologia.sociedade-contemporanea');
 
-            Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_quimica');
+            Route::get('/prova_sociologia', [MateriasController::class, 'prova_sociologia'])->name('sociologia.materias_prova_sociologia');
         });
 
         Route::prefix('literatura')->group(function () { 
@@ -376,7 +376,7 @@ Route::middleware('auth')->group(function () {
                 return view('materias.literatura.movimentos-literarios');
             })->name('literatura.movimentos-literarios');
 
-            Route::get('/prova_literatura', [MateriasController::class, 'prova_literatura'])->name('literatura.materias_prova_quimica');
+            Route::get('/prova_literatura', [MateriasController::class, 'prova_literatura'])->name('literatura.materias_prova_literatura');
         });
     });
 }); //fim da middleware('auth') que verifica se voce esta logado para dar acesso às rotas
