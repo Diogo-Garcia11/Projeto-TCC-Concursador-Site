@@ -12,6 +12,27 @@ Trata-se de um **site de simulados e estudos intensivos para vestibulares**, cri
 - 🖥️ **Vite** — para build e otimização dos assets  
 - 🎨 **Tailwind CSS** — estilização moderna e responsiva  
 - 💾 **MySQL** — banco de dados relacional para armazenar usuários, questões e resultados  
+- 🌐 **HTML5** e **CSS3** — estrutura e layout base do site  
+
+---
+
+## 🧠 Objetivo do Projeto
+
+O sistema tem como propósito **auxiliar estudantes na preparação para vestibulares**, oferecendo:  
+📘 Simulados por matéria e tema  
+📊 Estatísticas de desempenho do usuário  
+🎯 Interface intuitiva e adaptável a diferentes dispositivos  
+
+---
+
+## ⚙️ Funcionalidades Principais
+
+✅ Cadastro e login de usuários  
+✅ Sistema de simulado com correção automática  
+✅ Dashboard com gráficos de desempenho  
+✅ Área administrativa (via Laravel Backpack ou painel próprio)  
+✅ Organização de questões por categoria e nível de dificuldade  
+✅ Layout responsivo desenvolvido com Tailwind CSS  
 
 ## Requisitos
 
