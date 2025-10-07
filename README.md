@@ -1,4 +1,4 @@
-# 🎓 Plataforma de Curso Intensivo para Vestibulares
+# 🎓 **Concursador**, plataforma de Curso Intensivo para Vestibulares 
 
 Este projeto foi desenvolvido como **Trabalho de Conclusão de Curso (TCC)** na **ETEC Lauro Gomes**.  
 Trata-se de um **site de simulados e estudos intensivos para vestibulares**, criado com foco em acessibilidade, desempenho e experiência do aluno.
