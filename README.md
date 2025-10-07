@@ -46,7 +46,7 @@ O sistema tem como propósito **auxiliar estudantes na preparação para vestibu
 * Node.js 20 ou superior: https://nodejs.org/en/download/package-manager
 * 
 ---
-### Banco de dados
+## Banco de dados
   Utilizamos o PHPMyAdmin para gestão do banco de dados <br/>
   Todos os dados que utilizamos estão disponíveis em um arquivo como **concursador.sql**, na raiz do projeto 
 ---
