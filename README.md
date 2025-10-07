@@ -44,12 +44,15 @@ O sistema tem como propósito **auxiliar estudantes na preparação para vestibu
 * PHP 8.2 ou superior: https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x64.zip
 * Composer: https://getcomposer.org/download/
 * Node.js 20 ou superior: https://nodejs.org/en/download/package-manager
-* 
+  
 ---
+
 ## Banco de dados
   Utilizamos o PHPMyAdmin para gestão do banco de dados <br/>
   Todos os dados que utilizamos estão disponíveis em um arquivo como **concursador.sql**, na raiz do projeto 
+  
 ---
+
 ## Como rodar o projeto baixado
 Instalar as dependências do PHP(necessário)
 ```
