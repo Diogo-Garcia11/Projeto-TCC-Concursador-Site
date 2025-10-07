@@ -3,15 +3,18 @@
 Este projeto foi desenvolvido como **Trabalho de Conclusão de Curso (TCC)** na **ETEC Lauro Gomes**.  
 Trata-se de um **site de simulados e estudos intensivos para vestibulares**, criado com foco em acessibilidade, desempenho e experiência do aluno.
 
+#Apresentação:
+  https://www.canva.com/design/DAGTGEbdXtI/TJEbWDdZYrz4ckWcSSh0-Q/edit?utm_content=DAGTGEbdXtI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+  
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 - 🧩 **PHP 8+**
 - ⚙️ **Laravel** — framework principal do projeto  
-- 🖥️ **Vite** — para build e otimização dos assets  
+- 🖥️ **ViteJS** — para build e otimização dos assets  
 - 🎨 **Tailwind CSS** — estilização moderna e responsiva  
-- 💾 **MySQL** — banco de dados relacional para armazenar usuários, questões e resultados  
+- 💾 **MySQL** — banco de dados relacional para armazenar usuários, questões e notas  
 - 🌐 **HTML5** e **CSS3** — estrutura e layout base do site  
 
 ---
@@ -30,15 +33,19 @@ O sistema tem como propósito **auxiliar estudantes na preparação para vestibu
 ✅ Cadastro e login de usuários  
 ✅ Sistema de simulado com correção automática  
 ✅ Dashboard com gráficos de desempenho  
-✅ Área administrativa (via Laravel Backpack ou painel próprio)  
-✅ Organização de questões por categoria e nível de dificuldade  
-✅ Layout responsivo desenvolvido com Tailwind CSS  
+✅ Área administrativa (via Laravel Backpack)  
+✅ Organização de questões por categoria
+✅ Layout responsivo 
+
+---
 
 ## Requisitos
 
 * PHP 8.2 ou superior: https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x64.zip
 * Composer: https://getcomposer.org/download/
 * Node.js 20 ou superior: https://nodejs.org/en/download/package-manager
+* 
+---
 
 ## Como rodar o projeto baixado
 Instalar as dependências do PHP(necessário)
