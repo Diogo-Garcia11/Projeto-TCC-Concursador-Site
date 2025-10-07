@@ -180,6 +180,9 @@ Executar as bibliotecas Node.js
 ```
 npm run dev
 ```
+
+---
+
 ## Bibliotecas opcionais
 
 Traduzir para português
@@ -219,3 +222,5 @@ Criar personalização enviar e-mail contas a pagar
 ```
 php artisan make:mail SendEmailContaPagar
 ```
+
+---
