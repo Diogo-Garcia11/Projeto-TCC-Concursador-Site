@@ -1,3 +1,18 @@
+# 🎓 Plataforma de Curso Intensivo para Vestibulares
+
+Este projeto foi desenvolvido como **Trabalho de Conclusão de Curso (TCC)** na **ETEC Lauro Gomes**.  
+Trata-se de um **site de simulados e estudos intensivos para vestibulares**, criado com foco em acessibilidade, desempenho e experiência do aluno.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- 🧩 **PHP 8+**
+- ⚙️ **Laravel** — framework principal do projeto  
+- 🖥️ **Vite** — para build e otimização dos assets  
+- 🎨 **Tailwind CSS** — estilização moderna e responsiva  
+- 💾 **MySQL** — banco de dados relacional para armazenar usuários, questões e resultados  
+
 ## Requisitos
 
 * PHP 8.2 ou superior: https://windows.php.net/downloads/releases/php-8.3.13-nts-Win32-vs16-x64.zip
